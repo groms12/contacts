@@ -367,6 +367,32 @@
   margin-top: 50px;
 }
 
+.ymap-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: url("../img/ymap-before-loader.png") #ffffff no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-position: center center;
+  background-size: cover;
+}
+
+#map-yandex {
+  position: relative;
+  z-index: 7;
+  margin: auto;
+  width: 100%;
+  height: 30rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.contacts__text {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 1180px) {
   .list__btn img {
     background: url("../img/line.svg");
