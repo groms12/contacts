@@ -1,0 +1,68 @@
+@media (max-width: 1024px)
+    .points
+        width: 150px
+@media (max-width: 780px)
+    .points
+        display: none
+    .galery
+        &__text
+            display: none
+    .navigation
+        display: none
+    .swiper-pagination
+        display: none
+    .btn
+        display: flex
+@media (max-width: 580px)
+    .galery
+        &__slider
+            &__slide
+                &__block
+                    flex-direction: column
+                    padding: 0
+                    &__group
+                        align-items: start
+                    &__description
+                        &__title
+                            font-size: 16px
+                            margin-bottom: 10px
+                        &__name
+                            font-size: 14px
+                            margin-bottom: 6px
+                            color: #7B7B7B
+                        &__brand
+                            font-family: 'Arial', sans-serif
+                            font-size: 14px
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 16px
+                            color: #7B7B7B
+                            margin-bottom: 10px
+                            &-name
+                                color: #000
+                        &__num
+                            font-size: 14px
+                            color: #7B7B7B
+                            span
+                                color: #000
+                    &__cost
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        &__num
+                            font-size: 20px
+                            padding-top: 20px
+                            margin-left: -10px
+                        &__btn
+                            font-size: 16px
+                            padding: 16px 40px
+                            margin-right: -10px
+                            margin-bottom: 20px
+                            margin-left: 20px
+                    &__img
+                        width: 93px
+                        height: 93px
+                        margin-right: 10px
+    .btn
+        img
+            display: none

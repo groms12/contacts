@@ -1,0 +1,147 @@
+// section galery
+.galery
+    margin-top: 60px
+    &__text
+        font-family: 'Arial', sans-serif
+        font-size: 16px
+        font-style: normal
+        font-weight: 700
+        line-height: 44px
+        color: #008BCC
+        text-transform: uppercase
+        text-align: right
+        &__num
+            cursor: pointer
+            font-weight: 300
+            &--active
+                color: #008BCC
+                font-weight: 700
+    &__slider
+        display: flex
+        &__slide
+            &__block
+                padding: 30px 40px 30px 40px
+                border: 1px solid #E9E9E9
+                display: flex
+                align-items: center
+                justify-content: space-between
+                margin-bottom: 10px
+                &__img
+                    margin-right: 40px
+                &__description
+                    display: flex
+                    flex-direction: column
+                    max-width: 455px
+                    &__name
+                        font-family: 'Arial', sans-serif
+                        font-size: 14px
+                        font-style: normal
+                        font-weight: 700
+                        line-height: 16px
+                        color: #E9E9E9
+                        margin-bottom: 10px
+                    &__title
+                        font-family: 'Arial', sans-serif
+                        font-size: 20px
+                        font-style: normal
+                        font-weight: 700
+                        line-height: 23px
+                        color: #000000
+                        margin-bottom: 20px
+                    &__num, &__brand, &__brand-name
+                        font-family: 'Arial', sans-serif
+                        font-size: 16px
+                        font-style: normal
+                        font-weight: 700
+                        line-height: 18px
+                        color: #000000
+                        margin-bottom: 20px
+                &__cost
+                    &__num
+                        font-family: 'Arial', sans-serif
+                        font-size: 24px
+                        font-style: normal
+                        font-weight: 700
+                        color: #000000
+                        line-height: 28px
+                        text-align: center
+                        margin-bottom: 32px
+                    &__btn
+                        text-transform: uppercase
+                        color: #ffffff
+                        background-color: #027DC3
+                        text-decoration: none
+                        padding: 16px 44px 16px 44px
+                &__group
+                    display: flex
+                    align-items: center
+.points
+    display: inline-block
+    width: 220px
+.swiper-pagination
+    &-bullet
+        color: #7B7B7B
+        background-color: #fff
+        outline: none
+        margin-right: 10px
+        margin-top: 50px
+        margin-left: auto
+        &-active
+            color: #fff
+            background-color: #027DC3
+            border-radius: 0
+            width: 22px
+            padding-left: -2px
+            height: 20px
+.swiper-wrapper
+    padding-bottom: 70px
+.swiper-next
+    outline: none
+    color: #7b7b7b
+    width: 6px
+    height: 10px
+    background: url('../img/arrow-left-blue.svg')
+    transform: rotate(180deg)
+    cursor: pointer
+    z-index: 15
+    &--active
+        background: url('../img/arrow-left.svg')
+.swiper-prev
+    outline: none
+    color: #7B7B7B
+    background: url('../img/arrow-left-blue.svg')
+    width: 6px
+    height: 10px
+    cursor: pointer
+    z-index: 15
+    &--active
+        background: url('../img/arrow-left.svg')
+.navigation
+    display: flex
+    justify-content: space-around
+    margin: auto
+    margin-bottom: 15px
+.more
+    font-family: 'Arial', sans-serif
+    font-size: 16px
+    font-style: normal
+    font-weight: 700
+    line-height: 18px
+    text-align: center
+    color: #027DC3
+    background-color: #fff
+    text-transform: uppercase
+    text-decoration: none
+    padding: 16px 44px
+    border: 1px solid #027dc3
+    display: block
+    max-width: 224px
+    margin: auto
+    cursor: pointer
+.btn
+    display: none
+    align-items: center
+    justify-content: space-between
+    outline: none
+    &--nonactive
+        display: none
