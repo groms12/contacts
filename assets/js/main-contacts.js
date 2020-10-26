@@ -133,6 +133,8 @@ var spinner = $('.ymap-container').children('.loader');
             $('#phone').html(cityMoscow[2]);
             $('#mail').html(cityMoscow[3]);
             $('#time').html(cityMoscow[4]);
+            center_x = 55.774922;
+            center_y = 37.616333;
         }
         if (val == 'Новосибирск') {
             $('#city').html(cityNovosib[0]);
@@ -140,6 +142,8 @@ var spinner = $('.ymap-container').children('.loader');
             $('#phone').html(cityNovosib[2]);
             $('#mail').html(cityNovosib[3]);
             $('#time').html(cityNovosib[4]);
+            center_x = 54.987875;
+            center_y = 82.912956;
         }
     });
 });
