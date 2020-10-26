@@ -120,4 +120,26 @@ var spinner = $('.ymap-container').children('.loader');
             //Map Yandex
             ymap();            
         });
+
+    var cityMoscow = ['г. Москва,', 'Волконский 1-й переулок, дом 11 строение 2', '+7(000) 000-00-00', 'info@moscow.ru', '10:00 – 19:00'];
+    var cityNovosib = ['г. Новосибирск,', 'ул.Немировича-Данченко 165, офис 103', '+7(383) 292-36-12', 'info@sibgazservice.ru', '09:00 – 18:00'];
+    
+    $('.contacts__info__place__select').click(function(){
+        var val = $('.contacts__info__place__select').val();
+        $('.contacts__info__city__name').html(val);
+        if (val == 'Москва') {
+            $('#city').html(cityMoscow[0]);
+            $('#address').html(cityMoscow[1]);
+            $('#phone').html(cityMoscow[2]);
+            $('#mail').html(cityMoscow[3]);
+            $('#time').html(cityMoscow[4]);
+        }
+        if (val == 'Новосибирск') {
+            $('#city').html(cityNovosib[0]);
+            $('#address').html(cityNovosib[1]);
+            $('#phone').html(cityNovosib[2]);
+            $('#mail').html(cityNovosib[3]);
+            $('#time').html(cityNovosib[4]);
+        }
     });
+});
