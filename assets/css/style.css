@@ -126,9 +126,11 @@
   color: #7B7B7B;
   background-color: #fff;
   outline: none;
-  margin-right: 10px;
+  margin-right: 3px !important;
   margin-top: 50px;
   margin-left: auto;
+  font-size: 16px;
+  width: 22px;
 }
 
 .swiper-pagination-bullet-active {
@@ -147,12 +149,10 @@
 .swiper-next {
   outline: none;
   color: #7b7b7b;
-  width: 6px;
-  height: 10px;
   background: url("../img/arrow-left-blue.svg");
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
   cursor: pointer;
+  height: 24px;
+  width: 24px;
   z-index: 15;
 }
 
@@ -164,8 +164,10 @@
   outline: none;
   color: #7B7B7B;
   background: url("../img/arrow-left-blue.svg");
-  width: 6px;
-  height: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  height: 24px;
+  width: 24px;
   cursor: pointer;
   z-index: 15;
 }
@@ -181,7 +183,7 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: auto;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
 }
 
 .more {

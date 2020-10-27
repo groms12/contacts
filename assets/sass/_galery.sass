@@ -79,13 +79,16 @@
     display: inline-block
     width: 220px
 .swiper-pagination
+    // font-size: 14px
     &-bullet
         color: #7B7B7B
         background-color: #fff
         outline: none
-        margin-right: 10px
+        margin-right: 3px !important
         margin-top: 50px
         margin-left: auto
+        font-size: 16px
+        width: 22px
         &-active
             color: #fff
             background-color: #027DC3
@@ -98,11 +101,10 @@
 .swiper-next
     outline: none
     color: #7b7b7b
-    width: 6px
-    height: 10px
     background: url('../img/arrow-left-blue.svg')
-    transform: rotate(180deg)
     cursor: pointer
+    height: 24px
+    width: 24px
     z-index: 15
     &--active
         background: url('../img/arrow-left.svg')
@@ -110,8 +112,9 @@
     outline: none
     color: #7B7B7B
     background: url('../img/arrow-left-blue.svg')
-    width: 6px
-    height: 10px
+    transform: rotate(180deg)
+    height: 24px
+    width: 24px
     cursor: pointer
     z-index: 15
     &--active
@@ -120,7 +123,7 @@
     display: flex
     justify-content: space-around
     margin: auto
-    margin-bottom: 15px
+    margin-bottom: 9px
 .more
     font-family: 'Arial', sans-serif
     font-size: 16px

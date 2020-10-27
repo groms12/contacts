@@ -56,7 +56,7 @@ $('.galery__text__num-1').click(function(e){
     $('.galery__slider__slide').html(str);
     mySwiper.update();
     var bullets = $('.swiper-pagination-bullet');
-    $('.navigation').css('max-width', count*bullets.width() + count*20 + 50);
+    $('.navigation').css('max-width', count*bullets.width() + count*22 + 90);
 });
 
 $('.galery__text__num-2').click(function(e){
@@ -93,7 +93,8 @@ $('.galery__text__num-2').click(function(e){
     $('.galery__slider__slide').html(str);
     mySwiper.update();
     var bullets = $('.swiper-pagination-bullet');
-    $('.navigation').css('max-width', count*bullets.width() + count*20 + 50);
+    $('.navigation').css('max-width', count*bullets.width() + count*22 + 90);
+
 });
 
 $('.galery__text__num-3').click(function(e){
@@ -130,7 +131,7 @@ $('.galery__text__num-3').click(function(e){
     $('.galery__slider__slide').html(str);
     mySwiper.update();
     var bullets = $('.swiper-pagination-bullet');
-    $('.navigation').css('max-width', count*bullets.width() + count*20 + 50);
+    $('.navigation').css('max-width', count*bullets.width() + count*22 + 90);
 });
 var cnt = num - 10; // кол-во оставшихся записей при max-width: 780px
 

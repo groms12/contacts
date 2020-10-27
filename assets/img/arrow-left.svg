@@ -1,3 +1,11 @@
-<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00004C0 5.26524 0.10536 5.51965 0.292892 5.70715L4.29294 9.70718C4.68344 10.0977 5.31664 10.0977 5.70715 9.70718C6.09765 9.31668 6.09765 8.68347 5.70715 8.29297L2.41422 5.00004L5.70715 1.70712C6.09765 1.31659 6.09765 0.683426 5.70715 0.292892C5.31664 -0.0976308 4.68344 -0.0976308 4.29294 0.292892L0.292892 4.29294C0.10536 4.48044 0 4.73484 0 5.00004Z" fill="#7B7B7B"/>
+<svg width="23.999999999999996" height="23.999999999999996" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="white" id="svg_1" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.8" stroke="#4f4f4f" d="m9,5l7,7l-7,7"/>
+ </g>
 </svg>
