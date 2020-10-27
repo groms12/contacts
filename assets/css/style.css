@@ -602,9 +602,16 @@ option {
     padding: 0;
   }
   .galery__slider__slide__block__group {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
   }
   .galery__slider__slide__block__description__title {
     font-size: 16px;
@@ -644,6 +651,7 @@ option {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 70%;
   }
   .galery__slider__slide__block__cost__num {
     font-size: 20px;
@@ -695,5 +703,14 @@ option {
 @media (max-width: 488px) {
   .form__input:first-child {
     margin-bottom: 14px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .galery__slider__slide__block__cost {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
   }
 }

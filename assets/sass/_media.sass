@@ -45,7 +45,10 @@
                     flex-direction: column
                     padding: 0
                     &__group
-                        align-items: start
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        width: 80%
                     &__description
                         &__title
                             font-size: 16px
@@ -73,6 +76,7 @@
                         display: flex
                         align-items: center
                         justify-content: space-between
+                        width: 70%
                         &__num
                             font-size: 20px
                             padding-top: 20px
@@ -105,3 +109,11 @@
     .form__input
         &:first-child
             margin-bottom: 14px !important
+@media (max-width: 380px)
+    .galery
+        &__slider
+            &__slide
+                &__block
+                    &__cost
+                        justify-content: center
+                        width: 100%
