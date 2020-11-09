@@ -998,6 +998,12 @@ option {
   margin-right: 20px;
 }
 
+.description__img__big {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: none;
+}
+
 .description__text {
   max-width: 80%;
 }
@@ -1056,4 +1062,32 @@ option {
 .description__link__next__img {
   margin-left: 5px;
   width: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .description__img {
+    display: none;
+  }
+  .description__img__big {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .description__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .description__link__prev {
+    margin: 0;
+    margin-bottom: 15px;
+  }
 }

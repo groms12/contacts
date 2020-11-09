@@ -18,6 +18,9 @@
         height: 300px
         object-fit: cover
         margin-right: 20px
+        &__big
+            object-fit: cover
+            display: none
     &__text
         max-width: 80%
     &__links
@@ -57,4 +60,18 @@
                 margin-left: 5px
                 width: 8px
 
-
+@media screen and ( max-width: 768px )
+    .description__img
+        display: none
+        &__big
+            display: block
+@media screen and ( max-width: 500px )
+    .description
+        &__links
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &__link
+            &__prev
+                margin: 0
+                margin-bottom: 15px
