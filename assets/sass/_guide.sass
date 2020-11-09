@@ -1,0 +1,95 @@
+.guide
+    margin-top: 120px
+    color: #000000
+    font-family: 'Arial', sans-serif
+    &__title
+        font-family: 'Arial', sans-serif
+        font-size: 30px
+        font-style: normal
+        font-weight: 700
+        line-height: 34px
+        text-align: center
+        color: #000000
+        margin-bottom: 40px
+    &__objects
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        &__object
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 30px
+            border: 1px solid #E9E9E9
+            margin-bottom: 10px
+            &__description
+                display: flex
+                flex-direction: column
+                &__name
+                    font-size: 24px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 28px
+                    margin-bottom: 12px
+                &__text
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 18px
+                    margin-bottom: 30px
+                &__date
+                    color: #7B7B7B
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 18px
+                    margin-right: 20px
+                &__link
+                    color: #027DC3
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 18px
+            &__img
+                width: 140px
+                height: 140px
+                object-fit: cover
+    &__btn
+        outline: none
+@media screen and ( max-width: 500px )
+    .guide
+        &__objects
+            &__object
+                flex-direction: column-reverse
+                &__description
+                    text-align: center
+                    &__date
+                        display: block
+                        margin-bottom: 20px
+                &__img
+                    margin-bottom: 20px
+                    width: 240px
+                    height: 240px
+        &__date
+            display: flex
+            flex-direction: column
+@media screen and ( max-width: 350px )
+    .guide
+        &__objects
+            &__object
+                padding: 0
+                padding-top: 25px
+                padding-bottom: 25px
+                border: none
+                border-top: 1px solid #E9E9E9
+                border-bottom: 1px solid #E9E9E9
+                &__description
+                    &__name
+                        font-size: 18px
+                    &__text
+                        font-size: 16px
+                    &__date
+                        font-size: 16px
+                    &__link
+                        font-size: 16px
