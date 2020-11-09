@@ -23,5 +23,10 @@ $(document).ready(function () {
         }
     });
 
+    $('.guide__objects__object__description__link').click(function(e) {
+        e.preventDefault();
+        $('.guide').css('display', 'none');
+        $('.description').css('display', 'block');
+    });
     
 });
