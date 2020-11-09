@@ -1,0 +1,62 @@
+.certificates
+    margin-top: 120px
+    &__title
+        font-family: 'Arial', sans-serif
+        font-size: 30px
+        font-style: normal
+        font-weight: 700
+        line-height: 34px
+        text-align: center
+        color: #000000
+        margin-bottom: 40px
+    &__images
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+        margin: auto
+        max-width: 1120px
+        position: relative
+        &__photo
+            cursor: pointer
+            margin-right: 20px
+            margin-left: 20px
+            margin-bottom: 40px
+.cert
+    outline: none
+.popup 
+	position: absolute
+	height: 100%
+	width: 100%
+	top: 0
+	left: 0
+	display: none
+	text-align: center
+.popup_bg 
+	background:rgba(0,0,0,0.4)
+	position: absolute
+	z-index: 1
+	height: 100%
+	width: 100%
+.popup_img 
+	position: relative
+	margin: 0 auto
+	z-index: 2
+	width: 40%
+	margin: 1% 0 0 0
+    object-fit: cover
+@media screen and ( max-width: 768px )
+    .certificates
+        &__images
+            &__photo
+                margin-right: 10px
+                margin-left: 10px
+                margin-bottom: 30px
+    .popup_img 
+        width: 60%
+@media screen and ( max-width: 500px )
+    .certificates
+        &__images
+            &__photo
+                margin: auto
+                margin-bottom: 40px
