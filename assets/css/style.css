@@ -968,7 +968,6 @@ option {
 }
 
 .description {
-  padding-top: 120px;
   font-family: 'Arial', sans-serif;
 }
 
@@ -984,6 +983,7 @@ option {
   line-height: 34px;
   color: #000000;
   margin-bottom: 37px;
+  display: none;
 }
 
 .description__txt {
