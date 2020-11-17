@@ -22,6 +22,7 @@
 .contacts
     color: #000
     font-family: 'Arial', sans-serif
+    margin-bottom: -30px
     &__text
         margin-bottom: 30px
     &__info
@@ -61,7 +62,7 @@
                 align-items: center
                 justify-content: space-between
                 flex-wrap: wrap
-                margin-bottom: 40px
+                margin-bottom: 20px
                 margin-right: 20px
                 &__details
                     margin-bottom: 30px
@@ -98,6 +99,7 @@
                 font-style: normal
                 font-weight: 700
                 line-height: 16px
+                max-width: 180px
             &__change
                 font-size: 14px
                 font-style: normal
@@ -107,7 +109,28 @@
 option
     padding: 10px 44px 10px 14px !important
     background-color: #e9e9e9 !important
-    
+@media screen and ( max-width: 768px )
+    .contacts
+        &__info
+            width: 100%
+            &__city
+                &__more
+                    width: 80%
+                &__req
+                    width: 80%
+    .ymap-container
+        width: 100vw
+        position: relative
+        margin-left: -50vw
+        left: 50%
+@media screen and ( max-width: 650px )
+    .contacts
+        &__info
+            width: 80%
+            &__city
+                margin: auto
+                justify-content: center
+                align-items: center
 
 
     

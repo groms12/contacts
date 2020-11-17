@@ -105,6 +105,7 @@
   color: #ffffff;
   background-color: #027DC3;
   text-decoration: none;
+  font-weight: 700;
   padding: 16px 44px 16px 44px;
 }
 
@@ -399,6 +400,7 @@
 .contacts {
   color: #000;
   font-family: 'Arial', sans-serif;
+  margin-bottom: -30px;
 }
 
 .contacts__text {
@@ -466,7 +468,7 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   margin-right: 20px;
 }
 
@@ -526,6 +528,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
+  max-width: 180px;
 }
 
 .contacts__info__place__change {
@@ -539,6 +542,39 @@
 option {
   padding: 10px 44px 10px 14px !important;
   background-color: #e9e9e9 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__info {
+    width: 100%;
+  }
+  .contacts__info__city__more {
+    width: 80%;
+  }
+  .contacts__info__city__req {
+    width: 80%;
+  }
+  .ymap-container {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contacts__info {
+    width: 80%;
+  }
+  .contacts__info__city {
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .certificates {
