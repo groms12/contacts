@@ -5,8 +5,6 @@
                 background: url('../img/line.svg')
                 width: 350px
 @media (max-width: 1024px)
-    .points
-        width: 150px
     .contacts__info__city__req
         &__details
             width: 100%
@@ -20,10 +18,7 @@
         &__btn
             img
                 width: 200px
-
 @media (max-width: 780px)
-    .points
-        display: none
     .galery
         &__text
             display: none
@@ -33,11 +28,21 @@
         display: none
     .btn
         display: flex
+    .wr-line-dotted 
+        display: none
 @media (max-width: 770px)
     .form__input
         &:first-child
             margin-bottom: 0 !important   
-@media (max-width: 580px)
+@media (max-width: 700px)
+    .galery
+        &__slider
+            &__slide
+                &__block
+                    padding: 10px
+                    &__img
+                        margin-right: 10px
+@media (max-width: 605px)
     .galery
         &__slider
             &__slide
@@ -48,7 +53,7 @@
                         display: flex
                         align-items: center
                         justify-content: space-between
-                        width: 80%
+                        width: 90%
                     &__description
                         &__title
                             font-size: 16px
@@ -70,23 +75,25 @@
                         &__num
                             font-size: 14px
                             color: #7B7B7B
+                            margin-bottom: 10px
                             span
                                 color: #000
                     &__cost
                         display: flex
                         align-items: center
                         justify-content: space-between
-                        width: 70%
+                        width: 90%
                         &__num
                             font-size: 20px
                             padding-top: 20px
-                            margin-left: -10px
+                            // margin-left: -10px
+                            margin-left: 5px
                         &__btn
                             font-size: 16px
-                            padding: 16px 40px
-                            margin-right: -10px
-                            margin-bottom: 20px
-                            margin-left: 20px
+                            padding: 16px 58px
+                            // margin-right: -10px
+                            margin-bottom: 10px
+                            // margin-left: 20px
                     &__img
                         width: 93px
                         height: 93px
@@ -105,15 +112,32 @@
             text-align: center
         &__select
             padding-left: 25px
+    .points
+        white-space: pre-wrap
 @media (max-width: 488px)
     .form__input
         &:first-child
             margin-bottom: 14px !important
-@media (max-width: 380px)
+@media (max-width: 385px)
     .galery
         &__slider
             &__slide
                 &__block
+                    width: 100vw
+                    position: relative
+                    margin-left: -50vw
+                    left: 50%
+                    border-right: none
+                    border-left: none
+                    &__group
+                        justify-content: space-around
                     &__cost
-                        justify-content: center
-                        width: 100%
+                        justify-content: space-around
+// @media (max-width: 380px)
+//     .galery
+//         &__slider
+//             &__slide
+//                 &__block
+//                     &__cost
+//                         justify-content: center
+//                         width: 100%

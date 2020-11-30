@@ -79,7 +79,7 @@
   margin-bottom: 20px;
 }
 
-.galery__slider__slide__block__description__num, .galery__slider__slide__block__description__brand, .galery__slider__slide__block__description__brand-name {
+.galery__slider__slide__block__description__num, .galery__slider__slide__block__description__brand {
   font-family: 'Arial', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -120,7 +120,18 @@
 
 .points {
   display: inline-block;
-  width: 220px;
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+
+.wr-line-dotted {
+  width: 100%;
+}
+
+.line-dotted {
+  display: inline-block;
+  width: 100%;
+  border: 1px dashed #7B7B7B;
 }
 
 .swiper-pagination {
@@ -685,9 +696,6 @@ option {
 }
 
 @media (max-width: 1024px) {
-  .points {
-    width: 150px;
-  }
   .contacts__info__city__req__details {
     width: 100%;
   }
@@ -709,9 +717,6 @@ option {
 }
 
 @media (max-width: 780px) {
-  .points {
-    display: none;
-  }
   .galery__text {
     display: none;
   }
@@ -726,6 +731,9 @@ option {
     display: -ms-flexbox;
     display: flex;
   }
+  .wr-line-dotted {
+    display: none;
+  }
 }
 
 @media (max-width: 770px) {
@@ -734,7 +742,16 @@ option {
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 700px) {
+  .galery__slider__slide__block {
+    padding: 10px;
+  }
+  .galery__slider__slide__block__img {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 605px) {
   .galery__slider__slide__block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -752,7 +769,7 @@ option {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 80%;
+    width: 90%;
   }
   .galery__slider__slide__block__description__title {
     font-size: 16px;
@@ -778,6 +795,7 @@ option {
   .galery__slider__slide__block__description__num {
     font-size: 14px;
     color: #7B7B7B;
+    margin-bottom: 10px;
   }
   .galery__slider__slide__block__description__num span {
     color: #000;
@@ -792,19 +810,17 @@ option {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 70%;
+    width: 90%;
   }
   .galery__slider__slide__block__cost__num {
     font-size: 20px;
     padding-top: 20px;
-    margin-left: -10px;
+    margin-left: 5px;
   }
   .galery__slider__slide__block__cost__btn {
     font-size: 16px;
-    padding: 16px 40px;
-    margin-right: -10px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    padding: 16px 58px;
+    margin-bottom: 10px;
   }
   .galery__slider__slide__block__img {
     width: 93px;
@@ -839,6 +855,9 @@ option {
   .contacts__info__place__select {
     padding-left: 25px;
   }
+  .points {
+    white-space: pre-wrap;
+  }
 }
 
 @media (max-width: 488px) {
@@ -847,12 +866,22 @@ option {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 385px) {
+  .galery__slider__slide__block {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+    border-right: none;
+    border-left: none;
+  }
+  .galery__slider__slide__block__group {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   .galery__slider__slide__block__cost {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
