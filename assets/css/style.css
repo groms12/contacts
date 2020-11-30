@@ -251,6 +251,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .list__block__title {
@@ -351,7 +352,6 @@
   border: none;
   outline: none;
   text-transform: uppercase;
-  margin-bottom: 40px;
 }
 
 .list__text {
@@ -367,11 +367,24 @@
   color: #008BCC;
 }
 
+.list__text a:hover {
+  text-decoration: none;
+}
+
 .btn--active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
+}
+
+.form__btn {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.more {
+  outline: none;
 }
 
 .ymap-container {
@@ -689,7 +702,6 @@ option {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 320px;
   }
   .list__btn img {
     width: 200px;
