@@ -55,12 +55,29 @@
                     font-weight: 400
                     line-height: 18px
             &__img
-                width: 140px
-                height: 140px
-                object-fit: cover
+                max-width: 140px
+                max-height: 140px
+                object-fit: contain
     &__btn
         outline: none
+    .img
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-left: 140px
+@media screen and ( max-width: 1000px )
+    .img
+        margin-left: 40px !important
+@media screen and ( max-width: 650px )
+    .guide
+        &__objects
+            &__object
+                &__description
+                    &__name
+                        font-size: 18px
 @media screen and ( max-width: 500px )
+    .img
+        margin-left: 0 !important
     .guide
         &__objects
             &__object
@@ -74,8 +91,8 @@
                         margin-bottom: 20px
                 &__img
                     margin-bottom: 20px
-                    width: 240px
-                    height: 240px
+                    max-width: 240px
+                    max-height: 240px
         &__date
             display: flex
             flex-direction: column
