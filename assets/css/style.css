@@ -984,17 +984,6 @@ option {
   outline: none;
 }
 
-.guide .description__link__prev:hover {
-  color: white;
-  background-color: rgba(2, 125, 195, 0.6);
-}
-
-.guide .description__link__next:hover {
-  color: #027DC3;
-  background-color: rgba(2, 125, 195, 0.2);
-  border: 1px solid #027DC3;
-}
-
 @media screen and (max-width: 500px) {
   .guide__objects__object {
     -webkit-box-orient: vertical;
@@ -1075,16 +1064,18 @@ option {
 }
 
 .description__img {
-  width: 380px;
-  height: 300px;
+  max-width: 380px;
+  max-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 .description__img__big {
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 10px;
   display: none;
 }
 
@@ -1128,6 +1119,11 @@ option {
   padding-right: 27px;
 }
 
+.description__link__prev:hover {
+  color: white;
+  background-color: rgba(2, 125, 195, 0.6);
+}
+
 .description__link__prev__img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -1143,6 +1139,12 @@ option {
   padding-right: 17px;
 }
 
+.description__link__next:hover {
+  color: #027DC3;
+  background-color: rgba(2, 125, 195, 0.2);
+  border: 1px solid #027DC3;
+}
+
 .description__link__next__img {
   margin-left: 5px;
   width: 8px;
@@ -1154,6 +1156,10 @@ option {
   }
   .description__img__big {
     display: block;
+    margin-bottom: 10px;
+  }
+  .description__text {
+    margin-top: 20px;
   }
 }
 

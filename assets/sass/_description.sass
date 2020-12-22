@@ -14,12 +14,14 @@
     &__txt
         margin-bottom: 50px
     &__img
-        width: 380px
-        height: 300px
+        max-width: 380px
+        max-height: 300px
         object-fit: cover
         margin-right: 20px
+        margin-bottom: 10px
         &__big
             object-fit: cover
+            margin-bottom: 10px
             display: none
     &__text
         max-width: 80%
@@ -46,6 +48,9 @@
             border: 1px solid #027DC3
             padding-left: 17px
             padding-right: 27px
+            &:hover
+                color: white
+                background-color: rgba(#027DC3, 0.6)
             &__img
                 transform: rotate(180deg)
                 padding: 0
@@ -56,15 +61,22 @@
             color: #ffffff
             padding-left: 27px
             padding-right: 17px
+            &:hover
+                color: #027DC3
+                background-color: rgba(#027DC3, 0.2)
+                border: 1px solid #027DC3
             &__img
                 margin-left: 5px
                 width: 8px
-
 @media screen and ( max-width: 768px )
-    .description__img
-        display: none
-        &__big
-            display: block
+    .description
+        &__img
+            display: none
+            &__big
+                display: block
+                margin-bottom: 10px
+        &__text
+            margin-top: 20px
 @media screen and ( max-width: 500px )
     .description
         &__links
