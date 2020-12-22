@@ -14,10 +14,11 @@
         color: #000000
         margin-bottom: 40px
     &__objects
-        display: flex
-        align-items: center
-        justify-content: center
-        flex-direction: column
+        // display: flex
+        // align-items: center
+        // justify-content: center
+        // flex-direction: column
+        margin: 0 6%
         &__object
             display: flex
             align-items: center
@@ -59,6 +60,17 @@
                 object-fit: cover
     &__btn
         outline: none
+    .description
+        &__link
+            &__prev
+                &:hover
+                    color: white
+                    background-color: rgba(#027DC3, 0.6)
+            &__next
+                &:hover
+                    color: #027DC3
+                    background-color: rgba(#027DC3, 0.2)
+                    border: 1px solid #027DC3
 @media screen and ( max-width: 500px )
     .guide
         &__objects
@@ -66,6 +78,8 @@
                 flex-direction: column-reverse
                 &__description
                     text-align: center
+                    &__name
+                        font-size: 18px
                     &__date
                         display: block
                         margin-bottom: 20px

@@ -87,7 +87,9 @@ $('.galery__text__num-2').click(function(e){
         '<span class="galery__slider__slide__block__description__name">Газгольдер</span>'+
         '<span class="galery__slider__slide__block__description__title">BAXI Luma 3 comfort</span>'+
         '<span class="galery__slider__slide__block__description__brand">'+
-        '<p class="points"><span>Производитель (Бренд)</span> <span>Baki</span></p>'+
+        '<p class="points"><span>Производитель (Бренд) </span><span class="wr-line-dotted">'+
+        '<span class="line-dotted"></span>'+
+        '</span><span>Baki</span></p>'+
         '</span><span class="galery__slider__slide__block__description__num">Артикул 210000017</span>'+
         '</div></div><div class="galery__slider__slide__block__cost">'+
         '<div class="galery__slider__slide__block__cost__num">74 000 &#8381;</div>'+
@@ -125,7 +127,9 @@ $('.galery__text__num-3').click(function(e){
         '<span class="galery__slider__slide__block__description__name">Газгольдер</span>'+
         '<span class="galery__slider__slide__block__description__title">BAXI Luma 3 comfort</span>'+
         '<span class="galery__slider__slide__block__description__brand">'+
-        '<p class="points"><span>Производитель (Бренд)</span> <span>Baki</span></p>'+
+        '<p class="points"><span>Производитель (Бренд) </span><span class="wr-line-dotted">'+
+        '<span class="line-dotted"></span>'+
+        '</span><span>Baki</span></p>'+
         '</span><span class="galery__slider__slide__block__description__num">Артикул 210000017</span>'+
         '</div></div><div class="galery__slider__slide__block__cost">'+
         '<div class="galery__slider__slide__block__cost__num">74 000 &#8381;</div>'+
@@ -149,7 +153,9 @@ $('.more').click(function(){
             '<span class="galery__slider__slide__block__description__name">Газгольдер</span>'+
             '<span class="galery__slider__slide__block__description__title">BAXI Luma 3 comfort</span>'+
             '<span class="galery__slider__slide__block__description__brand">'+
-            '<p class="points"><span>Производитель (Бренд)</span> <span>Baki</span></p>'+
+            '<p class="points"><span>Производитель (Бренд) </span><span class="wr-line-dotted">'+
+        '<span class="line-dotted"></span>'+
+        '</span><span>Baki</span></p>'+
             '</span><span class="galery__slider__slide__block__description__num">Артикул 210000017</span>'+
             '</div></div><div class="galery__slider__slide__block__cost">'+
             '<div class="galery__slider__slide__block__cost__num">74 000 &#8381;</div>'+
@@ -166,7 +172,9 @@ $('.more').click(function(){
             '<span class="galery__slider__slide__block__description__name">Газгольдер</span>'+
             '<span class="galery__slider__slide__block__description__title">BAXI Luma 3 comfort</span>'+
             '<span class="galery__slider__slide__block__description__brand">'+
-            '<p class="points"><span>Производитель (Бренд) </span><span>Baki</span></p>'+
+            '<p class="points"><span>Производитель (Бренд) </span><span class="wr-line-dotted">'+
+        '<span class="line-dotted"></span>'+
+        '</span><span>Baki</span></p>'+
             '</span><span class="galery__slider__slide__block__description__num">Артикул 210000017</span>'+
             '</div></div><div class="galery__slider__slide__block__cost">'+
             '<div class="galery__slider__slide__block__cost__num">74 000 &#8381;</div>'+

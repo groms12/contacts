@@ -398,6 +398,11 @@
   outline: none;
 }
 
+.more:hover {
+  color: white;
+  background-color: #027DC3;
+}
+
 .ymap-container {
   position: relative;
   overflow: hidden;
@@ -907,19 +912,7 @@ option {
 }
 
 .guide__objects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin: 0 6%;
 }
 
 .guide__objects__object {
@@ -991,6 +984,17 @@ option {
   outline: none;
 }
 
+.guide .description__link__prev:hover {
+  color: white;
+  background-color: rgba(2, 125, 195, 0.6);
+}
+
+.guide .description__link__next:hover {
+  color: #027DC3;
+  background-color: rgba(2, 125, 195, 0.2);
+  border: 1px solid #027DC3;
+}
+
 @media screen and (max-width: 500px) {
   .guide__objects__object {
     -webkit-box-orient: vertical;
@@ -1000,6 +1004,9 @@ option {
   }
   .guide__objects__object__description {
     text-align: center;
+  }
+  .guide__objects__object__description__name {
+    font-size: 18px;
   }
   .guide__objects__object__description__date {
     display: block;
