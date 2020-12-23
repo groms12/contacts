@@ -46,18 +46,18 @@ $(document).ready(function () {
         }
     });
 
-    $('body').on('click', '.guide__objects__object__description__link', function(e) {
-        e.preventDefault();
-        var text = $(this).attr('class');
-        var num = text.split('--');
-        $('.guide__objects__object').css('display', 'none');
-        $('.btn').css('display', 'none');
-        $('.guide__title').text('Особенности эксплуатации напольных газовых котлов');
-        $('.guide__title').css('text-align', 'left');
-        $('.description--'+num[1]+'').css('display', 'block');
-        var destination = $('.biblioteka').offset().top;
-        $('html, body').animate({ scrollTop: destination }, 600);
-    });
+    // $('body').on('click', '.guide__objects__object__description__link', function(e) {
+    //     e.preventDefault();
+    //     var text = $(this).attr('class');
+    //     var num = text.split('--');
+    //     $('.guide__objects__object').css('display', 'none');
+    //     $('.btn').css('display', 'none');
+    //     $('.guide__title').text('Особенности эксплуатации напольных газовых котлов');
+    //     $('.guide__title').css('text-align', 'left');
+    //     $('.description--'+num[1]+'').css('display', 'block');
+    //     var destination = $('.biblioteka').offset().top;
+    //     $('html, body').animate({ scrollTop: destination }, 600);
+    // });
 
     function roughScale(x, base) {
         const parsed = parseInt(x, base);
@@ -65,30 +65,30 @@ $(document).ready(function () {
         return parsed;
     }  
 
-    $('body').on('click', '.description__link__prev', function(e) {
-        e.preventDefault();
-        var parent = $(this).parent().attr('class');
-        var num = parent.split('--');
-        var k = roughScale(num[1], '10');
-        if (num[1] != 1){
-            $('.description--'+num[1]+'').css('display', 'none');
-            $('.description--'+(k - 1)+'').css('display', 'block'); 
-        }
-        var destination = $('.biblioteka').offset().top;
-        $('html, body').animate({ scrollTop: destination }, 600);
-    });
+    // $('body').on('click', '.description__link__prev', function(e) {
+    //     e.preventDefault();
+    //     var parent = $(this).parent().attr('class');
+    //     var num = parent.split('--');
+    //     var k = roughScale(num[1], '10');
+    //     if (num[1] != 1){
+    //         $('.description--'+num[1]+'').css('display', 'none');
+    //         $('.description--'+(k - 1)+'').css('display', 'block'); 
+    //     }
+    //     var destination = $('.biblioteka').offset().top;
+    //     $('html, body').animate({ scrollTop: destination }, 600);
+    // });
 
-    $('body').on('click', '.description__link__next', function(e) {
-        e.preventDefault();
-        var parent = $(this).parent().attr('class');
-        var num = parent.split('--');
-        var kn = roughScale(num[1], '10');
-        if (num[1] != k-1){
-            $('.description--'+num[1]+'').css('display', 'none');
-            $('.description--'+(kn + 1)+'').css('display', 'block'); 
-        }
-        var destination = $('.biblioteka').offset().top;
-        $('html, body').animate({ scrollTop: destination }, 600);
-    });
+    // $('body').on('click', '.description__link__next', function(e) {
+    //     e.preventDefault();
+    //     var parent = $(this).parent().attr('class');
+    //     var num = parent.split('--');
+    //     var kn = roughScale(num[1], '10');
+    //     if (num[1] != k-1){
+    //         $('.description--'+num[1]+'').css('display', 'none');
+    //         $('.description--'+(kn + 1)+'').css('display', 'block'); 
+    //     }
+    //     var destination = $('.biblioteka').offset().top;
+    //     $('html, body').animate({ scrollTop: destination }, 600);
+    // });
     
 });
