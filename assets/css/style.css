@@ -238,6 +238,7 @@
 
 .list {
   font-family: 'Arial', sans-serif;
+  margin-top: 20px;
 }
 
 .list__exmpls {
@@ -400,6 +401,7 @@
 
 .more {
   outline: none;
+  padding: 16px 44px;
 }
 
 .more:hover {
@@ -757,6 +759,10 @@ option {
   }
   .galery__slider__slide__block__img {
     margin-right: 10px;
+  }
+  .btn--active {
+    margin-top: 40px;
+    margin-bottom: -20px;
   }
 }
 
