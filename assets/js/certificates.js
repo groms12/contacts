@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    
     var n = 3;
 
     if ($(window).width() > 768)
@@ -7,10 +7,17 @@ $(document).ready(function () {
      
     $('.cert').click(function() {
         for (var i = 1; i <= n; i++) {
-            $('.certificates__images').append('<img src="assets/img/certificates/img'+i+'.png" alt="" class="certificates__images__photo">')
+            // $('.certificates__images').append('<a href="assets/img/examples/examples--'+i+'.jpg" class="gallery"><img src="assets/img/examples/examples--'+i+'.jpg" alt=""></a>')
+            $('.certificates__images').append('<a href="assets/img/certificates/img'+i+'.png" class="gallery"><img src="assets/img/certificates/img'+i+'.png" alt=""></a>')
+            // $('.certificates__images').append('<img src="assets/img/certificates/img'+i+'.png" alt="" class="certificates__images__photo">')
         }
+        jQuery("a.gallery").colorbox({
+            maxWidth: "90%",
+            maxHeight: "90%",
+            opacity: "0.7",
+        });
     });
-
+/*
     $(".certificates__images").on('click', '.certificates__images__photo', function(){	
         if ($(window).width() > 360){
 		var src = $(this).attr('src'); // Достаем из этого изображения путь до картинки
@@ -25,7 +32,7 @@ $(document).ready(function () {
 			  $(".popup").remove(); // Удаляем разметку всплывающего окна
 			}, 800);
         });}
-    });
+    });*/
     
     $('.cert').trigger('click');
     if ($(window).width() > 360) {

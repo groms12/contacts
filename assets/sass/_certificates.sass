@@ -17,11 +17,21 @@
         margin: auto
         max-width: 1120px
         position: relative
-        &__photo
+        img
             cursor: pointer
             margin-right: 20px
             margin-left: 20px
             margin-bottom: 40px
+            max-width: 210px
+            object-fit: cover
+// .cboxPhoto
+//     width: 100%!important
+//     height: 100%!important
+//     margin-top: 0!important
+//     // position: absolute
+//     // left: 0
+//     // top: -25%
+//     object-fit: contain
 .cert
     outline: none
 .popup 
@@ -48,7 +58,7 @@
 @media screen and ( max-width: 768px )
     .certificates
         &__images
-            &__photo
+            img
                 margin-right: 10px
                 margin-left: 10px
                 margin-bottom: 30px
@@ -57,6 +67,6 @@
 @media screen and ( max-width: 500px )
     .certificates
         &__images
-            &__photo
+            img
                 margin: auto
                 margin-bottom: 40px

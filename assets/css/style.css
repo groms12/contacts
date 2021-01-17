@@ -644,11 +644,14 @@ option {
   position: relative;
 }
 
-.certificates__images__photo {
+.certificates__images img {
   cursor: pointer;
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 40px;
+  max-width: 210px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cert {
@@ -682,7 +685,7 @@ option {
 }
 
 @media screen and (max-width: 768px) {
-  .certificates__images__photo {
+  .certificates__images img {
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 30px;
@@ -693,7 +696,7 @@ option {
 }
 
 @media screen and (max-width: 500px) {
-  .certificates__images__photo {
+  .certificates__images img {
     margin: auto;
     margin-bottom: 40px;
   }
