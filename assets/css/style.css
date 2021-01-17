@@ -881,6 +881,12 @@ option {
   }
 }
 
+@media (max-width: 480px) {
+  .profile__img.xs {
+    width: 100%;
+  }
+}
+
 @media (max-width: 385px) {
   .galery__slider__slide__block {
     width: 100vw;
