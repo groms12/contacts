@@ -59,7 +59,7 @@ $('.galery__text__num-1').click(function(e){
     $('.galery__slider__slide').html(str);
     mySwiper.update();
     var bullets = $('.swiper-pagination-bullet');
-    $('.navigation').css('max-width', count*bullets.width() + count*20 + 150);
+    $('.navigation').css('max-width', count*bullets.width() + count*20 + 220);
 });
 
 $('.galery__text__num-2').click(function(e){

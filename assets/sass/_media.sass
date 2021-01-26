@@ -21,6 +21,9 @@
 // @media (max-width: 920px)
 //     .list
 //         &__btn
+@media screen and ( max-width: 880px )
+    .wr-line-dotted 
+        display: none    
 @media (max-width: 780px)
     .galery
         &__text
@@ -88,7 +91,8 @@
                         display: flex
                         align-items: center
                         justify-content: space-between
-                        width: 90%
+                        // width: 90%
+                        width: 80%
                         &__num
                             font-size: 20px
                             padding-top: 20px
@@ -101,12 +105,15 @@
                             margin-bottom: 10px
                             // margin-left: 20px
                     &__img
-                        width: 93px
-                        height: 93px
+                        // width: 93px
+                        // height: 93px
+                        margin-top: 20px
                         margin-right: 10px
     .btn
         img
             display: none
+    .galery__slider__slide__block__description
+        margin-right: 5%
 @media (max-width: 600px)
     .list
         &__block
@@ -154,11 +161,16 @@
                         justify-content: space-around
                     &__cost
                         justify-content: space-around
-// @media (max-width: 380px)
-//     .galery
-//         &__slider
-//             &__slide
-//                 &__block
-//                     &__cost
-//                         justify-content: center
-//                         width: 100%
+@media (max-width: 475px)
+    .galery__slider__slide__block__img
+        width: 93px
+        height: 93px
+    .galery__slider__slide__block__description
+        margin-top: 20px
+    .galery__slider__slide__block__cost
+        width: 90%
+        &__btn
+            margin-right: 5%
+    .galery__slider__slide__block  
+        margin-right: -25px
+    
