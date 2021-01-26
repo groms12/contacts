@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .galery {
   margin-top: 60px;
 }
@@ -659,6 +660,10 @@ option {
      object-fit: cover;
 }
 
+.cboxElement {
+  margin: auto !important;
+}
+
 .cert {
   outline: none;
 }
@@ -691,8 +696,6 @@ option {
 
 @media screen and (max-width: 768px) {
   .certificates__images img {
-    margin-right: 10px;
-    margin-left: 10px;
     margin-bottom: 30px;
   }
   .popup_img {
@@ -849,6 +852,24 @@ option {
   }
   .btn img {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .list__block {
+    width: 75%;
+  }
+  .list__block__img {
+    width: 100%;
+  }
+  .list__block__key {
+    width: 100%;
+  }
+  .list__block__cost {
+    width: 100%;
+  }
+  .list__block__cost__info {
+    width: 100%;
   }
 }
 
@@ -1037,6 +1058,46 @@ option {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 140px;
+}
+
+.title {
+  margin-top: 60px;
+  position: relative;
+  width: 100%;
+}
+
+.title:before, .title:after {
+  /* Обязательно указываем пустое свойство content, */
+  /** иначе псевдоэлементы не появятся на сайте */
+  content: "";
+  /* Указываем что наши линии будут строчно-блочные и */
+  /** выравнивание по высоте - по центру */
+  display: inline-block;
+  vertical-align: middle;
+  /* Задаем ширину 100% и выбираем высоту линии, */
+  width: 100%;
+  height: 2px;
+  /* Добавляем цвет для линии */
+  background-color: #027DC3;
+  /* Добавляем пседоэлемантам возможность изменить */
+  /** позицию линии, для создания отступов от текста */
+  position: absolute;
+}
+
+.title:before {
+  /* Смещаем левую линию на 100% влево, чтобы линия */
+  /** встала рядом с текстом слева */
+  margin-left: -100%;
+  /* Указываем в пикселях отступ линии от текста заголовка */
+  left: -75px;
+}
+
+.title:after {
+  /* Смещаем правую линию на 100% вправо, чтобы */
+  /** линия встала рядом с текстом справа */
+  margin-right: -100%;
+  /* Указываем в пикселях отступ линии от текста заголовка */
+  right: -75px;
 }
 
 @media screen and (max-width: 1000px) {
