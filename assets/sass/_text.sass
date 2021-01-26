@@ -1,60 +1,29 @@
 .page
     &__text
+        & h1, & h2, & h3, & h4, & h5, & h6
+            font-family: Arial
+            font-style: normal
+            font-weight: 700
+            letter-spacing: 0em
+            line-height: 28px
+            color: #000000
         & h1
-            font-family: Arial
             font-size: 30px
-            font-style: normal
-            font-weight: 700
             line-height: 34px
-            letter-spacing: 0em
-            text-align: center
         & h2
-            font-family: Arial
             font-size: 26px
-            font-style: normal
-            font-weight: 700
-            line-height: 28px
-            letter-spacing: 0em
-            text-align: center
         & h3
-            font-family: Arial
             font-size: 22px
-            font-style: normal
-            font-weight: 700
-            line-height: 28px
-            letter-spacing: 0em
-            text-align: center
         & h4
-            font-family: Arial
             font-size: 20px
-            font-style: normal
-            font-weight: 700
-            line-height: 28px
-            letter-spacing: 0em
-            text-align: center
         & h5
-            font-family: Arial
             font-size: 18px
-            font-style: normal
-            font-weight: 700
-            line-height: 28px
-            letter-spacing: 0em
-            text-align: center
         & h6
-            font-family: Arial
             font-size: 16px
-            font-style: normal
-            font-weight: 700
-            line-height: 28px
-            letter-spacing: 0em
-            text-align: center
         & ul, & ol
-            font-family: Arial
             font-size: 16px
-            font-style: normal
-            line-height: 18px
             text-align: left
-            margin-left: 30px
+            // margin-left: 30px
         & ul
             list-style: disc 
         & ol
@@ -62,9 +31,34 @@
         & img
             display: block
             margin: auto
+            max-width: 100%
+        .left
+            margin: 0
+        .right
+            margin-right: 0
         & p
             font-family: Arial
             font-size: 18px
+            font-style: normal
+            font-weight: 400
             line-height: 21px
+            letter-spacing: 0em
+            text-align: left
+            margin: 10px 0
+            color: #000000
         .border
             border: 1px solid black
+            & th, & tr, & td
+                border: 1px solid black
+        & b
+            font-weight: bolder
+        & i, & em
+            font-style: italic
+        & a
+            color: #027DC3
+            &:hover
+                text-decoration: none
+            &:visited, &:focus
+                color: #027DC3
+            
+                
