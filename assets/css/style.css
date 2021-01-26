@@ -1248,7 +1248,7 @@ option {
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 10px;
-  display: none;
+  display: none !important;
 }
 
 .description__text {
@@ -1309,11 +1309,12 @@ option {
   padding: 0;
   padding-right: 5px;
   width: 24px;
+  margin: 0 !important;
 }
 
 .description__link__next {
   background-color: #027DC3;
-  color: #ffffff;
+  color: #ffffff !important;
   padding-left: 27px;
   padding-right: 17px;
 }
@@ -1325,6 +1326,7 @@ option {
 }
 
 .description__link__next__img {
+  margin: 0 !important;
   margin-left: 5px;
   width: 8px;
 }
