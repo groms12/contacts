@@ -664,6 +664,28 @@ option {
   margin: auto !important;
 }
 
+#cboxNext {
+  display: block !important;
+  background: url("../img/arrow-left-blue.svg") center no-repeat !important;
+  right: -20px !important;
+  top: 45% !important;
+  outline: none;
+}
+
+#cboxPrevious {
+  display: block !important;
+  background: url("../img/arrow-left-blue.svg") center no-repeat !important;
+  -webkit-transform: rotate(180deg) !important;
+          transform: rotate(180deg) !important;
+  left: -20px !important;
+  top: 45% !important;
+  outline: none;
+}
+
+#cboxWrapper, #colorbox {
+  overflow: visible !important;
+}
+
 .cert {
   outline: none;
 }

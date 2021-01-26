@@ -11,18 +11,11 @@ $(document).ready(function () {
             $('.certificates__images').append('<a href="assets/img/certificates/img'+i+'.png" class="gallery"><img src="assets/img/certificates/img'+i+'.png" alt=""></a>')
             // $('.certificates__images').append('<img src="assets/img/certificates/img'+i+'.png" alt="" class="certificates__images__photo">')
         }
-        // jQuery("a.gallery").colorbox({
-        //     rel: "gallery",
-        //     maxWidth: "90%",
-        //     maxHeight: "90%",
-        //     // opacity: "0.7",
-        // });
         $("a.gallery").colorbox({
-            rel: true,
+            rel: 'gallery',
             maxHeight: "90%",
             current: "Изображение {current} из {total}",
-            opacity: 0.6,
-            scalePhotos: true
+            opacity: 0.6
           });
     });
 /*
