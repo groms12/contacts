@@ -410,11 +410,6 @@
   background-color: #027DC3;
 }
 
-.list__btn {
-  margin-left: -39px;
-  margin-right: -39px;
-}
-
 .ymap-container {
   position: relative;
   overflow: hidden;
@@ -686,10 +681,6 @@ option {
   overflow: visible !important;
 }
 
-.cert {
-  outline: none;
-}
-
 .popup {
   position: absolute;
   height: 100%;
@@ -764,6 +755,10 @@ option {
 }
 
 @media (max-width: 780px) {
+  .list__btn {
+    margin-left: -39px;
+    margin-right: -39px;
+  }
   .galery__text {
     display: none;
   }

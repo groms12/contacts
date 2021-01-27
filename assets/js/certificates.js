@@ -5,7 +5,7 @@ $(document).ready(function () {
     if ($(window).width() > 768)
         n = 4;
      
-    $('.cert').click(function() {
+    $('.more').click(function() {
         for (var i = 1; i <= n; i++) {
             // $('.certificates__images').append('<a href="assets/img/examples/examples--'+i+'.jpg" class="gallery"><img src="assets/img/examples/examples--'+i+'.jpg" alt=""></a>')
             $('.certificates__images').append('<a href="assets/img/certificates/img'+i+'.png" class="gallery"><img src="assets/img/certificates/img'+i+'.png" alt=""></a>')
@@ -35,7 +35,7 @@ $(document).ready(function () {
         });}
     });*/
     
-    $('.cert').trigger('click');
+    $('.more').trigger('click');
     if ($(window).width() > 360) {
         $('.cert').trigger('click');
     }
