@@ -924,6 +924,13 @@ option {
   .points {
     white-space: pre-wrap;
   }
+  .guide__objects {
+    margin-left: -39px;
+    margin-right: -39px;
+  }
+  .guide__objects__object {
+    padding: 30px 9%;
+  }
 }
 
 @media (max-width: 488px) {
@@ -1015,10 +1022,6 @@ option {
 
 .guide__title__description {
   text-align: left;
-}
-
-.guide__objects {
-  margin: 0 6%;
 }
 
 .guide__objects__object {
