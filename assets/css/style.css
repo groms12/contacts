@@ -965,7 +965,9 @@ option {
     margin-right: -39px;
   }
   .guide__objects__object {
-    padding: 30px 9%;
+    padding: 30px 6% !important;
+    width: 87.5%;
+    margin: auto;
   }
 }
 
