@@ -918,16 +918,18 @@ option {
 
 @media (max-width: 600px) {
   .list__block {
-    width: 75%;
+    width: 87.5%;
   }
   .list__block__img {
     width: 100%;
   }
   .list__block__key {
     width: 100%;
+    padding: 0 6%;
   }
   .list__block__cost {
     width: 100%;
+    padding: 0 6%;
   }
   .list__block__cost__info {
     width: 100%;
@@ -966,8 +968,6 @@ option {
   }
   .guide__objects__object {
     padding: 30px 6% !important;
-    width: 87.5%;
-    margin: auto;
   }
 }
 
