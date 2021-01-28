@@ -745,6 +745,12 @@ option {
   }
 }
 
+@media screen and (max-width: 1250px) {
+  .intro__text {
+    margin-left: 20px;
+  }
+}
+
 @media (max-width: 1180px) {
   .list__btn img {
     background: url("../img/line.svg");
