@@ -432,6 +432,14 @@
   background-color: #027DC3;
 }
 
+.intro__title {
+  margin-right: 20px;
+}
+
+.intro__text {
+  margin-right: 20px;
+}
+
 .ymap-container {
   position: relative;
   overflow: hidden;
