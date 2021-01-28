@@ -1783,7 +1783,7 @@ img {
 		color:#000
 	}
 
-	.intro .container {
+	.intro > .container {
 		padding:0
 	}
 
