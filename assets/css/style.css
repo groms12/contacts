@@ -1285,11 +1285,29 @@ option {
   max-width: 100%;
 }
 
+.page__text img[align=left] {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.page__text img[align=right] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
 .page__text .left {
-  margin: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 0;
+  margin-bottom: 10px;
 }
 
 .page__text .right {
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-right: 0;
 }
 
