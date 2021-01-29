@@ -1680,3 +1680,37 @@ option {
   font-weight: 400;
   line-height: 18px;
 }
+
+.about__certificates {
+  max-width: 85%;
+  margin: auto;
+  margin-bottom: 120px;
+}
+
+.about__certificates__title {
+  margin-bottom: 40px;
+}
+
+.swiper__slide__img {
+  margin-left: 20px;
+}
+
+.swiper-navigation {
+  position: relative;
+}
+
+.swiper-button-next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  opacity: 1 !important;
+  right: -40px !important;
+  top: 40% !important;
+  outline: none;
+}
+
+.swiper-button-prev {
+  opacity: 1 !important;
+  top: 40% !important;
+  left: -40px !important;
+  outline: none;
+}
