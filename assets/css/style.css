@@ -1512,6 +1512,16 @@ option {
   }
 }
 
+.about__title {
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: center;
+  color: #000000;
+}
+
 .about__company {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1554,13 +1564,6 @@ option {
 }
 
 .about__value__title {
-  font-family: 'Arial', sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 34px;
-  text-align: center;
-  color: #000000;
   margin-bottom: 10px;
 }
 
@@ -1628,4 +1631,52 @@ option {
   color: #605F5F;
   max-width: 200px;
   text-align: center;
+}
+
+.about__why {
+  color: #000000;
+  font-family: Arial;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 120px;
+}
+
+.about__why__title {
+  margin-bottom: 60px;
+}
+
+.about__why__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  list-style: url("../img/about/square.png") outside;
+}
+
+.about__why__list__li {
+  max-width: 290px;
+  margin-bottom: 50px;
+}
+
+.about__why__list__li__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 13px;
+}
+
+.about__why__list__li__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
 }
