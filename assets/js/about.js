@@ -2,7 +2,6 @@ $(document).ready(function () {
 
     const swiper = new Swiper('.swiper-container', {
         loop: true,
-        // centeredSlides: true,
         slidesPerView: 4,
         spacebetween: 40,
         navigation: {

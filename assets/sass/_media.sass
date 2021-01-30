@@ -1,7 +1,4 @@
-// @media screen and ( max-width: 1200px )
-//     .intro
-//         &__text
-//             margin-left: 40px
+//order:1
 @media (max-width: 1180px)
     .list
         &__btn
@@ -18,13 +15,6 @@
             font-size: 14px
             display: flex
             align-items: center
-            // width: 320px
-        // &__btn
-        //     img
-        //         width: 200px
-// @media (max-width: 920px)
-//     .list
-//         &__btn
 @media screen and ( max-width: 880px )
     .wr-line-dotted 
         display: none    
@@ -49,10 +39,35 @@
     .form__input
         &:first-child
             margin-bottom: 0 !important   
-// @media screen and ( max-width: 750px )
-//     .intro
-//         &__text
-//             margin-left: 20px
+    .about
+        &__value
+            margin-bottom: 15px
+            &__block
+                margin-top: 40px
+                max-width: 80%
+                &__val
+                    margin-bottom: 60px
+        &__why
+            max-width: 90%
+            margin: auto
+            &__title
+                margin-bottom: 40px
+            &__list
+                &__li
+                    max-width: 280px
+                    margin-bottom: 30px
+                    &--1
+                        order: 4
+                    &--2
+                        order: 3
+                    &--3
+                        order: 5
+                    &--4
+                        order: 6
+                    &--5
+                        order: 1
+                    &--6
+                        order: 2
 @media (max-width: 700px)
     .galery
         &__slider
@@ -141,6 +156,18 @@
                 padding: 0 6%
                 &__info
                     width: 100%
+@media (max-width: 565px)
+    .about
+        &__value
+            &__block
+                &__val
+                    margin: auto
+                    margin-bottom: 30px
+        &__why
+            &__list
+                &__li
+                    margin: auto
+                    margin-bottom: 30px
 @media (max-width: 500px)
     .contacts__info__place
         display: flex
