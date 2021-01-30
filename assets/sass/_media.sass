@@ -157,12 +157,31 @@
                 &__info
                     width: 100%
 @media (max-width: 565px)
+    .display
+        display: none
     .about
         &__value
+            &__subtitle
+                margin-bottom: 17px
             &__block
+                margin-top: 0
+                max-width: 100%
+                align-items: start
+                // justify-content: space-around
                 &__val
-                    margin: auto
+                    max-width: 140px
                     margin-bottom: 30px
+                    &:nth-child(2)
+                        max-width: 145px  
+                    &:nth-child(3)
+                        max-width: 170px                     
+                    &__img
+                        max-width: 120px
+                    &__title
+                        font-size: 14px
+                    &__text
+                        &:nth-child(2)
+                            max-width: 140px
         &__why
             &__list
                 &__li
@@ -196,6 +215,16 @@
 @media (max-width: 480px)
     .profile__img.xs 
         width: 100%
+@media (max-width: 475px)
+    .galery__slider__slide__block__img
+        width: 93px
+        height: 93px
+    .galery__slider__slide__block__description
+        margin-top: 20px
+    .galery__slider__slide__block__cost
+        width: 90%
+        &__btn
+            margin-right: 5%
 @media (max-width: 385px)
     .galery
         &__slider
@@ -211,14 +240,23 @@
                         justify-content: space-around
                     &__cost
                         justify-content: space-around
-@media (max-width: 475px)
-    .galery__slider__slide__block__img
-        width: 93px
-        height: 93px
-    .galery__slider__slide__block__description
-        margin-top: 20px
-    .galery__slider__slide__block__cost
-        width: 90%
-        &__btn
-            margin-right: 5%
+
+@media (max-width: 368px) 
+    .about
+        &__why
+            max-width: 95%
+            &__list
+                &__li
+                    &--1
+                        order: 4
+                    &--2
+                        order: 5
+                    &--3
+                        order: 6
+                    &--4
+                        order: 3
+                    &--5
+                        order: 1
+                    &--6
+                        order: 2
     
