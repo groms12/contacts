@@ -1569,6 +1569,9 @@ option {
   .form__input:first-child {
     margin-bottom: 0 !important;
   }
+  .about__certificates {
+    display: none;
+  }
   .about__media__cert {
     display: block;
   }
