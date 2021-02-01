@@ -1,5 +1,9 @@
 //order:1
 @media (max-width: 1180px)
+    .about
+        &__company
+            &__img
+                height: 550px
     .list
         &__btn
             img
@@ -10,14 +14,31 @@
         &__details
             width: 100%
 @media (max-width: 1000px)
+    .about
+        &__company
+            &__img
+                max-width: 400px!important
     .list
         &__more
             font-size: 14px
             display: flex
             align-items: center
 @media screen and ( max-width: 880px )
+    .about
+        &__company
+            &__img
+                height: 600px
+                max-width: 380px !important
     .wr-line-dotted 
         display: none    
+@media screen and ( max-width: 800px )
+    .about
+        &__company
+            &__text
+                &__description
+                    font-size: 20px
+                    line-height: 30px
+    
 @media (max-width: 780px)
     .list
         &__btn
@@ -40,6 +61,22 @@
         &:first-child
             margin-bottom: 0 !important   
     .about
+        &__company
+            &__img
+                max-width: 330px!important
+                height: 422px
+            &__text
+                &__title
+                    margin-bottom: 16px
+                &__description
+                    font-size: 18px
+                    line-height: 20px
+                    & div
+                        &:not(:last-child)
+                            display: block
+                            margin-bottom: 20px
+                    & span
+                        font-weight: bold
         &__value
             margin-bottom: 15px
             &__block
@@ -80,6 +117,17 @@
         margin-top: 40px
         margin-bottom: -20px
 @media (max-width: 605px)
+    .about
+        &__company
+            flex-wrap: wrap
+            &__img
+                max-width: 100% !important
+                height: auto
+            &__text
+                margin-left: 0
+                &__title
+                    text-align: center
+                    margin-top: 10px
     .galery
         &__slider
             &__slide
@@ -167,7 +215,6 @@
                 margin-top: 0
                 max-width: 100%
                 align-items: start
-                // justify-content: space-around
                 &__val
                     max-width: 140px
                     margin-bottom: 30px
@@ -226,6 +273,10 @@
         &__btn
             margin-right: 5%
 @media (max-width: 385px)
+    .about
+        &__company
+            &__img
+                height: 320px
     .galery
         &__slider
             &__slide

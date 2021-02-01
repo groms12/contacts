@@ -1297,6 +1297,10 @@ option {
   color: #000000;
 }
 
+.about__company__text__description div {
+  display: inline;
+}
+
 .about__company__img {
   max-width: 580px !important;
   -o-object-fit: cover;
@@ -1467,6 +1471,9 @@ option {
 }
 
 @media (max-width: 1180px) {
+  .about__company__img {
+    height: 550px;
+  }
   .list__btn img {
     background: url("../img/line.svg");
     width: 350px;
@@ -1480,6 +1487,9 @@ option {
 }
 
 @media (max-width: 1000px) {
+  .about__company__img {
+    max-width: 400px !important;
+  }
   .list__more {
     font-size: 14px;
     display: -webkit-box;
@@ -1492,8 +1502,19 @@ option {
 }
 
 @media screen and (max-width: 880px) {
+  .about__company__img {
+    height: 600px;
+    max-width: 380px !important;
+  }
   .wr-line-dotted {
     display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about__company__text__description {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -1524,6 +1545,24 @@ option {
 @media (max-width: 770px) {
   .form__input:first-child {
     margin-bottom: 0 !important;
+  }
+  .about__company__img {
+    max-width: 330px !important;
+    height: 422px;
+  }
+  .about__company__text__title {
+    margin-bottom: 16px;
+  }
+  .about__company__text__description {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .about__company__text__description div:not(:last-child) {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .about__company__text__description span {
+    font-weight: bold;
   }
   .about__value {
     margin-bottom: 15px;
@@ -1592,6 +1631,21 @@ option {
 }
 
 @media (max-width: 605px) {
+  .about__company {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about__company__img {
+    max-width: 100% !important;
+    height: auto;
+  }
+  .about__company__text {
+    margin-left: 0;
+  }
+  .about__company__text__title {
+    text-align: center;
+    margin-top: 10px;
+  }
   .galery__slider__slide__block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1797,6 +1851,9 @@ option {
 }
 
 @media (max-width: 385px) {
+  .about__company__img {
+    height: 320px;
+  }
   .galery__slider__slide__block {
     width: 100vw;
     position: relative;
