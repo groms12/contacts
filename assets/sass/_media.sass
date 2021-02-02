@@ -38,6 +38,13 @@
                 &__description
                     font-size: 20px
                     line-height: 30px
+        &__why
+            &__list
+                &__li
+                    margin: auto
+                    margin-bottom: 30px
+                    &:last-child
+                        margin-bottom: 120px
     
 @media (max-width: 780px)
     .list
@@ -98,18 +105,8 @@
                 &__li
                     max-width: 280px
                     margin-bottom: 30px
-                    &--1
-                        order: 4
-                    &--2
-                        order: 3
-                    &--3
-                        order: 5
-                    &--4
-                        order: 6
-                    &--5
-                        order: 1
-                    &--6
-                        order: 2
+                    &:last-child
+                        margin-bottom: 120px
 @media (max-width: 700px)
     .galery
         &__slider
@@ -238,7 +235,10 @@
             &__list
                 &__li
                     margin: auto
+                    margin-right: 20px
                     margin-bottom: 30px
+                    &:last-child
+                        margin-bottom: 120px
 @media (max-width: 500px)
     .contacts__info__place
         display: flex
@@ -301,18 +301,4 @@
     .about
         &__why
             max-width: 95%
-            &__list
-                &__li
-                    &--1
-                        order: 4
-                    &--2
-                        order: 5
-                    &--3
-                        order: 6
-                    &--4
-                        order: 3
-                    &--5
-                        order: 1
-                    &--6
-                        order: 2
     
