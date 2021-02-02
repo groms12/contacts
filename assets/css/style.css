@@ -983,6 +983,10 @@ option {
   }
 }
 
+.page__content {
+  margin-bottom: 30px;
+}
+
 .page__text h1, .page__text h2, .page__text h3, .page__text h4, .page__text h5, .page__text h6 {
   font-family: Arial;
   font-style: normal;
@@ -1935,7 +1939,9 @@ option {
   }
   .about__media__cert .btn {
     margin-top: 0;
-    margin-bottom: 10px;
+  }
+  .about__company {
+    margin-bottom: 80px;
   }
   .about__company__img {
     max-width: 330px !important;
@@ -2244,8 +2250,17 @@ option {
   .about__why {
     max-width: 95%;
   }
+}
+
+@media screen and (max-width: 350px) {
   .about__value__block__val {
-    margin: auto;
+    max-width: 110px;
     margin-bottom: 20px;
+  }
+  .about__value__block__val__img {
+    max-width: 110px;
+  }
+  .about__value__block__val h2, .about__value__block__val p {
+    max-width: 110px;
   }
 }
