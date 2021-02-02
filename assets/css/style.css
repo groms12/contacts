@@ -1411,12 +1411,16 @@ option {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  list-style: url("../img/about/square.png") outside;
 }
 
 .about__why__list__li {
-  max-width: 290px;
+  width: 292px;
   margin-bottom: 50px;
+  list-style: none;
+  background: url("../img/about/square.png") no-repeat 0 3px;
+  background-size: 15px;
+  padding-left: 25px;
+  line-height: 1.5em;
 }
 
 .about__why__list__li__title {
@@ -1430,6 +1434,7 @@ option {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
+  width: 292px;
 }
 
 .about__certificates {

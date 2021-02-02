@@ -93,10 +93,15 @@
             justify-content: space-between
             flex-wrap: wrap
             align-items: start
-            list-style: url('../img/about/square.png') outside
+            // list-style: url('../img/about/square.png') outside
             &__li
-                max-width: 290px
+                width: 292px
                 margin-bottom: 50px
+                list-style: none 
+                background: url('../img/about/square.png') no-repeat 0 3px 
+                background-size: 15px
+                padding-left: 25px
+                line-height: 1.5em 
                 &__title
                     font-size: 16px
                     font-weight: 700
@@ -106,6 +111,7 @@
                     font-size: 16px
                     font-weight: 400
                     line-height: 18px
+                    width: 292px
     &__certificates
         max-width: 85%
         margin: auto
