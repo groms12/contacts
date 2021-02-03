@@ -1775,9 +1775,9 @@ option {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1800,6 +1800,7 @@ option {
 
 .product-card__benefits__objects__object {
   position: relative;
+  max-width: 205px;
 }
 
 .product-card__benefits__objects__object__text {
@@ -1863,8 +1864,8 @@ option {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 30%;
-  left: -10%;
+  top: 27%;
+  left: -20%;
 }
 
 @media (max-width: 1180px) {
