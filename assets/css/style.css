@@ -1868,6 +1868,14 @@ option {
   left: -20%;
 }
 
+.card__objects__info__do {
+  list-style: disc;
+}
+
+.card__about ol {
+  list-style: decimal;
+}
+
 @media (max-width: 1180px) {
   .about__company__img {
     height: 550px;
