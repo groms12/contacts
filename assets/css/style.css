@@ -1987,6 +1987,12 @@ option {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .about {
+    margin-top: 70px;
+  }
+}
+
 @media (max-width: 700px) {
   .galery__slider__slide__block {
     padding: 10px;
