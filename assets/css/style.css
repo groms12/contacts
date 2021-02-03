@@ -1533,6 +1533,10 @@ option {
   margin: auto;
   margin-bottom: 30px;
   cursor: pointer;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 320px;
+  max-width: 420px;
 }
 
 .product-card__object__images__small {
@@ -1554,6 +1558,7 @@ option {
   height: 106px;
   padding: 5px;
   margin: auto;
+  text-align: center;
 }
 
 .product-card__object__images__small div img {
@@ -1793,6 +1798,10 @@ option {
   margin-top: 30px !important;
 }
 
+.product-card__benefits__objects__object {
+  position: relative;
+}
+
 .product-card__benefits__objects__object__text {
   font-size: 24px !important;
   font-weight: 400 !important;
@@ -1845,6 +1854,17 @@ option {
 
 .grey {
   color: #A5A5A5 !important;
+}
+
+.product-card__benefits__objects__object + .product-card__benefits__objects__object::before {
+  content: '';
+  background: url("../img/product-card/circle.png") no-repeat center;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 30%;
+  left: -10%;
 }
 
 @media (max-width: 1180px) {

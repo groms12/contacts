@@ -13,6 +13,9 @@
                 margin: auto
                 margin-bottom: 30px
                 cursor: pointer
+                object-fit: contain
+                height: 320px
+                max-width: 420px
             &__small
                 display: flex
                 align-items: center
@@ -24,6 +27,7 @@
                     height: 106px
                     padding: 5px
                     margin: auto
+                    text-align: center
                     & img
                         object-fit: contain
                         max-width: 100%
@@ -173,6 +177,7 @@
                 & button
                     margin-top: 30px !important
             &__object
+                position: relative
                 &__text
                     font-size: 24px!important
                     font-weight: 400!important
@@ -208,9 +213,12 @@
     color: #027DC3!important
 .grey
     color: #A5A5A5!important
-
-                        
-
-
-
-
+.product-card__benefits__objects__object + .product-card__benefits__objects__object::before
+    content: ''
+    background: url('../img/product-card/circle.png') no-repeat center
+    display: block
+    width: 30px
+    height: 30px
+    position: absolute
+    top: 30%
+    left: -10%
