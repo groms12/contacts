@@ -2298,4 +2298,7 @@ option {
   .about__value__block__val h2, .about__value__block__val p {
     max-width: 110px;
   }
+  .about__why__list__li__text {
+    width: 100%;
+  }
 }
