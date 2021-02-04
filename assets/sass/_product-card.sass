@@ -74,6 +74,11 @@
                     font-size: 16px !important
                     font-weight: 700 !important
                     line-height: 18px !important
+                    &:hover
+                        background-color: #ffffff
+                        border: 1px solid #027DC3
+                        cursor: pointer
+                        color: #027DC3
             &__download
                 display: flex
                 align-items: center
@@ -84,6 +89,10 @@
                     margin-left: 0px !important
                 &__text
                     font-size: 17px !important
+                    color: #000000 !important
+                    cursor: pointer
+                    &:hover
+                        color: #027DC3 !important
         &__description
             &__title
                 font-size: 30px !important
@@ -127,6 +136,11 @@
             margin-bottom: 14px
             font-size: 24px !important
         &__text
+            & a
+                color: #000000 !important
+                text-decoration: none
+                &:hover
+                    color: #027DC3 !important
             & span
                 display: block
                 margin-bottom: 10px
@@ -147,6 +161,9 @@
                 justify-content: space-between
                 border: 1px solid #E9E9E9
                 padding-left: 10px
+                text-decoration: none
+                &:hover
+                    border: 1px solid #027DC3
                 // padding-right: 10px
                 &__info
                     &__title
@@ -179,6 +196,7 @@
             &__object
                 position: relative
                 max-width: 205px
+                text-decoration: none
                 &__text
                     font-size: 24px!important
                     font-weight: 400!important
@@ -195,6 +213,8 @@
                     padding: 5px 10px
                     width: 210px
                     border: 1px solid #E9E9E9
+                    &:hover
+                        border: 1px solid #027DC3
                 &__title
                     font-size: 18px !important
                     font-weight: 700 !important
