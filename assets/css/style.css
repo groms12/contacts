@@ -2144,9 +2144,9 @@ option {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2221,6 +2221,12 @@ option {
 }
 
 @media screen and (max-width: 832px) {
+  .card__why__objects__object {
+    margin-bottom: 60px;
+    margin-top: 20px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
   .about__why {
     max-width: 90%;
   }
@@ -2599,6 +2605,18 @@ option {
   }
   .galery__slider__slide__block__cost__btn {
     margin-right: 5%;
+  }
+}
+
+@media (max-width: 430px) {
+  .card__why__objects {
+    max-width: 100%;
+  }
+  .card__why__objects__object__img {
+    width: 120px;
+  }
+  .card__why__objects__object__title {
+    font-size: 14px;
   }
 }
 
