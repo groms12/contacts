@@ -1910,8 +1910,6 @@ option {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
@@ -1984,9 +1982,10 @@ option {
 
 .card__objects__images__big {
   max-width: 680px;
-  height: 365px;
+  max-height: 365px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: auto;
 }
 
 .card__objects__images__small {
@@ -2004,6 +2003,8 @@ option {
 .card__objects__images__small img {
   max-width: 162px;
   max-height: 106px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card__about {
@@ -2149,8 +2150,14 @@ option {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 85%;
   margin: auto;
+}
+
+.card__why__objects__object {
+  margin-bottom: 60px;
 }
 
 .card__why__objects__object__img {
@@ -2219,7 +2226,6 @@ option {
     line-height: 30px;
   }
   .about__why__list__li {
-    margin: auto;
     margin-bottom: 30px;
   }
   .about__why__list__li:last-child {
@@ -2328,6 +2334,16 @@ option {
   .btn--active {
     margin-top: 40px;
     margin-bottom: -20px;
+  }
+}
+
+@media screen and (max-width: 684px) {
+  .about__why__list__li {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .about__why__list__li:last-child {
+    margin-bottom: 120px;
   }
 }
 

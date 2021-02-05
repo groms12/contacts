@@ -3,7 +3,7 @@
         display: flex
         align-items: start
         justify-content: center
-        flex-wrap: wrap
+        // flex-wrap: wrap
         margin-bottom: 40px
         &__info
             margin-left: 50px
@@ -57,8 +57,9 @@
         &__images
             &__big
                 max-width: 680px
-                height: 365px
+                max-height: 365px
                 object-fit: cover
+                margin: auto
             &__small
                 display: flex
                 align-items: center
@@ -66,6 +67,7 @@
                 img
                     max-width: 162px
                     max-height: 106px         
+                    object-fit: cover
     &__about
         font-family: Arial
         font-size: 18px
@@ -157,9 +159,11 @@
             display: flex
             align-items: center
             justify-content: space-between
+            flex-wrap: wrap
             max-width: 85%
             margin: auto
             &__object
+                margin-bottom: 60px
                 &__img
                     margin-bottom: 15px
                 &__title
