@@ -2220,10 +2220,19 @@ option {
   }
 }
 
+@media screen and (max-width: 832px) {
+  .about__why {
+    max-width: 90%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .about__company__text__description {
     font-size: 20px;
     line-height: 30px;
+  }
+  .about__why {
+    max-width: 90%;
   }
   .about__why__list__li {
     margin-bottom: 30px;
@@ -2303,7 +2312,6 @@ option {
     margin-bottom: 60px;
   }
   .about__why {
-    max-width: 90%;
     margin: auto;
   }
   .about__why__title {
