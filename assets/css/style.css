@@ -2355,6 +2355,20 @@ option {
   }
 }
 
+@media (max-width: 630px) {
+  .card__reviews img {
+    width: 93px;
+    height: 93px;
+    margin-right: 20px;
+  }
+  .card__reviews__text {
+    line-height: 18px;
+  }
+  .card__reviews__text span {
+    display: none;
+  }
+}
+
 @media (max-width: 605px) {
   .about__company {
     -ms-flex-wrap: wrap;
