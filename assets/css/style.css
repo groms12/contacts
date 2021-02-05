@@ -2326,9 +2326,18 @@ option {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .about {
     margin-top: 70px;
+  }
+  .card__about p {
+    margin-bottom: 20px !important;
+  }
+  .card__about p:nth-child(4) {
+    margin-bottom: 60px !important;
+  }
+  .card__about ol {
+    margin-bottom: 60px;
   }
 }
 
@@ -2594,6 +2603,18 @@ option {
 }
 
 @media (max-width: 385px) {
+  .card__about {
+    max-width: 95%;
+  }
+  .card__about p {
+    margin-bottom: 20px !important;
+  }
+  .card__about p:nth-child(4) {
+    margin-bottom: 60px !important;
+  }
+  .card__about ol {
+    margin-bottom: 40px;
+  }
   .about__company__img {
     height: 320px;
   }
