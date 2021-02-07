@@ -3,7 +3,6 @@ $(document).ready(function () {
 
     var width = $(window).width();
     var count = 5;
-    alert(width);
     if (width >= 915) {
       if (count > 4) {
         $(".owl-carousel").owlCarousel({
