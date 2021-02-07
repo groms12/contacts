@@ -1054,7 +1054,7 @@ option {
 
 .page__text .left {
   margin-top: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
   margin-left: 0;
   margin-bottom: 10px;
 }
@@ -1757,6 +1757,10 @@ option {
       flex-wrap: wrap;
 }
 
+.product-card__devices__dev .item {
+  margin: auto;
+}
+
 .product-card__devices__dev__device {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1770,6 +1774,7 @@ option {
   border: 1px solid #E9E9E9;
   padding-left: 10px;
   text-decoration: none;
+  margin-bottom: 30px;
 }
 
 .product-card__devices__dev__device:hover {

@@ -1,16 +1,28 @@
 $(document).ready(function () {
 
-    var count = 5;
 
-    if (count > 4) {
+    var width = $(window).width();
+    var count = 5;
+    alert(width);
+    if (width >= 915) {
+      if (count > 4) {
         $(".owl-carousel").owlCarousel({
-            items: 4,
             loop: true,
             margin: 10,
             dots: false,
             nav: true,
+            responsive: {
+                915: {
+                    items: 3,
+                },
+                1197: {
+                    items: 4, 
+                },
+            }     
         });
-    } 
+    }   
+    }
+    
     
 
     
