@@ -9,10 +9,12 @@
 	<link rel="stylesheet" href="assets/css/include/slick.css">
 	<!-- Modal -->
 	<link rel="stylesheet" href="assets/css/include/jquery.modal.min.css" type="text/css" media="screen" />
-	<!-- Styles -->
+
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="assets/css/styles.min.css?v=1.0.0.0.1">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/colorbox.css">
+	<link rel="stylesheet" href="assets/css/colorbox.css">
 
 	<title>СибГазСервис</title>
 </head>
@@ -334,38 +336,55 @@
 					</div>
 					<div class="product-card__devices page__text">
 						<h2 class="product-card__devices__title">Аксессуары</h2>
-						<div class="product-card__devices__dev">
-							<a href="#" class="product-card__devices__dev__device page__text">
-								<img src="/assets/img/product-card/device-1.png" alt="" align="left" class="product-card__devices__dev__device__img">
-								<div class="product-card__devices__dev__device__info">
-									<p class="product-card__devices__dev__device__info__title">Комплект 
-										коаксильный</p>
-									<p class="product-card__devices__dev__device__info__cost">3 890 ₽</p>
-								</div>
-							</a>
-							<a href="#" class="product-card__devices__dev__device page__text">
-								<img src="/assets/img/product-card/device-2.png" alt="" align="left" class="product-card__devices__dev__device__img">
-								<div class="product-card__devices__dev__device__info">
-									<p class="product-card__devices__dev__device__info__title">Газовая подводка Eliteline 3/4” г.ш. 1,0м.</p>
-									<p class="product-card__devices__dev__device__info__cost">390 ₽</p>
-								</div>
-							</a>
-							<a href="#" class="product-card__devices__dev__device page__text">
-								<img src="/assets/img/product-card/device-3.png" alt="" align="left" class="product-card__devices__dev__device__img">
-								<div class="product-card__devices__dev__device__info">
-									<p class="product-card__devices__dev__device__info__title">Система 
-										автоматического...</p>
-									<p class="product-card__devices__dev__device__info__cost">7 990 ₽</p>
-								</div>
-							</a>
-							<a href="#" class="product-card__devices__dev__device page__text">
-								<img src="/assets/img/product-card/device-4.png" alt="" align="left" class="product-card__devices__dev__device__img">
-								<div class="product-card__devices__dev__device__info">
-									<p class="product-card__devices__dev__device__info__title">Терморегуляторы 
-										Salus RT310RF</p>
-									<p class="product-card__devices__dev__device__info__cost">8 590 ₽</p>
-								</div>
-							</a>
+						<div class="product-card__devices__dev owl-carousel owl-theme">
+							<div class="item">
+								<a href="#" class="product-card__devices__dev__device page__text">
+									<img src="/assets/img/product-card/device-1.png" alt="" align="left" class="product-card__devices__dev__device__img left">
+									<div class="product-card__devices__dev__device__info">
+										<p class="product-card__devices__dev__device__info__title">Комплект 
+											коаксильный</p>
+										<p class="product-card__devices__dev__device__info__cost">3 890 ₽</p>
+									</div>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#" class="product-card__devices__dev__device page__text">
+									<img src="/assets/img/product-card/device-2.png" alt="" align="left" class="product-card__devices__dev__device__img left">
+									<div class="product-card__devices__dev__device__info">
+										<p class="product-card__devices__dev__device__info__title">Газовая подводка Eliteline 3/4” г.ш. 1,0м.</p>
+										<p class="product-card__devices__dev__device__info__cost">390 ₽</p>
+									</div>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#" class="product-card__devices__dev__device page__text">
+									<img src="/assets/img/product-card/device-3.png" alt="" align="left" class="product-card__devices__dev__device__img left">
+									<div class="product-card__devices__dev__device__info">
+										<p class="product-card__devices__dev__device__info__title">Система 
+											автоматического...</p>
+										<p class="product-card__devices__dev__device__info__cost">7 990 ₽</p>
+									</div>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#" class="product-card__devices__dev__device page__text">
+									<img src="/assets/img/product-card/device-4.png" alt="" align="left" class="product-card__devices__dev__device__img left">
+									<div class="product-card__devices__dev__device__info">
+										<p class="product-card__devices__dev__device__info__title">Терморегуляторы 
+											Salus RT310RF</p>
+										<p class="product-card__devices__dev__device__info__cost">8 590 ₽</p>
+									</div>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#" class="product-card__devices__dev__device page__text">
+									<img src="/assets/img/product-card/device-2.png" alt="" align="left" class="product-card__devices__dev__device__img left">
+									<div class="product-card__devices__dev__device__info">
+										<p class="product-card__devices__dev__device__info__title">Газовая подводка Eliteline 3/4” г.ш. 1,0м.</p>
+										<p class="product-card__devices__dev__device__info__cost">390 ₽</p>
+									</div>
+								</a>
+							</div>
 						</div>
 					</div>
 					<div class="product-card__benefits page__text">
@@ -534,6 +553,7 @@
 	<script src="assets/js/include/slick.min.js"></script>
 
 	<!-- Custom JS -->
+	<script src="assets/js/owl.carousel.min.js"></script>
 	<script src="assets/js/scripts.min.js?v=1.0.0.0.1"></script>
 	<script src="assets/js/jquery.colorbox-min.js"></script>
 	<script src="assets/js/product-card.js"></script>

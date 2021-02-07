@@ -165,6 +165,8 @@
                 &:hover
                     border: 1px solid #027DC3
                 // padding-right: 10px
+                &__img
+                    max-width: 80px !important
                 &__info
                     &__title
                         font-size: 16px !important
@@ -234,12 +236,21 @@
     color: #027DC3!important
 .grey
     color: #A5A5A5!important
-.product-card__benefits__objects__object + .product-card__benefits__objects__object::before
-    content: ''
-    background: url('../img/product-card/circle.png') no-repeat center
-    display: block
-    width: 30px
-    height: 30px
-    position: absolute
-    top: 27%
-    left: -20%
+.product-card__benefits__objects__object + .product-card__benefits__objects__object 
+    position: relative
+    &::before
+        content: ''
+        background: url('../img/product-card/circle.png') no-repeat center
+        display: block
+        width: 30px
+        height: 30px
+        position: absolute
+        top: 26%
+        left: -22%
+.owl
+    &-next, &-prev
+        outline: none
+        width: 30px
+        span
+            font-size: 30px
+

@@ -1776,6 +1776,10 @@ option {
   border: 1px solid #027DC3;
 }
 
+.product-card__devices__dev__device__img {
+  max-width: 80px !important;
+}
+
 .product-card__devices__dev__device__info__title {
   font-size: 16px !important;
   line-height: 18px  !important;
@@ -1889,6 +1893,10 @@ option {
   color: #A5A5A5 !important;
 }
 
+.product-card__benefits__objects__object + .product-card__benefits__objects__object {
+  position: relative;
+}
+
 .product-card__benefits__objects__object + .product-card__benefits__objects__object::before {
   content: '';
   background: url("../img/product-card/circle.png") no-repeat center;
@@ -1896,8 +1904,17 @@ option {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 27%;
-  left: -20%;
+  top: 26%;
+  left: -22%;
+}
+
+.owl-next, .owl-prev {
+  outline: none;
+  width: 30px;
+}
+
+.owl-next span, .owl-prev span {
+  font-size: 30px;
 }
 
 .card__objects {
