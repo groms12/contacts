@@ -1,5 +1,18 @@
 //order:1
 @media (max-width: 1180px)
+    .card
+        &__objects
+            &__images
+                max-width: 600px
+                &__big, &__small
+                    max-width: 100%
+                    object-fit: cover
+                    img
+                        max-width: 24%
+                        height: 80px
+                &__big
+                    height: 330px
+                    
     .about
         &__company
             &__img
@@ -32,6 +45,16 @@
     .wr-line-dotted 
         display: none    
 @media screen and ( max-width: 832px )
+    .card
+        &__objects
+            &__info
+                margin-left: 30px
+            & ul
+                &:first-child
+                    & li
+                        & span
+                            &:first-child
+                                margin-right: 4em
     .card
         &__why
             &__objects
@@ -154,6 +177,20 @@
                     margin-bottom: 30px
                     &:last-child
                         margin-bottom: 120px
+@media (max-width: 640px)
+    .card
+        &__objects
+            flex-wrap: wrap
+            &__info
+                margin-top: 40px
+                flex-basis: 100%
+                margin-left: 0
+                &__do
+                    max-width: 95%
+                    margin: auto
+            &__images
+                flex-basis: 100%
+
 @media (max-width: 630px)
     .card
         &__reviews
