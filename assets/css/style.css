@@ -2107,23 +2107,36 @@ option {
   max-width: 1178px;
   max-height: 280px;
   margin: auto;
-  background: linear-gradient(269.69deg, #008BCC 60.65%, rgba(0, 139, 204, 0) 81.09%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 120px;
+  position: relative;
+}
+
+.card__sale__gradient {
+  position: absolute;
+  width: 1178px;
+  height: 280px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(269.69deg, #008BCC 60.65%, rgba(0, 139, 204, 0) 81.09%);
+  z-index: 5;
+  display: block;
 }
 
 .card__sale img {
   opacity: 0.5;
   width: 600px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card__sale div {
@@ -2131,6 +2144,8 @@ option {
   font-style: normal;
   letter-spacing: 0em;
   color: #ffffff;
+  z-index: 6;
+  margin-right: 20px;
 }
 
 .card__sale__title {
@@ -2298,6 +2313,9 @@ option {
 }
 
 @media (max-width: 1024px) {
+  .card__sale img {
+    width: 500px;
+  }
   .contacts__info__city__req__details {
     width: 100%;
   }
@@ -2315,6 +2333,17 @@ option {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .card__sale__gradient {
+    height: 241px;
+    width: 900px;
+  }
+  .card__sale img {
+    width: 400px;
+    height: 241px;
   }
 }
 
@@ -2490,6 +2519,9 @@ option {
 }
 
 @media (max-width: 700px) {
+  .card__sale img {
+    width: 350px;
+  }
   .galery__slider__slide__block {
     padding: 10px;
   }
@@ -2548,6 +2580,25 @@ option {
 }
 
 @media (max-width: 605px) {
+  .card__sale__title {
+    font-size: 25px;
+    line-height: 26px;
+  }
+  .card__sale__subtitle {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .card__sale__gradient {
+    width: 605px;
+    height: 158px;
+  }
+  .card__sale img {
+    width: 250px;
+    height: 158px;
+  }
+  .card__sale div {
+    margin-left: -40px;
+  }
   .product-card__description__text {
     max-width: 100%;
     max-height: 100%;
@@ -2781,6 +2832,15 @@ option {
   .galery__slider__slide__block__cost__btn {
     margin-right: 5%;
   }
+  .card__sale__gradient {
+    width: 475px;
+  }
+  .card__sale img {
+    width: 200px;
+  }
+  .card__sale div {
+    margin-left: -50px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -2796,6 +2856,18 @@ option {
   }
   .card__why__objects__object__title {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 397px) {
+  .card__sale__gradient {
+    width: 400px;
+  }
+  .card__sale img {
+    width: 150px;
+  }
+  .card__sale div {
+    margin-left: -60px;
   }
 }
 
@@ -2852,5 +2924,17 @@ option {
   }
   .about__why__list__li__text {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 337px) {
+  .card__sale__gradient {
+    width: 337px;
+  }
+  .card__sale img {
+    width: 100px;
+  }
+  .card__sale div {
+    margin-left: -40px;
   }
 }

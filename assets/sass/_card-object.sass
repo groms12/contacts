@@ -117,20 +117,32 @@
         max-width: 1178px
         max-height: 280px
         margin: auto
-        background: linear-gradient(269.69deg, #008BCC 60.65%, rgba(0, 139, 204, 0) 81.09%) 
         display: flex
         align-items: center
-        justify-content: space-around
+        justify-content: center
         margin-bottom: 120px
+        position: relative
+        &__gradient
+            position: absolute
+            width: 1178px 
+            height: 280px
+            top: 0
+            left: 0
+            background: linear-gradient(269.69deg, #008BCC 60.65%, rgba(0, 139, 204, 0) 81.09%)
+            z-index: 5 
+            display: block
         img
             opacity: 0.5
             width: 600px
-            object-fit: contain
+            height: 280px
+            object-fit: cover
         div
             font-family: Arial
             font-style: normal
             letter-spacing: 0em
             color: #ffffff 
+            z-index: 6
+            margin-right: 20px
         &__title
             font-size: 42px
             font-weight: 700
