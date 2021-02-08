@@ -20,11 +20,7 @@ $(document).ready(function () {
             }     
         });
     }   
-    }
-    
-    
-
-    
+    }    
 
     $('.product-card__object__images__small div img').click(function() {
         var srcLittle = this.src;
