@@ -191,6 +191,8 @@
             justify-content: space-between
             max-width: 85%
             margin: auto
+            .item
+                max-width: 205px
             &__download
                 padding: 20px
                 &__text
@@ -214,7 +216,7 @@
                     text-decoration: line-through
                 &__img
                     object-fit: contain
-                    max-height: 190px
+                    height: 190px
                     padding: 5px 10px
                     width: 210px
                     border: 1px solid #E9E9E9
@@ -239,7 +241,8 @@
     color: #027DC3!important
 .grey
     color: #A5A5A5!important
-.product-card__benefits__objects__object + .product-card__benefits__objects__object 
+// .product-card__benefits__objects__object + .product-card__benefits__objects__object
+.product-card__benefits__objects__object
     position: relative
     &::before
         content: ''
@@ -248,12 +251,18 @@
         width: 30px
         height: 30px
         position: absolute
-        top: 26%
-        left: -22%
+        // top: 26%
+        // left: -22%
+        // top: 80px
+        top: 6em
+        left: -3em
 .owl
     &-next, &-prev
         outline: none
         width: 30px
         span
             font-size: 30px
-
+.slide-two
+    // flex-basis: 75%
+    width: 75%
+    margin-left: 0

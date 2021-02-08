@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
-
+    var countSale = 4;
     var width = $(window).width();
-    var count = 5;
+    var countDev = 5;
     if (width >= 915) {
-      if (count > 4) {
-        $(".owl-carousel").owlCarousel({
+      if (countDev > 4) {
+        $(".slide-one").owlCarousel({
             loop: true,
             margin: 10,
             dots: false,
@@ -19,8 +19,18 @@ $(document).ready(function () {
                 },
             }     
         });
-    }   
-    }    
+      }   
+    }  
+    
+    // if (countSale >= 4) {
+        $(".slide-two").owlCarousel({
+            loop: true,
+            margin: 10,
+            items: 3,
+            dots: false,
+            nav: true,   
+        });
+    // }   
 
     $('.product-card__object__images__small div img').click(function() {
         var srcLittle = this.src;

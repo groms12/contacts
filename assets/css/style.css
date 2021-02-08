@@ -1821,6 +1821,10 @@ option {
   margin: auto;
 }
 
+.product-card__benefits__objects .item {
+  max-width: 205px;
+}
+
 .product-card__benefits__objects__download {
   padding: 20px;
 }
@@ -1859,7 +1863,7 @@ option {
 .product-card__benefits__objects__object__img {
   -o-object-fit: contain;
      object-fit: contain;
-  max-height: 190px;
+  height: 190px;
   padding: 5px 10px;
   width: 210px;
   border: 1px solid #E9E9E9;
@@ -1898,19 +1902,19 @@ option {
   color: #A5A5A5 !important;
 }
 
-.product-card__benefits__objects__object + .product-card__benefits__objects__object {
+.product-card__benefits__objects__object {
   position: relative;
 }
 
-.product-card__benefits__objects__object + .product-card__benefits__objects__object::before {
+.product-card__benefits__objects__object::before {
   content: '';
   background: url("../img/product-card/circle.png") no-repeat center;
   display: block;
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 26%;
-  left: -22%;
+  top: 6em;
+  left: -3em;
 }
 
 .owl-next, .owl-prev {
@@ -1920,6 +1924,11 @@ option {
 
 .owl-next span, .owl-prev span {
   font-size: 30px;
+}
+
+.slide-two {
+  width: 75%;
+  margin-left: 0;
 }
 
 .card__objects {
