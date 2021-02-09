@@ -2513,6 +2513,10 @@ option {
 }
 
 @media screen and (max-width: 768px) {
+  .documents__files__file__text {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
   .about {
     margin-top: 70px;
   }
