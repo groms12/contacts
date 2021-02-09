@@ -1957,6 +1957,7 @@ option {
   letter-spacing: 0em;
   text-align: left;
   color: #000000;
+  max-width: 370px;
 }
 
 .card__objects__info ul:first-child {
@@ -1996,7 +1997,7 @@ option {
 
 .card__objects__info ul:first-child li span:last-child {
   position: absolute;
-  right: 0;
+  right: 0px;
   padding-left: 6px;
 }
 
