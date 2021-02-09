@@ -3,6 +3,7 @@ $(document).ready(function () {
         var srcLittle = this.src;
         var srcBig = $('.card__objects__images__big').attr('src');
         $('.card__objects__images__big').attr('src', srcLittle);
+        $('.card__objects__images__big').attr('width', '680');
         $(this).attr('src', srcBig);
     })
 });
