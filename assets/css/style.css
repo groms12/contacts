@@ -2055,7 +2055,6 @@ option {
   letter-spacing: 0em;
   color: #000000;
   max-width: 90%;
-  margin: auto;
   margin-bottom: 80px;
 }
 
@@ -2088,6 +2087,7 @@ option {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 80px;
+  max-width: 80%;
 }
 
 .card__reviews__img {
@@ -2114,7 +2114,7 @@ option {
 }
 
 .card__sale {
-  max-width: 1178px;
+  max-width: 100%;
   max-height: 280px;
   margin: auto;
   display: -webkit-box;
@@ -2123,16 +2123,15 @@ option {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-bottom: 120px;
   position: relative;
 }
 
 .card__sale__gradient {
   position: absolute;
-  width: 1178px;
+  width: 100%;
   height: 280px;
   top: 0;
   left: 0;
@@ -2143,7 +2142,7 @@ option {
 
 .card__sale img {
   opacity: 0.5;
-  width: 600px;
+  width: 55%;
   height: 280px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -2155,6 +2154,8 @@ option {
   letter-spacing: 0em;
   color: #ffffff;
   z-index: 6;
+  width: 60%;
+  margin-left: -8%;
   margin-right: 20px;
 }
 
@@ -2178,6 +2179,7 @@ option {
   letter-spacing: 0em;
   text-align: center;
   color: #000000;
+  margin-bottom: -100px;
 }
 
 .card__why__title {
@@ -2346,17 +2348,6 @@ option {
   }
 }
 
-@media screen and (max-width: 885px) {
-  .card__sale__gradient {
-    height: 241px;
-    width: 900px;
-  }
-  .card__sale img {
-    width: 400px;
-    height: 241px;
-  }
-}
-
 @media screen and (max-width: 880px) {
   .about__company__img {
     height: 600px;
@@ -2379,6 +2370,15 @@ option {
     margin-top: 20px;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+  }
+  .card__sale__gradient {
+    height: 241px;
+  }
+  .card__sale img {
+    height: 241px;
+  }
+  .card__sale div {
+    margin-left: -20%;
   }
   .about__why {
     max-width: 90%;
@@ -2430,6 +2430,16 @@ option {
 }
 
 @media (max-width: 770px) {
+  .card__sale img {
+    width: 50%;
+  }
+  .card__sale div {
+    margin-left: 0;
+  }
+  .card__sale__title {
+    font-size: 37px;
+    line-height: 42.5px;
+  }
   .product-card__description__text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2521,6 +2531,9 @@ option {
   .about {
     margin-top: 70px;
   }
+  .card__why__objects__object {
+    margin-bottom: 40px;
+  }
   .card__about p {
     margin-bottom: 20px !important;
   }
@@ -2533,9 +2546,6 @@ option {
 }
 
 @media (max-width: 700px) {
-  .card__sale img {
-    width: 350px;
-  }
   .galery__slider__slide__block {
     padding: 10px;
   }
@@ -2594,6 +2604,18 @@ option {
 }
 
 @media (max-width: 605px) {
+  .card__reviews {
+    margin-bottom: 40px;
+  }
+  .card__sale {
+    max-height: 158px;
+  }
+  .card__sale img {
+    height: 158px;
+  }
+  .card__sale__gradient {
+    height: 158px;
+  }
   .card__sale__title {
     font-size: 25px;
     line-height: 26px;
@@ -2601,17 +2623,6 @@ option {
   .card__sale__subtitle {
     font-size: 16px;
     line-height: 18px;
-  }
-  .card__sale__gradient {
-    width: 605px;
-    height: 158px;
-  }
-  .card__sale img {
-    width: 250px;
-    height: 158px;
-  }
-  .card__sale div {
-    margin-left: -40px;
   }
   .product-card__description__text {
     max-width: 100%;
@@ -2833,6 +2844,10 @@ option {
 }
 
 @media (max-width: 475px) {
+  .card__sale div {
+    margin-left: -20%;
+    margin-right: 0;
+  }
   .galery__slider__slide__block__img {
     width: 93px;
     height: 93px;
@@ -2845,15 +2860,6 @@ option {
   }
   .galery__slider__slide__block__cost__btn {
     margin-right: 5%;
-  }
-  .card__sale__gradient {
-    width: 475px;
-  }
-  .card__sale img {
-    width: 200px;
-  }
-  .card__sale div {
-    margin-left: -50px;
   }
 }
 
@@ -2870,18 +2876,6 @@ option {
   }
   .card__why__objects__object__title {
     font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 397px) {
-  .card__sale__gradient {
-    width: 400px;
-  }
-  .card__sale img {
-    width: 150px;
-  }
-  .card__sale div {
-    margin-left: -60px;
   }
 }
 
@@ -2926,6 +2920,9 @@ option {
 }
 
 @media screen and (max-width: 350px) {
+  .card__objects__info ul:first-child li span:first-child {
+    margin-right: 3em;
+  }
   .about__value__block__val {
     max-width: 110px;
     margin-bottom: 20px;
@@ -2938,17 +2935,5 @@ option {
   }
   .about__why__list__li__text {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 337px) {
-  .card__sale__gradient {
-    width: 337px;
-  }
-  .card__sale img {
-    width: 100px;
-  }
-  .card__sale div {
-    margin-left: -40px;
   }
 }

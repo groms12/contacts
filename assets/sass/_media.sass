@@ -40,15 +40,6 @@
             font-size: 14px
             display: flex
             align-items: center
-@media screen and ( max-width: 885px )
-    .card
-        &__sale
-            &__gradient
-                height: 241px
-                width: 900px
-            img
-                width: 400px
-                height: 241px
 @media screen and ( max-width: 880px )
     .about
         &__company
@@ -68,7 +59,6 @@
                         & span
                             &:first-child
                                 margin-right: 4em
-    .card
         &__why
             &__objects
                 &__object
@@ -76,6 +66,13 @@
                     margin-bottom: 60px
                     margin-top: 20px
                     flex-basis: 50%
+        &__sale
+            &__gradient
+                height: 241px
+            img
+                height: 241px
+            div
+                margin-left: -20%
     .about
         &__why
             max-width: 90%
@@ -117,6 +114,15 @@
         display: none
     
 @media (max-width: 770px)
+    .card
+        &__sale
+            img
+                width: 50%
+            div
+                margin-left: 0
+            &__title
+                font-size: 37px
+                line-height: 42.5px
     .product-card
         &__description
             &__text
@@ -188,6 +194,10 @@
     .about
         margin-top: 70px
     .card
+        &__why
+            &__objects
+                &__object
+                    margin-bottom: 40px
         &__about
             p
                 margin-bottom: 20px !important
@@ -196,10 +206,6 @@
             ol
                 margin-bottom: 60px       
 @media (max-width: 700px)
-    .card
-        &__sale
-            img
-                width: 350px
     .galery
         &__slider
             &__slide
@@ -246,21 +252,20 @@
                     display: none
 @media (max-width: 605px)
     .card
+        &__reviews
+            margin-bottom: 40px
         &__sale
+            max-height: 158px
+            img
+                height: 158px
+            &__gradient
+                height: 158px
             &__title
                 font-size: 25px
                 line-height: 26px
             &__subtitle
                 font-size: 16px
                 line-height: 18px
-            &__gradient
-                width: 605px
-                height: 158px
-            img
-                width: 250px
-                height: 158px
-            div
-                margin-left: -40px
     .product-card
         &__description
             &__text
@@ -422,6 +427,11 @@
     .profile__img.xs 
         width: 100%
 @media (max-width: 475px)
+    .card
+        &__sale
+            div
+                margin-left: -20%
+                margin-right: 0
     .galery__slider__slide__block__img
         width: 93px
         height: 93px
@@ -431,14 +441,6 @@
         width: 90%
         &__btn
             margin-right: 5%
-    .card
-        &__sale
-            &__gradient
-                width: 475px
-            img
-                width: 200px
-            div
-                margin-left: -50px
 @media (max-width: 430px)
     .documents
         &__files
@@ -453,15 +455,6 @@
                         width: 120px
                     &__title
                         font-size: 14px
-@media screen and ( max-width: 397px )
-    .card
-        &__sale
-            &__gradient
-                width: 400px
-            img
-                width: 150px
-            div
-                margin-left: -60px
 @media (max-width: 385px)
     .card
         &__about
@@ -496,6 +489,15 @@
         &__why
             max-width: 95%
 @media screen and ( max-width: 350px )
+    .card
+        &__objects
+            &__info
+                & ul
+                    &:first-child
+                        & li
+                            & span
+                                &:first-child
+                                    margin-right: 3em
     .about
         &__value
             &__block
@@ -511,14 +513,5 @@
                 &__li
                     &__text
                         width: 100%
-@media screen and ( max-width: 337px )
-    .card
-        &__sale
-            &__gradient
-                width: 337px
-            img
-                width: 100px
-            div
-                margin-left: -40px
     
     
