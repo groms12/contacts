@@ -1541,6 +1541,10 @@ option {
 
 .product-card__object__images__tablet .product-card__object__info__brand {
   margin-bottom: 20px;
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .product-card__object__images__tablet .product-card__object__description__ul {
@@ -1548,6 +1552,10 @@ option {
 }
 
 .product-card__object__images__tablet .product-card__object__info__buy {
+  display: none;
+}
+
+.product-card__object__images__tablet .product-card__object__description__title {
   display: none;
 }
 
@@ -2681,9 +2689,19 @@ option {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .product-card__object__images__tablet {
+    width: 320px;
+  }
+  .product-card__object__images__tablet .product-card__object__description__title {
+    display: block;
+    text-align: center;
+  }
   .product-card__object__description {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .product-card__object__description__title {
+    display: none;
   }
   .product-card__object__description__tablet {
     display: none;
@@ -2733,6 +2751,22 @@ option {
 }
 
 @media (max-width: 605px) {
+  .product-card__description__title, .product-card__devices__title, .product-card__benefits__title {
+    font-size: 30px !important;
+  }
+  .product-card__description {
+    width: 100%;
+  }
+  .product-card__object__description__ul {
+    margin-bottom: 40px;
+  }
+  .product-card__object__description__link {
+    font-weight: 700;
+    text-align: center !important;
+    font-size: 16px;
+    display: block;
+    margin: auto;
+  }
   .card__reviews {
     margin-bottom: 40px;
   }

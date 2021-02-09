@@ -266,8 +266,16 @@
     .product-card
         &__object
             justify-content: center
+            &__images
+                &__tablet
+                    width: 320px
+                    .product-card__object__description__title
+                        display: block
+                        text-align: center
             &__description
                 flex-basis: 100%
+                &__title
+                    display: none
                 &__tablet
                     display: none  
             &__images
@@ -300,6 +308,21 @@
                 span
                     display: none
 @media (max-width: 605px)
+    .product-card
+        &__description__title, &__devices__title, &__benefits__title
+           font-size: 30px !important
+        &__description
+            width: 100%
+        &__object
+            &__description
+                &__ul
+                    margin-bottom: 40px
+                &__link
+                    font-weight: 700
+                    text-align: center !important
+                    font-size: 16px
+                    display: block
+                    margin: auto
     .card
         &__reviews
             margin-bottom: 40px
