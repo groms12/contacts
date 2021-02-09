@@ -22,6 +22,18 @@
             img
                 background: url('../img/line.svg')
                 width: 350px
+@media (max-width: 1100px)
+    .product-card
+        &__object
+            &__description
+                max-width: 337px
+            &__images
+                max-width: 300px
+                &__big
+                    max-width: 100%
+            &__info
+                max-width: 22%
+                margin: auto
 @media (max-width: 1024px)
     .card
         &__sale
@@ -40,6 +52,25 @@
             font-size: 14px
             display: flex
             align-items: center
+@media screen and ( max-width: 895px )
+    .product-card
+        &__object
+            &__description
+                flex-basis: 50%
+                &__tablet
+                    display: flex
+                    width: 337px
+            &__info
+                display: none
+            &__images
+                flex-basis: 50%
+                &__big
+                    max-width: 100%
+                    height: 250px
+                &__small
+                    display: none
+                &__tablet
+                    display: block
 @media screen and ( max-width: 880px )
     .about
         &__company
@@ -225,6 +256,24 @@
                     margin-bottom: 30px
                     &:last-child
                         margin-bottom: 120px
+@media (max-width: 676px)
+    .product-card
+        &__object
+            &__description
+                &__tablet
+                    max-width: 330px
+@media screen and ( max-width: 670px )
+    .product-card
+        &__object
+            justify-content: center
+            &__description
+                flex-basis: 100%
+                &__tablet
+                    display: none  
+            &__images
+                flex-basis: 100%
+                .product-card__object__info__buy
+                    display: block            
 @media (max-width: 640px)
     .card
         &__objects
