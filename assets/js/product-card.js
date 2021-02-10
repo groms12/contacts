@@ -24,7 +24,6 @@ $(document).ready(function () {
     
     // if (countSale >= 4) {
         $(".slide-two").owlCarousel({
-            loop: true,
             margin: 10,
             items: 3,
             dots: false,

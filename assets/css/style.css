@@ -1980,6 +1980,10 @@ option {
   left: -3em;
 }
 
+.product-card__benefits__objects__object--1::before {
+  display: none;
+}
+
 .owl-next, .owl-prev {
   outline: none;
   width: 30px;
