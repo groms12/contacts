@@ -180,6 +180,17 @@
                 margin-bottom: 10px
     &__devices
         margin-bottom: 118px
+        .owl
+            &-carousel
+                position: relative
+            &-nav
+                button
+                    position: absolute
+                    top: 25%
+                    &:first-child
+                        left: -3%
+                    &:last-child
+                        right: -3%
         &__title
             text-align: center
             margin-bottom: 20px
@@ -295,6 +306,16 @@
         &::before
             display: none
 .owl
+    &-carousel
+        position: relative
+    &-nav
+        button
+            position: absolute
+            top: 25%
+            &:first-child
+                left: -5%
+            &:last-child
+                right: -5%
     &-next, &-prev
         outline: none
         width: 30px

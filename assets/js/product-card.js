@@ -27,7 +27,7 @@ $(document).ready(function () {
             margin: 10,
             items: 3,
             dots: false,
-            nav: true,   
+            nav: true, 
         });
     // }   
 
