@@ -10,7 +10,7 @@
         text-align: center
     &__cost
         display: flex
-        align-items: start
+        align-items: center
         justify-content: space-between
         margin-bottom: 88px
         &__form
@@ -69,16 +69,22 @@
                         font-weight: 500
                         line-height: 16px
                         color: #333 
+                    span a
+                        &:hover
+                            color: #027DC3
+                            text-decoration: none
     &__why
         display: flex
         align-items: start
         justify-content: space-between
         flex-wrap: wrap
-        margin-bottom: 120px
+        margin-bottom: 60px
         text-align: center
         &__obj
             max-width: 220px
             margin: auto
+            margin-bottom: 60px
+            height: 209px
             &__img
                 margin-bottom: 10px
             &__title
@@ -86,6 +92,8 @@
                 text-transform: uppercase
                 font-size: 16px
                 line-height: 18px
+                padding-left: 5px
+                padding-right: 5px
             &__text
                 font-family: Inter-Regular
                 font-size: 14px
@@ -106,12 +114,12 @@
                 max-height: 100%
                 object-fit: cover
             &__about
+                margin-right: 10px
                 &__text
                     font-size: 24px
                     font-weight: 400
                     line-height: 34px
                     max-width: 452px
-                    height: 248px
                     display: flex
                     flex-direction: column
                     justify-content: space-between
@@ -144,6 +152,9 @@
             justify-content: space-between
             flex-wrap: wrap
             margin-top: 20px
+            .list__block
+                margin: auto
+                margin-bottom: 55px
     &__warm
         &__ul
             display: flex
