@@ -1,4 +1,7 @@
-//order:1
+@media screen and ( max-width: 1200px )
+    .product-card__benefits
+        &__objects
+            max-width: 100%
 @media (max-width: 1180px)
     .card
         &__objects
@@ -34,7 +37,24 @@
             &__info
                 max-width: 22%
                 margin: auto
+@media screen and ( max-width: 1085px )
+    .product-card__benefits__objects__object
+        &::before
+            width: 20px
+            height: 20px
+            border-radius: 50%
+            top: 6em
+            left: -2em
 @media (max-width: 1024px)
+    .product-card__benefits__objects
+        max-width: 90%
+    .product-card__benefits__objects__object
+        &::before
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            top: 6em
+            left: -5em
     .card
         &__sale
             img
@@ -52,6 +72,9 @@
             font-size: 14px
             display: flex
             align-items: center
+@media screen and ( max-width: 940px )
+    .product-card__benefits__objects
+        max-width: 100%
 @media screen and ( max-width: 895px )
     .product-card
         &__object
@@ -72,6 +95,10 @@
                 &__tablet
                     display: block
 @media screen and ( max-width: 880px )
+    .product-card__benefits__objects__object
+        &::before
+            top: 6em
+            left: -4em
     .about
         &__company
             &__img
@@ -145,6 +172,25 @@
         display: none
     
 @media (max-width: 770px)
+    .product-card__benefits
+        &__objects
+            flex-wrap: wrap
+            &__download
+                margin: auto
+            .owl
+                &-nav
+                    button
+                        top: 20%
+            .slide-two
+                width: 100%
+                .item
+                    width: 144px
+                    img
+                        max-height: 136px
+            &__object
+                &::before
+                    top: 4em
+                    left: -4em
     .card
         &__sale
             img
@@ -283,6 +329,11 @@
                 .product-card__object__info__buy
                     display: block            
 @media (max-width: 640px)
+    .product-card__benefits
+        &__objects
+            &__object
+                &::before
+                    left: -3em
     .card
         &__objects
             flex-wrap: wrap
@@ -437,6 +488,8 @@
                 padding: 0 6%
                 &__info
                     width: 100%
+@media screen and ( max-width: 580px )
+    
 @media (max-width: 565px)
     .display
         display: none

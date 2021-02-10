@@ -2400,6 +2400,12 @@ option {
      object-fit: contain;
 }
 
+@media screen and (max-width: 1200px) {
+  .product-card__benefits__objects {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 1180px) {
   .card__objects__images {
     max-width: 600px;
@@ -2441,7 +2447,27 @@ option {
   }
 }
 
+@media screen and (max-width: 1085px) {
+  .product-card__benefits__objects__object::before {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 6em;
+    left: -2em;
+  }
+}
+
 @media (max-width: 1024px) {
+  .product-card__benefits__objects {
+    max-width: 90%;
+  }
+  .product-card__benefits__objects__object::before {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 6em;
+    left: -5em;
+  }
   .card__sale img {
     width: 500px;
   }
@@ -2462,6 +2488,12 @@ option {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .product-card__benefits__objects {
+    max-width: 100%;
   }
 }
 
@@ -2496,6 +2528,10 @@ option {
 }
 
 @media screen and (max-width: 880px) {
+  .product-card__benefits__objects__object::before {
+    top: 6em;
+    left: -4em;
+  }
   .about__company__img {
     height: 600px;
     max-width: 380px !important;
@@ -2577,6 +2613,29 @@ option {
 }
 
 @media (max-width: 770px) {
+  .product-card__benefits__objects {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .product-card__benefits__objects__download {
+    margin: auto;
+  }
+  .product-card__benefits__objects .owl-nav button {
+    top: 20%;
+  }
+  .product-card__benefits__objects .slide-two {
+    width: 100%;
+  }
+  .product-card__benefits__objects .slide-two .item {
+    width: 144px;
+  }
+  .product-card__benefits__objects .slide-two .item img {
+    max-height: 136px;
+  }
+  .product-card__benefits__objects__object::before {
+    top: 4em;
+    left: -4em;
+  }
   .card__sale img {
     width: 50%;
   }
@@ -2754,6 +2813,9 @@ option {
 }
 
 @media (max-width: 640px) {
+  .product-card__benefits__objects__object::before {
+    left: -3em;
+  }
   .card__objects {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;

@@ -28,8 +28,16 @@ $(document).ready(function () {
             items: 3,
             dots: false,
             nav: true, 
+            responsive: {
+                771: {
+                    items: 2,
+                },
+                1025: {
+                    items: 3, 
+                },
+            }     
         });
-    // }   
+    // }  
 
     $('.product-card__object__images__small div img').click(function() {
         var srcLittle = this.src;
