@@ -31,6 +31,9 @@
                 width: 350px
 @media (max-width: 1100px)
     .work
+        &__heating
+            &__info
+                padding-left: 0
         &__cost
             &__img
                 max-width: 55%
@@ -232,11 +235,24 @@
     
 @media (max-width: 770px)
     .work
+        &__heating
+            &__info
+                margin-top: 40px
+                &__img
+                    max-height: 208px
+                    width: 360px !important
+                    object-fit: cover
+                &__about
+                    max-width: 309px
+                    &__images
+                        &__tablet
+                            padding-left: 40px
         &__cost
             margin-bottom: 0
             &__img
                 max-width: 60%
             &__form
+                margin-top: 10px
                 &__title
                     max-width: 90%
                     margin-bottom: 8px
@@ -244,17 +260,20 @@
                     margin-bottom: 20px
                 input, &__price__btn
                     max-width: 270px
-                &__price__check
-                    display: none
+                &__price
+                    input
+                        margin-bottom: 12px
+                    &__check
+                        display: none
         &__why
             margin-top: 60px
             margin-bottom: 20px
         &__examples
-            margin-bottom: 40px
+            margin-bottom: 20px
             &__works
                 max-width: 85%
                 margin: auto
-                margin-top: 20px
+                margin-top: 40px
     .product-card__benefits
         &__objects
             flex-wrap: wrap
@@ -600,14 +619,24 @@
                     width: 100%
 @media screen and ( max-width: 580px )
     .work
+        &__price
+            &__table
+                &__tr
+                    height: 75px
+        &__examples
+            margin-bottom: 20px
         &__heating
+            margin-bottom: 80px
             &__info
                 flex-wrap: wrap-reverse
                 &__img
-                    max-width: 90%
+                    max-width: 100%
                     margin: auto
                     margin-bottom: 20px
+                    max-height: 185px
                 &__about
+                    margin: auto
+                    max-width: 100%
                     &__text
                         text-align: center
                         margin: auto
@@ -616,6 +645,7 @@
                         &__tablet
                             display: flex
                             justify-content: space-around
+                            padding-left: 0
                             div
                                 margin-right: 0
     

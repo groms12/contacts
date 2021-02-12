@@ -2576,9 +2576,9 @@ option {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 90%;
   margin: auto;
   margin-top: 60px;
+  padding-left: 100px;
 }
 
 .work__heating__info__img {
@@ -2656,7 +2656,7 @@ option {
 }
 
 .work__examples {
-  margin-bottom: 110px;
+  margin-bottom: 90px;
 }
 
 .work__examples__works {
@@ -2671,7 +2671,7 @@ option {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .work__examples__works .list__block {
@@ -2825,6 +2825,9 @@ option {
 }
 
 @media (max-width: 1100px) {
+  .work__heating__info {
+    padding-left: 0;
+  }
   .work__cost__img {
     max-width: 55%;
   }
@@ -3062,11 +3065,29 @@ option {
 }
 
 @media (max-width: 770px) {
+  .work__heating__info {
+    margin-top: 40px;
+  }
+  .work__heating__info__img {
+    max-height: 208px;
+    width: 360px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .work__heating__info__about {
+    max-width: 309px;
+  }
+  .work__heating__info__about__images__tablet {
+    padding-left: 40px;
+  }
   .work__cost {
     margin-bottom: 0;
   }
   .work__cost__img {
     max-width: 60%;
+  }
+  .work__cost__form {
+    margin-top: 10px;
   }
   .work__cost__form__title {
     max-width: 90%;
@@ -3078,6 +3099,9 @@ option {
   .work__cost__form input, .work__cost__form__price__btn {
     max-width: 270px;
   }
+  .work__cost__form__price input {
+    margin-bottom: 12px;
+  }
   .work__cost__form__price__check {
     display: none;
   }
@@ -3086,12 +3110,12 @@ option {
     margin-bottom: 20px;
   }
   .work__examples {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .work__examples__works {
     max-width: 85%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .product-card__benefits__objects {
     -ms-flex-wrap: wrap;
@@ -3528,14 +3552,28 @@ option {
 }
 
 @media screen and (max-width: 580px) {
+  .work__price__table__tr {
+    height: 75px;
+  }
+  .work__examples {
+    margin-bottom: 20px;
+  }
+  .work__heating {
+    margin-bottom: 80px;
+  }
   .work__heating__info {
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
   }
   .work__heating__info__img {
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
     margin-bottom: 20px;
+    max-height: 185px;
+  }
+  .work__heating__info__about {
+    margin: auto;
+    max-width: 100%;
   }
   .work__heating__info__about__text {
     text-align: center;
@@ -3548,6 +3586,7 @@ option {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-left: 0;
   }
   .work__heating__info__about__images__tablet div {
     margin-right: 0;
