@@ -2751,20 +2751,21 @@ option {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 91%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 100%;
   margin: auto;
   margin-top: 30px;
 }
 
 .work__price__table div {
-  -ms-flex-preferred-size: 47%;
-      flex-basis: 47%;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
 }
 
 .work__price__table__tr {
+  padding-left: 35px;
+  padding-right: 35px;
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
@@ -3335,7 +3336,8 @@ option {
     max-width: 100%;
   }
   .work__cost__form__title, .work__cost__form__subtitle {
-    max-width: 90%;
+    width: 100% !important;
+    max-width: 100% !important;
     margin: auto;
     margin-bottom: 20px;
   }
@@ -3348,11 +3350,12 @@ option {
     max-width: 320px !important;
   }
   .work__cost__form__price__btn {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 320px !important;
   }
   .work__cost__img {
-    max-width: 90%;
+    max-width: 100%;
+    margin-bottom: 20px;
   }
   .product-card__benefits__objects__object::before {
     left: -3em;
@@ -3783,9 +3786,18 @@ option {
   .about__why {
     max-width: 95%;
   }
+  .work__why {
+    margin-top: 70px;
+  }
 }
 
 @media screen and (max-width: 350px) {
+  .work__cost__form input, .work__cost__form__price__btn {
+    width: 95% !important;
+  }
+  .work__why {
+    margin-top: 70px;
+  }
   .work__why__obj {
     max-width: 140px;
   }

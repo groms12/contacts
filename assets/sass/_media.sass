@@ -444,7 +444,8 @@
             max-width: 100%
             &__form
                 &__title, &__subtitle
-                    max-width: 90%
+                    width: 100% !important
+                    max-width: 100% !important
                     margin: auto
                     margin-bottom: 20px
                 &__price
@@ -454,10 +455,11 @@
                         margin-bottom: 10px
                         max-width: 320px !important
                     &__btn
-                        margin-top: 20px
+                        margin-top: 10px
                         width: 320px !important
             &__img
-                max-width: 90%
+                max-width: 100%
+                margin-bottom: 20px
     .product-card__benefits
         &__objects
             &__object
@@ -793,9 +795,17 @@
     .about
         &__why
             max-width: 95%
-@media screen and ( max-width: 350px )
     .work
         &__why
+            margin-top: 70px
+@media screen and ( max-width: 350px )
+    .work
+        &__cost 
+            &__form
+                input, &__price__btn
+                    width: 95% !important
+        &__why
+            margin-top: 70px
             &__obj
                 max-width: 140px
     .card
