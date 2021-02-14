@@ -2700,7 +2700,7 @@ option {
   margin: auto;
   margin-top: 80px;
   counter-reset: counter-name;
-  padding-left: 100px;
+  padding-left: 8%;
 }
 
 .work__warm__ul__li {
@@ -2831,6 +2831,12 @@ option {
   }
 }
 
+@media screen and (max-width: 1160px) {
+  .work__warm__ul {
+    max-width: 90%;
+  }
+}
+
 @media (max-width: 1100px) {
   .work__heating__info {
     padding-left: 0;
@@ -2857,6 +2863,9 @@ option {
 }
 
 @media screen and (max-width: 1085px) {
+  .work__warm__ul {
+    max-width: 100%;
+  }
   .product-card__benefits__objects__object::before {
     width: 20px;
     height: 20px;
@@ -2906,6 +2915,22 @@ option {
 @media screen and (max-width: 940px) {
   .work__price__table__tr--th--2 {
     display: none;
+  }
+  .work__warm__ul {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 33%;
+    margin-top: 40px;
+  }
+  .work__warm__ul__li {
+    margin-bottom: 45px;
+  }
+  .work__warm__ul__li::before {
+    left: -30%;
+    top: -5%;
+    width: 90px;
+    height: 69px;
+    padding-top: 21px;
   }
   .work__price {
     margin-bottom: 80px;
@@ -3715,6 +3740,12 @@ option {
 }
 
 @media (max-width: 500px) {
+  .work__warm__ul {
+    padding-left: 30%;
+  }
+  .work__warm__ul__li::before {
+    left: -40%;
+  }
   .contacts__info__place {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3811,6 +3842,25 @@ option {
   }
   .card__why__objects__object__title {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .work__warm__ul {
+    padding-left: 35%;
+  }
+  .work__warm__ul__li {
+    margin-bottom: 30px;
+  }
+  .work__warm__ul__li::before {
+    width: 76px;
+    height: 64px;
+    padding-top: 12px;
+    left: -50%;
+  }
+  .work__warm__ul__li__title {
+    font-size: 20px;
+    line-height: 23px;
   }
 }
 

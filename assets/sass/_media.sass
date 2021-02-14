@@ -29,6 +29,11 @@
             img
                 background: url('../img/line.svg')
                 width: 350px
+@media screen and ( max-width: 1160px )
+    .work
+        &__warm
+            &__ul
+                max-width: 90%
 @media (max-width: 1100px)
     .work
         &__heating
@@ -52,6 +57,10 @@
                 max-width: 22%
                 margin: auto
 @media screen and ( max-width: 1085px )
+    .work
+        &__warm
+            &__ul
+                max-width: 100%
     .product-card__benefits__objects__object
         &::before
             width: 20px
@@ -95,6 +104,20 @@
     .work__price__table__tr--th--2
         display: none
     .work
+        &__warm
+            &__ul
+                max-width: 100%
+                width: 100%
+                padding-left: 33%
+                margin-top: 40px
+                &__li
+                    margin-bottom: 45px
+                    &::before
+                        left: -30%
+                        top: -5%
+                        width: 90px
+                        height: 69px
+                        padding-top: 21px
         &__price
             margin-bottom: 80px
             &__table
@@ -748,6 +771,17 @@
                     padding-left: 0
                     padding-right: 0
 @media (max-width: 500px)
+    .work
+        &__warm
+            &__ul
+                padding-left: 30%
+                &__li
+                    &::before
+                        left: -40%
+                        // top: -5%
+                        // width: 90px
+                        // height: 69px
+                        // padding-top: 21px
     .contacts__info__place
         display: flex
         flex-direction: column
@@ -821,6 +855,21 @@
                         width: 120px
                     &__title
                         font-size: 14px
+@media screen and ( max-width: 410px )
+    .work
+        &__warm
+            &__ul
+                padding-left: 35%
+                &__li
+                    margin-bottom: 30px
+                    &::before
+                        width: 76px
+                        height: 64px
+                        padding-top: 12px
+                        left: -50%
+                    &__title
+                        font-size: 20px
+                        line-height: 23px
 @media (max-width: 385px)
     .card
         &__about
