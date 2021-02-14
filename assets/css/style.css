@@ -3295,6 +3295,9 @@ option {
   .about {
     margin-top: 70px;
   }
+  .card__sale {
+    margin-bottom: 80px;
+  }
   .card__why__objects__object {
     margin-bottom: 40px;
   }
@@ -3899,6 +3902,27 @@ option {
 }
 
 @media (max-width: 368px) {
+  .card__why__objects__object {
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+  .card__sale {
+    margin-bottom: 40px;
+  }
+  .card__reviews {
+    max-width: 100%;
+    margin-bottom: 80px;
+  }
+  .card__reviews__text {
+    width: 207px;
+  }
+  .card__about {
+    margin-bottom: 50px;
+  }
+  .card__objects__info ul {
+    list-style-position: inside;
+    margin-left: -10px;
+  }
   .about__why {
     max-width: 95%;
   }
