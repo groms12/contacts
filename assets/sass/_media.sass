@@ -358,6 +358,23 @@
                 font-size: 37px
                 line-height: 42.5px
     .product-card
+        &__object
+            align-items: center
+            margin-bottom: 60px
+            &__description
+                &__ul
+                    margin-bottom: 20px
+                &__title
+                    font-size: 26px !important
+                    line-height: 34px !important
+                    margin: 0 !important
+                    margin-bottom: 10px !important
+            &__images
+                &__tablet
+                    margin-top: 20px
+                &__big
+                    max-width: 137px
+                    max-height: 208px
         &__description
             padding-left: 10px
             margin-bottom: 70px
@@ -958,6 +975,37 @@
                         font-size: 20px
                         line-height: 23px
 @media (max-width: 385px)
+    .product-card
+        &__object
+            margin-bottom: 75px
+            &__info
+                &__buy
+                    width: 252px
+                    height: 150px
+                    button
+                        width: 212px
+            &__images
+                &__tablet
+                    margin-top: 10px
+                    .product-card__object__info__brand
+                        width: 60%
+                    .product-card__object__info__download
+                        width: 70%
+                        font-weight: 700
+                        text-decoration: underline
+                    .product-card__object__description__ul 
+                        margin: auto
+                        margin-bottom: 25px
+                        max-width: 70%
+                &__big
+                    max-width: 125px
+                    max-height: 191px
+            &__description
+                &__title
+                    font-size: 30px !important
+                    line-height: 38px !important
+                    max-width: 314px
+                    margin-bottom: 40px !important
     .card
         &__about
             max-width: 95%
