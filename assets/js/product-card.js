@@ -21,23 +21,30 @@ $(document).ready(function () {
         });
       }   
     }  
+
+    $('.slider-item').slick({ 
+        infinite: false, 
+        vertical: false, 
+        // centerMode: true, 
+        slidesToShow: 3, 
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 601,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 441,
+                settings: {
+                    vertical: true, 
+                    slidesToShow: 3,
+                }
+            }
+        ]
+    });
     
-    // if (countSale >= 4) {
-        $(".slide-two").owlCarousel({
-            margin: 10,
-            items: 3,
-            dots: false,
-            nav: true, 
-            responsive: {
-                771: {
-                    items: 2,
-                },
-                1025: {
-                    items: 3, 
-                },
-            }     
-        });
-    // }  
 
     $('.product-card__object__images__small div img').click(function() {
         var srcLittle = this.src;
