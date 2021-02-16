@@ -2010,7 +2010,7 @@ option {
   height: 30px;
   position: absolute;
   top: 6em;
-  left: -1em;
+  left: -3em;
 }
 
 .product-card__benefits__objects__object--1::before {
@@ -2048,10 +2048,14 @@ option {
   margin-left: 0;
 }
 
+.slick-slide {
+  padding-right: 5%;
+}
+
 .slick-arrow {
   background: url("../img/arrow-left.svg");
   position: absolute;
-  top: 32%;
+  top: 30%;
 }
 
 .slick-arrow:hover {
@@ -2061,7 +2065,7 @@ option {
 .slick-arrow[aria-label="Previous"] {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  left: -10px;
+  left: -20px;
 }
 
 .card__objects {
@@ -3377,6 +3381,12 @@ option {
 }
 
 @media screen and (max-width: 768px) {
+  .card__reviews {
+    max-width: 100%;
+  }
+  .card__reviews__text {
+    max-width: 100%;
+  }
   .work__examples {
     margin-bottom: 30px;
   }
@@ -3504,6 +3514,9 @@ option {
 }
 
 @media screen and (max-width: 650px) {
+  .product-card__benefits__objects__object::before {
+    left: -2.5em;
+  }
   .work__why {
     margin-top: 60px;
     margin-bottom: 20px;
@@ -3942,9 +3955,14 @@ option {
 }
 
 @media (max-width: 440px) {
+  .product-card__benefits__objects__object {
+    display: block;
+    margin: 0 auto;
+  }
   .product-card__benefits__objects__object::before {
     top: -5em;
-    left: 135px;
+    left: 50%;
+    margin-left: -15px;
   }
   .product-card__benefits {
     border: 1px solid #027DC3;
@@ -3965,6 +3983,21 @@ option {
   .product-card__benefits__objects__download {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 0;
+    padding-top: 20px;
+  }
+  .product-card__benefits__objects__download button {
+    width: 210px;
+  }
+  .product-card__benefits__objects__download p {
+    font-size: 30px !important;
+    line-height: 34,5px !important;
+  }
+  .product-card__benefits__objects__download p:first-child {
+    margin-bottom: 15px;
+  }
+  .product-card__benefits__objects__download p:last-child {
+    margin-bottom: 30px;
   }
   .product-card__benefits__objects__download div {
     margin: auto;
@@ -3995,10 +4028,10 @@ option {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
     top: -20px;
-    left: 48%;
+    left: 46%;
   }
   .slick-arrow[aria-label="Next"] {
-    left: 48%;
+    left: 46%;
     top: 100%;
   }
 }
@@ -4044,7 +4077,6 @@ option {
   }
   .product-card__object__info__buy {
     width: 252px;
-    height: 150px;
   }
   .product-card__object__info__buy button {
     width: 212px;

@@ -445,6 +445,11 @@
                     &:last-child
                         margin-bottom: 120px
 @media screen and ( max-width: 768px )
+    .card
+        &__reviews
+            max-width: 100%
+            &__text
+                max-width: 100%
     .work
         &__examples
             margin-bottom: 30px
@@ -553,6 +558,9 @@
                 .product-card__object__info__buy
                     display: block
 @media screen and ( max-width: 650px )
+    .product-card__benefits__objects__object
+        &::before
+            left: -2.5em
     .work
         &__why
             margin-top: 60px
@@ -899,10 +907,13 @@
                     font-size: 14px
 @media (max-width: 440px)
     .product-card__benefits__objects__object
+        display: block
+        margin: 0 auto
         &::before
             top: -5em
             // left: 31vw
-            left: 135px
+            left: 50%
+            margin-left: -15px
     .product-card
         &__benefits
             border: 1px solid #027DC3
@@ -920,8 +931,20 @@
                         height: 200px
                 &__download
                     flex-wrap: wrap
+                    padding: 0
+                    padding-top: 20px
+                    button
+                        width: 210px
+                    p
+                        font-size: 30px !important
+                        line-height: 34,5px !important
+                        &:first-child
+                            margin-bottom: 15px
+                        &:last-child
+                            margin-bottom: 30px
                     div
                         margin: auto
+                    
             &__title
                 margin-bottom: 30px
     .slide-two
@@ -941,9 +964,9 @@
     .slick-arrow[aria-label="Previous"]
         transform: rotate(-90deg)
         top: -20px
-        left: 48%
+        left: 46%
     .slick-arrow[aria-label="Next"]
-        left: 48%
+        left: 46%
         top: 100%
 @media (max-width: 430px)
     .documents
@@ -981,7 +1004,7 @@
             &__info
                 &__buy
                     width: 252px
-                    height: 150px
+                    // height: 150px
                     button
                         width: 212px
             &__images
