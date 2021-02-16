@@ -4139,6 +4139,8 @@ option {
   }
   .card__objects__info ul {
     list-style-position: inside;
+  }
+  .card__objects__info__do {
     margin-left: -10px;
   }
   .about__why {
