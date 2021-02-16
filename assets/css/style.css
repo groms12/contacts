@@ -1584,7 +1584,7 @@ option {
   max-width: 100%;
 }
 
-.product-card__object__images__small div {
+.product-card__object__images__small a {
   width: 140px;
   height: 106px;
   padding: 5px;
@@ -1592,9 +1592,10 @@ option {
   text-align: center;
   border: 1px solid #e9e9e9;
   margin-right: 10px;
+  outline: none;
 }
 
-.product-card__object__images__small div img {
+.product-card__object__images__small a img {
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 100%;
@@ -1602,7 +1603,7 @@ option {
   margin: auto;
 }
 
-.product-card__object__images__small div:hover {
+.product-card__object__images__small a:hover {
   border: 2px solid #008BCC;
 }
 
@@ -2074,6 +2075,10 @@ option {
   border: none !important;
 }
 
+.active {
+  border: 2px solid #008BCC !important;
+}
+
 .card__objects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2180,13 +2185,21 @@ option {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
 }
 
-.card__objects__images__small img {
+.card__objects__images__small a {
   max-width: 160px;
   height: 106px;
   -o-object-fit: cover;
      object-fit: cover;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.card__objects__images__small a img {
+  height: 100%;
+  width: 100%;
 }
 
 .card__about {
@@ -2376,6 +2389,10 @@ option {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+}
+
+.card__gallery {
+  text-align: center;
 }
 
 .documents {
@@ -2849,7 +2866,7 @@ option {
   .product-card__benefits__objects {
     max-width: 100%;
   }
-  .product-card__object__images__small div {
+  .product-card__object__images__small a {
     margin-right: auto;
     border: none;
   }
@@ -2864,7 +2881,7 @@ option {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .card__objects__images__big img, .card__objects__images__small img {
+  .card__objects__images__big a, .card__objects__images__small a {
     max-width: 24%;
     height: 80px;
   }
