@@ -260,6 +260,7 @@
                 position: relative
                 max-width: 205px
                 text-decoration: none
+                outline: none
                 &__title
                     font-size: 24px!important
                     font-weight: 400!important
@@ -352,3 +353,7 @@
 .slick-arrow[aria-label="Previous"]
     transform: rotate(180deg)
     left: -20px
+.slick-slide:active, .slick-slide:focus, .slick-slide, .slick-active, .slick-vertical
+    outline: none !important
+    border: none !important
+

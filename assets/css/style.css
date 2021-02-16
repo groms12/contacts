@@ -1933,6 +1933,7 @@ option {
   position: relative;
   max-width: 205px;
   text-decoration: none;
+  outline: none;
 }
 
 .product-card__benefits__objects__object__title {
@@ -2066,6 +2067,11 @@ option {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   left: -20px;
+}
+
+.slick-slide:active, .slick-slide:focus, .slick-slide, .slick-active, .slick-vertical {
+  outline: none !important;
+  border: none !important;
 }
 
 .card__objects {
