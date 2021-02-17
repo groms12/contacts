@@ -1559,7 +1559,7 @@ option {
   display: none;
 }
 
-.product-card__object__images__big {
+.product-card__object__images .card__gallery__big {
   margin: auto;
   margin-bottom: 30px;
   cursor: pointer;
@@ -1569,7 +1569,7 @@ option {
   max-width: 420px;
 }
 
-.product-card__object__images__small {
+.product-card__object__images .card__gallery__thumbs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1584,7 +1584,7 @@ option {
   max-width: 100%;
 }
 
-.product-card__object__images__small a {
+.product-card__object__images .card__gallery__thumbs a {
   width: 140px;
   height: 106px;
   padding: 5px;
@@ -1595,7 +1595,7 @@ option {
   outline: none;
 }
 
-.product-card__object__images__small a img {
+.product-card__object__images .card__gallery__thumbs a img {
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 100%;
@@ -1603,7 +1603,7 @@ option {
   margin: auto;
 }
 
-.product-card__object__images__small a:hover {
+.product-card__object__images .card__gallery__thumbs a:hover {
   border: 2px solid #008BCC;
 }
 
@@ -2167,7 +2167,7 @@ option {
       flex-basis: 50%;
 }
 
-.card__objects__images__big {
+.card__objects .card__gallery__big {
   max-width: 680px;
   height: 365px;
   -o-object-fit: cover;
@@ -2175,7 +2175,7 @@ option {
   margin: auto;
 }
 
-.card__objects__images__small {
+.card__objects .card__gallery__thumbs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2188,7 +2188,7 @@ option {
   cursor: pointer;
 }
 
-.card__objects__images__small a {
+.card__objects .card__gallery__thumbs a {
   max-width: 160px;
   height: 106px;
   -o-object-fit: cover;
@@ -2197,7 +2197,11 @@ option {
   border: 2px solid transparent;
 }
 
-.card__objects__images__small a img {
+.card__objects .card__gallery__thumbs a:hover {
+  border: 2px solid #008BCC;
+}
+
+.card__objects .card__gallery__thumbs a img {
   height: 100%;
   width: 100%;
 }
@@ -2866,7 +2870,7 @@ option {
   .product-card__benefits__objects {
     max-width: 100%;
   }
-  .product-card__object__images__small a {
+  .product-card__object__images .card__gallery__thumbs a {
     margin-right: auto;
     border: none;
   }
@@ -2876,16 +2880,16 @@ option {
   .card__objects__images {
     max-width: 600px;
   }
-  .card__objects__images__big, .card__objects__images__small {
+  .card__objects__images .card__gallery__big, .card__objects__images .card__gallery__thumbs {
     max-width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .card__objects__images__big a, .card__objects__images__small a {
+  .card__objects__images .card__gallery__big a, .card__objects__images .card__gallery__thumbs a {
     max-width: 24%;
     height: 80px;
   }
-  .card__objects__images__big {
+  .card__objects__images .card__gallery__big {
     height: 330px;
   }
   .about__company__img {
@@ -2919,7 +2923,7 @@ option {
   .product-card__object__images {
     max-width: 300px;
   }
-  .product-card__object__images__big {
+  .product-card__object__images .card__gallery__big {
     max-width: 100%;
   }
   .product-card__object__info {
@@ -3057,11 +3061,11 @@ option {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
-  .product-card__object__images__big {
+  .product-card__object__images .card__gallery__big {
     max-width: 100%;
     height: 250px;
   }
-  .product-card__object__images__small {
+  .product-card__object__images .card__gallery__thumbs {
     display: none;
   }
   .product-card__object__images__tablet {
@@ -3305,7 +3309,7 @@ option {
   .product-card__object__images__tablet {
     margin-top: 20px;
   }
-  .product-card__object__images__big {
+  .product-card__object__images .card__gallery__big {
     max-width: 137px;
     max-height: 208px;
   }
@@ -4120,7 +4124,7 @@ option {
     margin-bottom: 25px;
     max-width: 70%;
   }
-  .product-card__object__images__big {
+  .product-card__object__images .card__gallery__big {
     max-width: 125px;
     max-height: 191px;
   }

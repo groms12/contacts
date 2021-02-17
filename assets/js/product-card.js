@@ -46,12 +46,12 @@ $(document).ready(function () {
     });
     
 
-    $('.product-card__object__images__small a').click(function() {
-        var srcLittle = $(this).attr('data-img');
-        $('.product-card__object__images__small a').removeClass('active');
-        $(this).addClass('active');
-        var srcBig = $('.product-card__object__images__big').src;
-        $('.product-card__object__images__big').attr('src', srcLittle);
-        $('.product-card__object__images__small a img').attr('src', srcBig);
-    })
+        $('.card__gallery__thumbs a').click(function() {
+            var srcLittle = $(this).attr('data-img');
+            // var srcBig = $('.card__objects__images__big').attr('src');
+            $('.card__gallery__thumbs a').removeClass('active');
+            $(this).addClass('active');
+            $('.card__gallery__big').attr('src', srcLittle);
+            $(this).attr('src', srcBig);
+        })
 });

@@ -58,12 +58,13 @@
                     margin-left: 10px
         &__images
             flex-basis: 50%
+        .card__gallery
             &__big
                 max-width: 680px
                 height: 365px
                 object-fit: cover
                 margin: auto
-            &__small
+            &__thumbs
                 display: flex
                 align-items: center
                 justify-content: space-between
@@ -74,6 +75,8 @@
                     object-fit: cover
                     outline: none
                     border: 2px solid transparent
+                    &:hover
+                        border: 2px solid #008BCC
                     img
                         height: 100%
                         width: 100%
