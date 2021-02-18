@@ -2194,16 +2194,19 @@ option {
   -o-object-fit: cover;
      object-fit: cover;
   outline: none;
-  border: 2px solid transparent;
-}
-
-.card__objects .card__gallery__thumbs a:hover {
-  border: 2px solid #008BCC;
+  overflow: hidden;
 }
 
 .card__objects .card__gallery__thumbs a img {
-  height: 100%;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid transparent;
+}
+
+.card__objects .card__gallery__thumbs a img:hover {
+  border: 2px solid #008BCC;
 }
 
 .card__about {
@@ -3610,6 +3613,15 @@ option {
 }
 
 @media (max-width: 630px) {
+  .card__about {
+    margin-bottom: 40px;
+  }
+  .card__sale {
+    margin-bottom: 40px;
+  }
+  .card__reviews {
+    margin-bottom: 80px;
+  }
   .card__reviews img {
     width: 93px;
     height: 93px;
@@ -3646,9 +3658,6 @@ option {
     font-size: 16px;
     display: block;
     margin: auto;
-  }
-  .card__reviews {
-    margin-bottom: 40px;
   }
   .card__sale {
     max-height: 158px;
@@ -3948,7 +3957,7 @@ option {
   .work__price__table__tr__left {
     max-width: 200px;
   }
-  .card__sale div {
+  .cards__sale div {
     margin-left: -20%;
     margin-right: 0;
   }
@@ -3968,6 +3977,16 @@ option {
 }
 
 @media screen and (max-width: 460px) {
+  .card__gallery__thumbs a {
+    height: auto;
+  }
+  .card__gallery__thumbs a img {
+    max-height: 100%;
+    max-width: unset;
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .work__why__obj {
     height: 160px;
     max-width: 152px;

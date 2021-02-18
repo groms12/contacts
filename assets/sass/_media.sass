@@ -618,7 +618,12 @@
 
 @media (max-width: 630px)
     .card
+        &__about
+            margin-bottom: 40px
+        &__sale
+            margin-bottom: 40px
         &__reviews
+            margin-bottom: 80px
             img
                 width: 93px
                 height: 93px
@@ -650,8 +655,8 @@
                     display: block
                     margin: auto
     .card
-        &__reviews
-            margin-bottom: 40px
+        // &__reviews
+        //     margin-bottom: 40px
         &__sale
             max-height: 158px
             img
@@ -885,7 +890,7 @@
                 &__tr
                     &__left
                         max-width: 200px
-    .card
+    .cards
         &__sale
             div
                 margin-left: -20%
@@ -900,6 +905,16 @@
         &__btn
             margin-right: 5%
 @media screen and ( max-width: 460px )
+    .card  
+        &__gallery
+            &__thumbs
+                a
+                    height: auto
+                    img
+                        max-height: 100%
+                        max-width: unset
+                        width: auto
+                        object-fit: cover
     .work
         &__why
             &__obj
