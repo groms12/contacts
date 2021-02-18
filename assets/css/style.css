@@ -2058,6 +2058,7 @@ option {
   background: url("../img/arrow-left.svg");
   position: absolute;
   top: 30%;
+  z-index: 100;
 }
 
 .slick-arrow:hover {
@@ -2075,8 +2076,16 @@ option {
   border: none !important;
 }
 
-.active {
+.activee {
   border: 2px solid #008BCC !important;
+}
+
+.slick-prev.slick-disabled, .slick-next.slick-disabled {
+  opacity: 0.5;
+}
+
+.slick-prev:before, .slick-next:before {
+  content: '' !important;
 }
 
 .card__objects {
