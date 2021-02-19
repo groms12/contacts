@@ -2204,18 +2204,18 @@ option {
      object-fit: cover;
   outline: none;
   overflow: hidden;
-}
-
-.card__objects .card__gallery__thumbs a img {
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
   border: 2px solid transparent;
 }
 
-.card__objects .card__gallery__thumbs a img:hover {
+.card__objects .card__gallery__thumbs a:hover {
   border: 2px solid #008BCC;
+}
+
+.card__objects .card__gallery__thumbs a img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card__about {
@@ -3988,8 +3988,6 @@ option {
 @media screen and (max-width: 460px) {
   .card__gallery__thumbs a {
     height: auto;
-  }
-  .card__gallery__thumbs a img {
     max-height: 100%;
     max-width: unset;
     width: auto;
