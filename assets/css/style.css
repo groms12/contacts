@@ -3050,6 +3050,18 @@ option {
   .work__warm__ul {
     max-width: 90%;
   }
+  .rewievs__slider__slide::after {
+    right: 30px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .rewievs__slider {
+    max-width: 98%;
+  }
+  .rewievs__slider-wrapper {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -3081,6 +3093,9 @@ option {
   .work__warm__ul {
     max-width: 100%;
   }
+  .rewievs__slider__slide:first-child {
+    margin-left: 40px;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -3101,6 +3116,12 @@ option {
   }
 }
 
+@media screen and (max-width: 1020px) {
+  .rewievs__slider__slide::after {
+    right: 15px;
+  }
+}
+
 @media (max-width: 1000px) {
   .about__company__img {
     max-width: 400px !important;
@@ -3113,6 +3134,18 @@ option {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .rewievs__slider__slide__description {
+    max-width: 400px;
+  }
+  .rewievs__slider__slide__description__text {
+    font-size: 16px;
+  }
+  .rewievs__slider__slide::after {
+    display: none;
   }
 }
 
@@ -3225,6 +3258,18 @@ option {
   }
   .wr-line-dotted {
     display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .rewievs__slider__slide:first-child {
+    margin-left: 180px;
+  }
+  .rewievs__slider__slide__description {
+    max-width: 440px;
+  }
+  .rewievs__slider__slide__description__text {
+    font-size: 20px;
   }
 }
 
@@ -3553,6 +3598,16 @@ option {
 }
 
 @media screen and (max-width: 768px) {
+  .rewievs {
+    margin-top: 80px;
+    margin-bottom: -160px;
+  }
+  .rewievs__slider {
+    max-width: 94%;
+  }
+  .rewievs__slider__slide:first-child {
+    margin-left: 107px;
+  }
   .card__reviews {
     max-width: 100%;
   }
@@ -3685,6 +3740,12 @@ option {
   }
 }
 
+@media screen and (max-width: 660px) {
+  .rewievs__slider__slide:first-child {
+    margin-left: 85px;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .product-card__benefits__objects__object::before {
     left: -2.5em;
@@ -3784,6 +3845,9 @@ option {
 }
 
 @media (max-width: 605px) {
+  .rewievs__slider__slide:first-child {
+    margin-left: 60px;
+  }
   .product-card__description__title, .product-card__devices__title, .product-card__benefits__title {
     font-size: 30px !important;
   }
@@ -3990,6 +4054,9 @@ option {
 }
 
 @media (max-width: 565px) {
+  .rewievs__slider {
+    display: none;
+  }
   .work__price__table {
     max-width: 100%;
   }

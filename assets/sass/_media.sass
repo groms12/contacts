@@ -46,6 +46,17 @@
         &__warm
             &__ul
                 max-width: 90%
+    .rewievs
+        &__slider
+            &__slide
+                &::after
+                    right: 30px
+@media (max-width: 1120px)
+    .rewievs
+        &__slider
+            max-width: 98%
+            &-wrapper
+                max-width: 100%
 @media (max-width: 1100px)
     .work
         &__heating
@@ -74,6 +85,11 @@
         &__warm
             &__ul
                 max-width: 100%
+    .rewievs
+        &__slider
+            &__slide
+                &:first-child
+                    margin-left: 40px
 @media screen and ( max-width: 1050px )
     .product-card__benefits__objects__object__img
        width: 180px
@@ -90,6 +106,12 @@
     .contacts__info__city__req
         &__details
             width: 100%
+@media screen and ( max-width: 1020px )
+    .rewievs
+        &__slider
+            &__slide
+                &::after
+                    right: 15px
 @media (max-width: 1000px)
     .about
         &__company
@@ -100,6 +122,16 @@
             font-size: 14px
             display: flex
             align-items: center
+@media screen and ( max-width: 965px )
+    .rewievs
+        &__slider
+            &__slide
+                &__description
+                    max-width: 400px
+                    &__text
+                        font-size: 16px
+                &::after
+                    display: none
 @media screen and ( max-width: 940px )
     .work__price__table__tr--th--2
         display: none
@@ -186,6 +218,16 @@
                 max-width: 380px !important
     .wr-line-dotted 
         display: none    
+@media screen and ( max-width: 850px )
+    .rewievs
+        &__slider
+            &__slide
+                &:first-child
+                    margin-left: 180px
+                &__description
+                    max-width: 440px
+                    &__text
+                        font-size: 20px
 @media screen and ( max-width: 840px )
     .product-card__benefits
         &__objects
@@ -450,6 +492,14 @@
                     &:last-child
                         margin-bottom: 120px
 @media screen and ( max-width: 768px )
+    .rewievs
+        margin-top: 80px
+        margin-bottom: -160px
+        &__slider
+            max-width: 94%
+            &__slide
+                &:first-child
+                    margin-left: 107px
     .card
         &__reviews
             max-width: 100%
@@ -562,6 +612,12 @@
                 flex-basis: 100%
                 .product-card__object__info__buy
                     display: block
+@media screen and ( max-width: 660px )
+    .rewievs
+        &__slider
+            &__slide
+                &:first-child
+                    margin-left: 85px
 @media screen and ( max-width: 650px )
     .product-card__benefits__objects__object
         &::before
@@ -638,6 +694,11 @@
             &__text
                 max-height: 450px
 @media (max-width: 605px)
+    .rewievs
+        &__slider
+            &__slide
+                &:first-child
+                    margin-left: 60px
     .product-card
         &__description__title, &__devices__title, &__benefits__title
            font-size: 30px !important
@@ -801,6 +862,9 @@
                                 margin-right: 0
     
 @media (max-width: 565px)
+    .rewievs
+        &__slider
+            display: none
     .work
         &__price
             &__table
