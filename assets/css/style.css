@@ -2872,6 +2872,139 @@ option {
   line-height: 14px;
 }
 
+.rewievs {
+  margin-top: 120px;
+  font-family: Arial;
+  font-style: normal;
+  color: #000;
+  margin-bottom: -100px;
+}
+
+.rewievs__title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.rewievs__slider {
+  max-width: 94%;
+  margin: auto;
+}
+
+.rewievs__slider-wrapper {
+  position: relative;
+  max-width: 90%;
+}
+
+.rewievs__slider__slide {
+  position: relative;
+}
+
+.rewievs__slider__slide:first-child {
+  margin-left: 70px;
+}
+
+.rewievs__slider__slide::after {
+  content: '';
+  height: 200px;
+  width: 1px;
+  display: inline-block;
+  background-color: #979797;
+  position: absolute;
+  top: 40px;
+  right: 50px;
+}
+
+.rewievs__slider__slide__people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 22px;
+}
+
+.rewievs__slider__slide__people__img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+
+.rewievs__slider__slide__people__text {
+  margin-left: 16px;
+}
+
+.rewievs__slider__slide__people__text__name {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+}
+
+.rewievs__slider__slide__people__text__city {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.rewievs__slider__slide__description {
+  max-width: 440px;
+}
+
+.rewievs__slider__slide__description__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-right: 20px;
+  margin-bottom: 8px;
+}
+
+.rewievs__slider__slide__description__more {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #027DC3;
+}
+
+.rewievs__slider__slide__description__more:visited {
+  color: #027DC3;
+}
+
+.rewievs__slider__slide__description__more:hover {
+  text-decoration: none;
+}
+
+.swiper-button-prev1, .swiper-button-next1 {
+  background: url("../img/rewievs/Line.png") no-repeat center;
+  width: 30px;
+  height: 35px;
+  position: absolute;
+  top: 32%;
+  cursor: pointer;
+  z-index: 100;
+  outline: none;
+}
+
+.swiper-button-prev1 {
+  left: 0%;
+}
+
+.swiper-button-next1 {
+  right: 0%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+
 @media screen and (max-width: 1200px) {
   .product-card__benefits__objects {
     max-width: 90%;

@@ -1,0 +1,89 @@
+.rewievs
+    margin-top: 120px
+    font-family: Arial
+    font-style: normal
+    color: #000 
+    margin-bottom: -100px
+    &__title
+        text-align: center  
+        margin-bottom: 50px
+        font-size: 30px
+        font-weight: 700
+        line-height: 34px
+    &__slider
+        max-width: 94%
+        margin: auto
+        &-wrapper
+            position: relative
+            max-width: 90%
+        &__slide
+            position: relative
+            &:first-child
+                margin-left: 70px
+            &::after
+                content: ''
+                height: 200px
+                width: 1px
+                display: inline-block
+                background-color: #979797
+                position: absolute
+                top: 40px
+                right: 50px
+            &__people
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                margin-bottom: 22px
+                &__img
+                    width: 54px
+                    height: 54px
+                    border-radius: 50%
+                &__text
+                    margin-left: 16px
+                    &__name
+                        font-size: 22px
+                        font-weight: 700
+                        line-height: 34px
+                        letter-spacing: -0.5px
+                    &__city
+                        font-size: 16px
+                        font-weight: 400
+                        line-height: 24px
+            &__description
+                max-width: 440px
+                &__text
+                    font-size: 20px
+                    font-weight: 400
+                    line-height: 32px
+                    padding-right: 20px
+                    margin-bottom: 8px
+                &__more
+                    font-size: 20px
+                    font-weight: 400
+                    line-height: 32px
+                    color: #027DC3
+                    &:visited
+                        color: #027DC3
+                    &:hover
+                        text-decoration: none
+.swiper-button
+    &-prev1, &-next1
+        background: url('../img/rewievs/Line.png') no-repeat center
+        width: 30px
+        height: 35px
+        position: absolute
+        top: 32%
+        cursor: pointer
+        z-index: 100
+        outline: none
+    &-prev1
+        left: 0%
+    &-next1
+        right: 0%
+        transform: rotate(180deg)
+    &-disabled
+        opacity: 0.5
+                            
+
+
+
