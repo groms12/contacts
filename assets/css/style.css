@@ -2050,41 +2050,41 @@ option {
   margin-left: 0;
 }
 
-.slick-slide {
+.product-card__benefits__objects .slick-slide {
   padding-right: 5%;
 }
 
-.slick-arrow {
+.product-card__benefits__objects .slick-arrow {
   background: url("../img/arrow-left.svg");
   position: absolute;
   top: 30%;
   z-index: 100;
 }
 
-.slick-arrow:hover {
+.product-card__benefits__objects .slick-arrow:hover {
   background: url("../img/arrow-left-blue.svg");
 }
 
-.slick-arrow[aria-label="Previous"] {
+.product-card__benefits__objects .slick-arrow[aria-label="Previous"] {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   left: -20px;
 }
 
-.slick-slide:active, .slick-slide:focus, .slick-slide, .slick-active, .slick-vertical {
+.product-card__benefits__objects .slick-slide:active, .product-card__benefits__objects .slick-slide:focus, .product-card__benefits__objects .slick-slide, .product-card__benefits__objects .slick-active, .product-card__benefits__objects .slick-vertical {
   outline: none !important;
   border: none !important;
 }
 
-.activee {
+.product-card__benefits__objects .activee {
   border: 2px solid #008BCC !important;
 }
 
-.slick-prev.slick-disabled, .slick-next.slick-disabled {
+.product-card__benefits__objects .slick-prev.slick-disabled, .product-card__benefits__objects .slick-next.slick-disabled {
   opacity: 0.5;
 }
 
-.slick-prev:before, .slick-next:before {
+.product-card__benefits__objects .slick-prev:before, .product-card__benefits__objects .slick-next:before {
   content: '' !important;
 }
 
@@ -3003,6 +3003,10 @@ option {
 
 .swiper-button-disabled {
   opacity: 0.5;
+}
+
+.btn-none {
+  display: none  !important;
 }
 
 @media screen and (max-width: 1200px) {
@@ -4054,7 +4058,32 @@ option {
 }
 
 @media (max-width: 565px) {
-  .rewievs__slider {
+  .btn-none {
+    display: block  !important;
+    margin-bottom: 120px;
+    margin-top: 0px;
+  }
+  .rewievs__slider__slide {
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+  .rewievs__slider__slide:first-child {
+    margin-left: 40px;
+    margin-top: 0;
+  }
+  .rewievs__slider__slide:nth-child(3n) {
+    display: none;
+  }
+  .rewievs__slider-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .swiper-button-prev1, .swiper-button-next1 {
     display: none;
   }
   .work__price__table {
@@ -4110,6 +4139,16 @@ option {
 }
 
 @media (max-width: 500px) {
+  .rewievs__slider__slide__description {
+    max-width: 330px;
+  }
+  .rewievs__slider__slide__description__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .rewievs__slider__slide__description__more {
+    font-size: 18px;
+  }
   .work__warm__ul {
     padding-left: 30%;
   }
@@ -4258,32 +4297,32 @@ option {
   .product-card__benefits__title {
     margin-bottom: 30px;
   }
-  .slide-two {
+  .product-card__benefits__objects .slide-two {
     margin-left: 0;
   }
-  .slick-slide {
+  .product-card__benefits__objects .slick-slide {
     position: relative;
     margin-bottom: 100px;
   }
-  .slick-list {
+  .product-card__benefits__objects .slick-list {
     height: 1150px !important;
   }
-  .slick-arrow {
+  .product-card__benefits__objects .slick-arrow {
     background: url("../img/arrow-left.svg");
     position: absolute;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
-  .slick-arrow:hover {
+  .product-card__benefits__objects .slick-arrow:hover {
     background: url("../img/arrow-left-blue.svg");
   }
-  .slick-arrow[aria-label="Previous"] {
+  .product-card__benefits__objects .slick-arrow[aria-label="Previous"] {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
     top: -20px;
     left: 46%;
   }
-  .slick-arrow[aria-label="Next"] {
+  .product-card__benefits__objects .slick-arrow[aria-label="Next"] {
     left: 46%;
     top: 100%;
   }
@@ -4306,6 +4345,26 @@ option {
 }
 
 @media screen and (max-width: 410px) {
+  .rewievs__title {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .rewievs__slider {
+    max-width: 100%;
+  }
+  .rewievs__slider__slide {
+    margin-left: 0;
+  }
+  .rewievs__slider__slide:first-child {
+    margin-left: 0;
+  }
+  .rewievs__slider__slide__description {
+    max-width: 100%;
+  }
+  .rewievs__slider__slide__description__text {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
   .work__warm__ul {
     padding-left: 35%;
   }
