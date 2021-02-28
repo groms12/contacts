@@ -4063,6 +4063,9 @@ option {
     margin-bottom: 120px;
     margin-top: 0px;
   }
+  .rewievs__slider-wrapper {
+    padding-bottom: 40px;
+  }
   .rewievs__slider__slide {
     margin-left: 40px;
     margin-top: 50px;
