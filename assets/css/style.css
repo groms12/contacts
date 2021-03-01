@@ -3009,6 +3009,76 @@ option {
   display: none  !important;
 }
 
+.slide__more {
+  position: fixed;
+  z-index: 199;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slide__more .rewievs__slider__slide {
+  background-color: #fff;
+  padding: 24px 40px 18px;
+  position: relative;
+  margin-left: 0;
+}
+
+.slide__more .rewievs__slider__slide:first-child {
+  margin-left: 0;
+}
+
+.slide__more .rewievs__slider__slide__close {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: -60px;
+  top: 0;
+  background: url("../img/rewievs/exit.svg") no-repeat center;
+  background-color: #FF2432;
+}
+
+.slide__more .rewievs__slider__slide__people {
+  margin-bottom: 15px;
+}
+
+.slide__more .rewievs__slider__slide__people__text__name {
+  font-size: 20px;
+}
+
+.slide__more .rewievs__slider__slide__people__text__city {
+  font-size: 14px;
+}
+
+.slide__more .rewievs__slider__slide__description {
+  max-width: 580px;
+}
+
+.slide__more .rewievs__slider__slide__description__text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.slide__more .rewievs__slider__slide::after {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   .product-card__benefits__objects {
     max-width: 90%;
@@ -3311,6 +3381,9 @@ option {
 }
 
 @media screen and (max-width: 800px) {
+  .slide__more .rewievs__slider__slide__description {
+    max-width: 480px;
+  }
   .product-card__benefits__objects {
     max-width: 95%;
   }
@@ -3659,6 +3732,9 @@ option {
 }
 
 @media screen and (max-width: 725px) {
+  .slide__more .rewievs__slider__slide__description {
+    max-width: 400px;
+  }
   .work__why {
     margin-top: 60px;
     margin-bottom: 20px;
@@ -3843,6 +3919,10 @@ option {
 }
 
 @media screen and (max-width: 614px) {
+  .slide__more .rewievs__slider__slide__close {
+    top: 5px;
+    right: 5px;
+  }
   .product-card__description__text {
     max-height: 450px;
   }
@@ -4142,6 +4222,12 @@ option {
 }
 
 @media (max-width: 500px) {
+  .slide__more .rewievs__slider__slide {
+    padding: 12px 20px 10px;
+  }
+  .slide__more .rewievs__slider__slide__description {
+    max-width: 350px;
+  }
   .rewievs__slider__slide__description {
     max-width: 330px;
   }
@@ -4348,6 +4434,9 @@ option {
 }
 
 @media screen and (max-width: 410px) {
+  .slide__more .rewievs__slider__slide__description {
+    max-width: 300px;
+  }
   .rewievs__title {
     text-align: left;
     margin-bottom: 40px;
@@ -4456,6 +4545,9 @@ option {
 }
 
 @media (max-width: 368px) {
+  .slide__more .rewievs__slider__slide__description {
+    max-width: 265px;
+  }
   .product-card__description__text {
     margin: auto;
     max-width: 340px !important;

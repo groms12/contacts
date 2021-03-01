@@ -51,4 +51,15 @@ $(document).ready(function () {
         )
     });
 
+    $('.rewievs__slider__slide__description__more').click(function (e) {
+        e.preventDefault();
+        $('.slide__more').css('opacity', '1');
+        $('.slide__more').css('visibility', 'visible');
+    });
+
+    $('.rewievs__slider__slide__close').click(function (e) {
+        $('.slide__more').css('opacity', '0');
+        $('.slide__more').css('visibility', 'hidden');
+    });
+
 });
