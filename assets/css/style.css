@@ -3052,6 +3052,7 @@ option {
   top: 0;
   background: url("../img/rewievs/exit.svg") no-repeat center;
   background-color: #FF2432;
+  cursor: pointer;
 }
 
 .slide__more .rewievs__slider__slide__people {
