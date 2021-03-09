@@ -219,6 +219,14 @@
     .wr-line-dotted 
         display: none    
 @media screen and ( max-width: 850px )
+    .swiper-button
+        &-prev2, &-next2
+            background: url('../img/rewievs/Line.png') no-repeat center
+            right: 0px
+            transform: rotate(180deg)
+        &-prev2
+            left: 0px
+            transform: rotate(360deg)
     .rewievs
         &__slider
             &__slide
@@ -264,7 +272,9 @@
     .slide__more
         .rewievs__slider__slide
             &__description
-                max-width: 480px
+                max-width: 490px
+                &__text
+                    margin-bottom: 0
     .product-card__benefits
         &__objects
             max-width: 95%
@@ -549,6 +559,8 @@
 @media screen and ( max-width: 725px )
     .slide__more
         .rewievs__slider__slide
+            max-width: 500px
+            height: auto
             &__description
                 max-width: 400px
     .work
@@ -701,11 +713,15 @@
         .rewievs__slider__slide__close
             top: 5px
             right: 5px
+            z-index: 100
     .product-card
         &__description
             &__text
                 max-height: 450px
 @media (max-width: 605px)
+    .rewievs
+        &__slider--1
+            overflow: hidden
     .rewievs
         &__slider
             &__slide
@@ -879,6 +895,12 @@
         margin-bottom: 120px
         margin-top: 0px
     .rewievs
+        &__slider--1
+            .rewievs
+                &__slider
+                    &-wrapper
+                        flex-direction: row
+    .rewievs
         &__slider
             &-wrapper
                 padding-bottom: 40px
@@ -942,7 +964,8 @@
 @media (max-width: 500px)
     .slide__more
         .rewievs__slider__slide
-            padding: 12px 20px 10px
+            // padding: 12px 20px 10px
+            max-width: 450px
             &__description
                 max-width: 350px
     .rewievs
@@ -1015,6 +1038,9 @@
         &__btn
             margin-right: 5%
 @media screen and ( max-width: 460px )
+    .slide__more
+        .rewievs__slider__slide
+            max-width: 400px
     .card  
         &__gallery
             &__thumbs
@@ -1113,6 +1139,11 @@
                     &__title
                         font-size: 14px
 @media screen and ( max-width: 410px )
+    .slide__more
+        .rewievs__slider__slide
+            max-width: 350px
+            &__description
+                max-width: 280px
     .slide__more
         .rewievs__slider__slide
             &__description

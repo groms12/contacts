@@ -1,8 +1,16 @@
 $(document).ready(function () {
 
 
+    const swiper = new Swiper('.rewievs__slider--1', {
+        slidesPerView: 1,
+        navigation: {
+          nextEl: '.swiper-button-next2',
+          prevEl: '.swiper-button-prev2',
+        },
+      }); 
+
     if ($(window).width() > 565){
-       const swiper = new Swiper('.swiper-container', {
+       const swiper = new Swiper('.rewievs__slider', {
         slidesPerView: 2,
         // spaceBetween: 45,
         navigation: {

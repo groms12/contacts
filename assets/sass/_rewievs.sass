@@ -67,6 +67,18 @@
                     &:hover
                         text-decoration: none
 .swiper-button
+    &-prev2, &-next2
+        background: url('../img/arrow-white-right.svg') no-repeat center
+        width: 30px
+        height: 35px
+        cursor: pointer
+        position: absolute
+        z-index: 100
+        top: 42%
+        right: -15%
+    &-prev2
+        transform: rotate(180deg)
+        left: -15%
     &-prev1, &-next1
         background: url('../img/rewievs/Line.png') no-repeat center
         width: 30px
@@ -101,11 +113,14 @@
     justify-content: center
     opacity: 0
     visibility: hidden
+    .rewievs__slider--1
+        position: static
     .rewievs__slider__slide
         background-color: #fff
-        padding: 24px 40px 18px
-        position: relative
+        padding: 10px 20px 0 20px
         margin-left: 0
+        width: 660px
+        height: 240px
         &:first-child
             margin-left: 0
         &__close
@@ -131,6 +146,8 @@
                 line-height: 24px
         &::after
             display: none
-
+        .swiper-wrapper
+            .rewievs__slider__slide
+                height: auto
 
 

@@ -2980,6 +2980,23 @@ option {
   text-decoration: none;
 }
 
+.swiper-button-prev2, .swiper-button-next2 {
+  background: url("../img/arrow-white-right.svg") no-repeat center;
+  width: 30px;
+  height: 35px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  top: 42%;
+  right: -15%;
+}
+
+.swiper-button-prev2 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  left: -15%;
+}
+
 .swiper-button-prev1, .swiper-button-next1 {
   background: url("../img/rewievs/Line.png") no-repeat center;
   width: 30px;
@@ -3033,11 +3050,16 @@ option {
   visibility: hidden;
 }
 
+.slide__more .rewievs__slider--1 {
+  position: static;
+}
+
 .slide__more .rewievs__slider__slide {
   background-color: #fff;
-  padding: 24px 40px 18px;
-  position: relative;
+  padding: 10px 20px 0 20px;
   margin-left: 0;
+  width: 660px;
+  height: 240px;
 }
 
 .slide__more .rewievs__slider__slide:first-child {
@@ -3078,6 +3100,10 @@ option {
 
 .slide__more .rewievs__slider__slide::after {
   display: none;
+}
+
+.slide__more .rewievs__slider__slide .swiper-wrapper .rewievs__slider__slide {
+  height: auto;
 }
 
 @media screen and (max-width: 1200px) {
@@ -3337,6 +3363,17 @@ option {
 }
 
 @media screen and (max-width: 850px) {
+  .swiper-button-prev2, .swiper-button-next2 {
+    background: url("../img/rewievs/Line.png") no-repeat center;
+    right: 0px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .swiper-button-prev2 {
+    left: 0px;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
   .rewievs__slider__slide:first-child {
     margin-left: 180px;
   }
@@ -3383,7 +3420,10 @@ option {
 
 @media screen and (max-width: 800px) {
   .slide__more .rewievs__slider__slide__description {
-    max-width: 480px;
+    max-width: 490px;
+  }
+  .slide__more .rewievs__slider__slide__description__text {
+    margin-bottom: 0;
   }
   .product-card__benefits__objects {
     max-width: 95%;
@@ -3733,6 +3773,10 @@ option {
 }
 
 @media screen and (max-width: 725px) {
+  .slide__more .rewievs__slider__slide {
+    max-width: 500px;
+    height: auto;
+  }
   .slide__more .rewievs__slider__slide__description {
     max-width: 400px;
   }
@@ -3923,6 +3967,7 @@ option {
   .slide__more .rewievs__slider__slide__close {
     top: 5px;
     right: 5px;
+    z-index: 100;
   }
   .product-card__description__text {
     max-height: 450px;
@@ -3930,6 +3975,9 @@ option {
 }
 
 @media (max-width: 605px) {
+  .rewievs__slider--1 {
+    overflow: hidden;
+  }
   .rewievs__slider__slide:first-child {
     margin-left: 60px;
   }
@@ -4144,6 +4192,12 @@ option {
     margin-bottom: 120px;
     margin-top: 0px;
   }
+  .rewievs__slider--1 .rewievs__slider-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   .rewievs__slider-wrapper {
     padding-bottom: 40px;
   }
@@ -4224,7 +4278,7 @@ option {
 
 @media (max-width: 500px) {
   .slide__more .rewievs__slider__slide {
-    padding: 12px 20px 10px;
+    max-width: 450px;
   }
   .slide__more .rewievs__slider__slide__description {
     max-width: 350px;
@@ -4315,6 +4369,9 @@ option {
 }
 
 @media screen and (max-width: 460px) {
+  .slide__more .rewievs__slider__slide {
+    max-width: 400px;
+  }
   .card__gallery__thumbs a {
     height: auto;
     max-height: 100%;
@@ -4435,6 +4492,12 @@ option {
 }
 
 @media screen and (max-width: 410px) {
+  .slide__more .rewievs__slider__slide {
+    max-width: 350px;
+  }
+  .slide__more .rewievs__slider__slide__description {
+    max-width: 280px;
+  }
   .slide__more .rewievs__slider__slide__description {
     max-width: 300px;
   }
