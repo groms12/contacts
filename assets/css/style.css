@@ -4680,6 +4680,12 @@ option {
 }
 
 @media screen and (max-width: 350px) {
+  .slide__more .rewievs__slider__slide {
+    max-width: 320px;
+  }
+  .slide__more .rewievs__slider__slide__description {
+    max-width: 250px;
+  }
   .work__cost__form input, .work__cost__form__price__btn {
     width: 95% !important;
   }
