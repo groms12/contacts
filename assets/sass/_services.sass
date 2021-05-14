@@ -1,0 +1,154 @@
+.services
+    &__slider
+        margin-bottom: 100px
+        &__title
+            font-family: Arial
+            font-size: 30px
+            font-style: normal
+            font-weight: 700
+            line-height: 34px
+            letter-spacing: 0em
+            text-align: center
+            color: #000 
+            margin-bottom: 100px
+    .con
+        position: relative
+    &__info
+        color: #4F4F4F
+        font-family: Arial
+        font-style: normal
+        text-align: center
+        font-weight: 400
+        font-size: 16px
+        letter-spacing: 0em
+        margin-bottom: 75px
+        padding: 60px 0
+        background: #F5F5F5
+        &::before
+            content: ""
+            background-color:#F5F5F5
+            position: absolute
+            height: 100%
+            top: 0
+            width: 4000px
+            left: -2000px
+            z-index: -1
+        &__title
+            color: #000
+            font-size: 30px
+            font-weight: 700
+            line-height: 34px
+            margin-bottom: 10px
+        &__subtitle
+            line-height: 24px
+            max-width: 668px
+            margin: auto
+            margin-bottom: 40px
+        &__text
+            line-height: 20px
+            text-align: left
+            max-width: 781px
+            margin: auto
+            span
+                display: inline-block
+                margin-bottom: 20px
+    .card__why
+        margin-bottom: 55px !important
+    .list__block__title
+        text-align: center
+        margin-top: 60px
+    .btn
+        margin-top: 70px
+        margin-bottom: 220px
+    .work__cost
+        color: #000    
+        margin-bottom: 107px
+    .swiper-button
+        &-next1, &-prev1 
+            background: url('../img/serviсes/arrow-left.svg') no-repeat center
+            width: 24px
+            height: 44px
+            position: absolute
+            top: 0
+        &-next1
+            right: -55px
+        &-prev1
+            left: -60px
+    .advantages__title
+        margin-bottom: 60px
+    .card__sale__span
+        display: inline-block
+        margin-top: 40px
+    .card__sale img
+        opacity: 1 
+        height: auto 
+        position: absolute
+        left: 0
+        bottom: 0
+        z-index: 2
+        width: 479px
+        height: 448px
+    .card__sale div
+        position: absolute
+        right: 0
+        margin-right: 0
+    .card__sale
+        height: 280px
+        &__gradient
+           background-color: #008BCC
+           z-index: 1
+    .advantages
+        padding-top: 0
+    .swiper-container
+        overflow: visible
+        .swiper-slide
+            img
+                display: block
+                margin: auto
+    &__examples
+        color: #000 
+        margin-top: 57px
+        font-family: Arial
+        font-style: normal
+        letter-spacing: 0em
+        text-align: center
+        &__title
+            font-size: 30px
+            font-weight: 700
+            line-height: 34px
+            margin-bottom: 60px
+        &__items
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-wrap: wrap
+            &__item
+                width: 320px
+                background-color: #FAFAFA
+                padding: 25px
+                border: 1px solid #E9E9E9
+                margin-bottom: 30px
+                img
+                    margin-bottom: 28px
+                &__name
+                    font-family: Arial;
+                    font-size: 16px
+                    font-weight: 400
+                    line-height: 18px
+                    margin-bottom: 28px
+                &__btn
+                    text-transform: uppercase
+                    color: #027DC3
+                    border: 1px solid #027DC3
+                    padding: 10px 20px
+                    max-width: 100px
+                    margin: auto
+                    font-size: 11px
+                    font-weight: 700
+                    line-height: 13px
+
+@media screen and ( max-width: 680px )
+    .services
+        &__examples
+            &__items
+                justify-content: center

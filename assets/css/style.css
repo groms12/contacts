@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .galery {
   margin-top: 60px;
 }
@@ -734,6 +735,7 @@ option {
   z-index: 2;
   width: 40%;
   margin: 1% 0 0 0;
+  margin-object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {
@@ -3059,7 +3061,6 @@ option {
   margin-left: 0;
   width: 660px;
   height: 240px;
-  max-width: inherit;
 }
 
 .slide__more .rewievs__slider__slide:first-child {
@@ -3104,6 +3105,230 @@ option {
 
 .slide__more .rewievs__slider__slide .swiper-wrapper .rewievs__slider__slide {
   height: auto;
+}
+
+.services__slider {
+  margin-bottom: 100px;
+}
+
+.services__slider__title {
+  font-family: Arial;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #000;
+  margin-bottom: 100px;
+}
+
+.services .con {
+  position: relative;
+}
+
+.services__info {
+  color: #4F4F4F;
+  font-family: Arial;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0em;
+  margin-bottom: 75px;
+  padding: 60px 0;
+  background: #F5F5F5;
+}
+
+.services__info::before {
+  content: "";
+  background-color: #F5F5F5;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 4000px;
+  left: -2000px;
+  z-index: -1;
+}
+
+.services__info__title {
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 10px;
+}
+
+.services__info__subtitle {
+  line-height: 24px;
+  max-width: 668px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.services__info__text {
+  line-height: 20px;
+  text-align: left;
+  max-width: 781px;
+  margin: auto;
+}
+
+.services__info__text span {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.services .card__why {
+  margin-bottom: 55px !important;
+}
+
+.services .list__block__title {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.services .btn {
+  margin-top: 70px;
+  margin-bottom: 220px;
+}
+
+.services .work__cost {
+  color: #000;
+  margin-bottom: 107px;
+}
+
+.services .swiper-button-next1, .services .swiper-button-prev1 {
+  background: url("../img/serviсes/arrow-left.svg") no-repeat center;
+  width: 24px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+}
+
+.services .swiper-button-next1 {
+  right: -55px;
+}
+
+.services .swiper-button-prev1 {
+  left: -60px;
+}
+
+.services .advantages__title {
+  margin-bottom: 60px;
+}
+
+.services .card__sale__span {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.services .card__sale img {
+  opacity: 1;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 479px;
+  height: 448px;
+}
+
+.services .card__sale div {
+  position: absolute;
+  right: 0;
+  margin-right: 0;
+}
+
+.services .card__sale {
+  height: 280px;
+}
+
+.services .card__sale__gradient {
+  background-color: #008BCC;
+  z-index: 1;
+}
+
+.services .advantages {
+  padding-top: 0;
+}
+
+.services .swiper-container {
+  overflow: visible;
+}
+
+.services .swiper-container .swiper-slide img {
+  display: block;
+  margin: auto;
+}
+
+.services__examples {
+  color: #000;
+  margin-top: 57px;
+  font-family: Arial;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.services__examples__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 60px;
+}
+
+.services__examples__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services__examples__items__item {
+  width: 320px;
+  background-color: #FAFAFA;
+  padding: 25px;
+  border: 1px solid #E9E9E9;
+  margin-bottom: 30px;
+}
+
+.services__examples__items__item img {
+  margin-bottom: 28px;
+}
+
+.services__examples__items__item__name {
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 28px;
+}
+
+.services__examples__items__item__btn {
+  text-transform: uppercase;
+  color: #027DC3;
+  border: 1px solid #027DC3;
+  padding: 10px 20px;
+  max-width: 100px;
+  margin: auto;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 13px;
+}
+
+@media screen and (max-width: 680px) {
+  .services__examples__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (max-width: 1200px) {

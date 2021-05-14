@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Slick -->
+	<link rel="stylesheet" href="assets/css/include/slick.css">
+	<!-- Modal -->
+	<link rel="stylesheet" href="assets/css/include/jquery.modal.min.css" type="text/css" media="screen" />
+	<!-- Styles -->
+	<link rel="stylesheet" href="assets/css/styles.min.css?v=1.0.0.0.1">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/colorbox.css">
+
+	<title>СибГазСервис</title>
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__location">
+					<img loading="lazy" src="assets/img/location.svg" alt="Location" class="header__location__icon">
+					<div class="header__location__text">Ваше местоположение:</div>
+					<span class="header__location__cont">
+						<a href="#" class="header__location__link">Новосибирск</a>
+						<ul>
+							<li><a href="#" class="header__location__link">Новосибирск</a></li>
+							<li><a href="#" class="header__location__link">Омск</a></li>
+							<li><a href="#" class="header__location__link">Томск</a></li>
+							<li><a href="#" class="header__location__link">Ростов</a></li>
+							<li><a href="#" class="header__location__link">Красноярск</a></li>
+						</ul>
+					</span>
+				</div>
+				<nav class="nav" id="nav">
+					<div class="nav__inner">
+						<a href="list.html" class="nav__link">Галерея работ</a>
+						<a href="#" class="nav__link">Отзывы</a>
+						<a href="galery.html" class="nav__link">Справочник</a>
+						<a href="certificates.html" class="nav__link">Сертификаты</a>
+						<a href="#" class="nav__link">О компании</a>
+						<a href="contacts.html" class="nav__link">Контакты</a>
+					</div>
+				</nav>
+				<div class="header__work no-xl md no-xs">
+					<img loading="lazy" src="assets/img/clock--white.svg" alt="Clock" class="header__work___clock">
+					<div class="header__work__text__wrapper">
+						<div class="header__work__text">Работаем без выходных</div>
+						<div class="header__work__text">Пн. – Вс.<span>08:00 – 20:00</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header END -->
+	<main>
+
+		<!-- Subheader -->
+		<div class="subheader">
+			<div class="container">
+				<div class="subheader__inner">
+					<div class="subheader__left">
+						<a href="/" class="subheader__logo">
+							<img loading="lazy" src="assets/img/logo.png" alt="Logo">
+						</a>
+						<div class="subheader__line"></div>
+						<div class="subheader__text__wrapper no-xs">
+							<div class="subheader__text">системы автономного газоснабжения</div>
+							<div class="subheader__text">монтаж систем отопления</div>
+							<div class="subheader__text">монтаж ГВС</div>
+						</div>
+					</div>
+					<div class="subheader__right">
+						<div class="subheader__work">
+							<img loading="lazy" src="assets/img/clock.svg" alt="Clock" class="subheader__clock">
+							<div class="subheader__work__text__wrapper">
+								<div class="subheader__work__text">Работаем без выходных</div>
+								<div class="subheader__work__text">Пн. – Вс.<span>08:00 – 20:00</span></div>
+							</div>
+						</div>
+						<div class="subheader__line"></div>
+						<div class="subheader__conntection">
+							<div class="subheader__conntection__left">
+								<a href="+7(383) 292-36-12" class="subheader__phone">+7(383) 292-36-12</a>
+								<a href="#modal__feedback" rel="modal:open" class="subheader__link">Заказать обратный звонок</a>
+							</div>
+							<div class="subheader__conntection__right">
+								<span class="subheader__burger"></span>
+								<nav class="subheader__nav__hidden">
+									<div class="subheader__nav__hidden__inner">
+										<span class="subheader__burger__hidden"></span>
+										<a class="subheader__nav__hidden__link active no-xl xs">Меню</a>
+										<a href="#" class="subheader__nav__hidden__link">Галерея работ</a>
+										<a href="#" class="subheader__nav__hidden__link">Отзывы</a>
+										<a href="#" class="subheader__nav__hidden__link">Справочник</a>
+										<a href="#" class="subheader__nav__hidden__link">Сертификаты</a>
+										<a href="#" class="subheader__nav__hidden__link">О компании</a>
+										<a href="#" class="subheader__nav__hidden__link">Контакты</a>
+									</div>
+									<div class="subheader__hidden__bottom no-xl xs">
+										<a href="#" class="footer__btn footer__btn--white">Написать в WhatsApp</a>
+										<div class="header__work xs">
+											<div class="header__work__text__wrapper">
+												<div class="header__work__text"><img loading="lazy" src="assets/img/clock--white.svg" alt="Clock"
+														class="header__work___clock"> Работаем без выходных</div>
+												<div class="header__work__text">Пн. – Вс.<span>08:00 – 20:00</span></div>
+												<div class="header__work__text">Сибгазсервис</div>
+											</div>
+										</div>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Subheader END -->
+
+		<!-- Pannel (Desktop) -->
+		<div class="pannel no-xs">
+			<div class="container">
+				<div class="pannel__inner">
+					<div class="pannel__item__wrapper" id="wrapper__1">
+						<div class="pannel__item">
+							<div class="pannel__icon">
+								<img loading="lazy" src="assets/img/heat.svg" alt="heat">
+							</div>
+							<div class="pannel__text__wrapper">
+								<span class="pannel__text no-md">Отопление</span>
+								<img loading="lazy" src="assets/img/pannel__arrow.svg" alt="Arrow" class="pannel__arrow">
+								<img loading="lazy" src="assets/img/pannel__arrow_white.svg" alt="Arrow" class="pannel__arrow white">
+							</div>
+						</div>
+						<span class="pannel__text no-xl md">Отопление</span>
+						<ul class="pannel__subitems">
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Проектирование систем отопления</a></li>
+							<li><a href="#">
+								<span class="pannel__arrow__left">
+									<svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+								Монтаж систем отопления</a></li>
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Обслуживание систем отопления</a></li>
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Обслуживание котлов</a></li>
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Оборудование</a></li>
+						</ul>
+					</div>
+
+					<div class="pannel__item__wrapper" id="wrapper__2">
+						<div class="pannel__item">
+							<div class="pannel__icon">
+								<img loading="lazy" src="assets/img/water.svg" alt="water">
+							</div>
+							<div class="pannel__text__wrapper">
+								<span class="pannel__text no-md">Водоснабжение</span>
+								<img loading="lazy" src="assets/img/pannel__arrow.svg" alt="Arrow" class="pannel__arrow">
+								<img loading="lazy" src="assets/img/pannel__arrow_white.svg" alt="Arrow" class="pannel__arrow white">
+							</div>
+						</div>
+						<span class="pannel__text no-xl md">Водоснабжение</span>
+						<ul class="pannel__subitems">
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Проектирование систем водоснабжения</a></li>
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Монтаж систем водоснабжения</a></li>
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Обслуживание систем водоснабжения</a></li>
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Обслуживание водонагревателей</a></li>
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Оборудование</a></li>
+						</ul>
+					</div>
+
+					<div class="pannel__item__wrapper" id="wrapper__3">
+						<div class="pannel__item">
+							<div class="pannel__icon">
+								<img loading="lazy" src="assets/img/Treament.svg" alt="Treament">
+							</div>
+							<div class="pannel__text__wrapper">
+								<span class="pannel__text no-md">Водоочистка</span>
+								<img loading="lazy" src="assets/img/pannel__arrow.svg" alt="Arrow" class="pannel__arrow">
+								<img loading="lazy" src="assets/img/pannel__arrow_white.svg" alt="Arrow" class="pannel__arrow white">
+							</div>
+						</div>
+						<span class="pannel__text no-xl md">Водоочистка</span>
+					</div>
+
+					<div class="pannel__item__wrapper" id="wrapper__4">
+						<div class="pannel__item">
+							<div class="pannel__icon">
+								<img loading="lazy" src="assets/img/sewerage.svg" alt="sewerage">
+							</div>
+							<div class="pannel__text__wrapper">
+								<span class="pannel__text no-md">Канализация</span>
+								<img loading="lazy" src="assets/img/pannel__arrow.svg" alt="Arrow" class="pannel__arrow">
+								<img loading="lazy" src="assets/img/pannel__arrow_white.svg" alt="Arrow" class="pannel__arrow white">
+							</div>
+						</div>
+						<span class="pannel__text no-xl md">Канализация</span>
+					</div>
+
+					<div class="pannel__item__wrapper" id="wrapper__5">
+						<div class="pannel__item">
+							<div class="pannel__icon">
+								<img loading="lazy" src="assets/img/design.svg" alt="design">
+							</div>
+							<div class="pannel__text__wrapper">
+								<span class="pannel__text no-md">Проектирование</span>
+								<img loading="lazy" src="assets/img/pannel__arrow.svg" alt="Arrow" class="pannel__arrow">
+								<img loading="lazy" src="assets/img/pannel__arrow_white.svg" alt="Arrow" class="pannel__arrow white">
+							</div>
+						</div>
+						<span class="pannel__text no-xl md">Проектирование</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Pannel (Desktop) END -->
+
+		<!-- intro -->
+		<section class="intro">
+			<div class="container">
+					<div class="intro__text">
+			            <div class="container">
+                            <a href="index.html">Главная</a>  / <a href="quide.html">Услуги</a>
+                        </div> 
+                    </div>
+			</div>
+		</section>
+        <!-- intro END -->
+		
+		<!-- Pannel (Mobile) -->
+		<div class="pannel no-xl xs">
+			<div class="container">
+				<div class="pannel__inner">
+					<div class="pannel__item__wrapper" id="m_wpapper__1">
+						<div class="pannel__item">
+							<div class="pannel__icon">
+								<img loading="lazy" src="assets/img/heat.svg" alt="heat">
+							</div>
+							<div class="pannel__text__wrapper">
+								<span class="pannel__text no-md xs">Отопление</span>
+								<img loading="lazy" src="assets/img/pannel__arrow.svg" alt="Arrow" class="pannel__arrow">
+								<img loading="lazy" src="assets/img/pannel__arrow_white.svg" alt="Arrow" class="pannel__arrow white">
+							</div>
+						</div>
+						<span class="pannel__text no-xl md no-xs">Отопление</span>
+						<ul class="pannel__subitems">
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Проектирование систем отопления</a></li>
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Монтаж систем отопления</a></li>
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Обслуживание систем отопления</a></li>
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Обслуживание котлов</a></li>
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Оборудование</a></li>
+						</ul>
+					</div>
+
+					<div class="pannel__item__wrapper" id="m_wpapper__2">
+						<div class="pannel__item">
+							<div class="pannel__icon">
+								<img loading="lazy" src="assets/img/water.svg" alt="water">
+							</div>
+							<div class="pannel__text__wrapper">
+								<span class="pannel__text no-md xs">Водоснабжение</span>
+								<img loading="lazy" src="assets/img/pannel__arrow.svg" alt="Arrow" class="pannel__arrow">
+								<img loading="lazy" src="assets/img/pannel__arrow_white.svg" alt="Arrow" class="pannel__arrow white">
+							</div>
+						</div>
+						<span class="pannel__text no-xl md no-xs">Водоснабжение</span>
+						<ul class="pannel__subitems">
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Проектирование систем водоснабжения</a></li>
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Монтаж систем водоснабжения</a></li>
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Обслуживание систем водоснабжения</a></li>
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Обслуживание водонагревателей</a></li>
+							<li><a href="#">
+								<span class="pannel__arrow__left"><svg class="pannel__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L1 15" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+								Оборудование</a></li>
+						</ul>
+					</div>
+
+					<div class="pannel__item__wrapper" id="m_wpapper__3">
+						<div class="pannel__item">
+							<div class="pannel__icon">
+								<img loading="lazy" src="assets/img/Treament.svg" alt="Treament">
+							</div>
+							<div class="pannel__text__wrapper">
+								<span class="pannel__text no-md xs">Водоочистка</span>
+								<img loading="lazy" src="assets/img/pannel__arrow.svg" alt="Arrow" class="pannel__arrow">
+								<img loading="lazy" src="assets/img/pannel__arrow_white.svg" alt="Arrow" class="pannel__arrow white">
+							</div>
+						</div>
+						<span class="pannel__text no-xl md no-xs">Водоочистка</span>
+					</div>
+
+					<div class="pannel__item__wrapper" id="m_wpapper__4">
+						<div class="pannel__item">
+							<div class="pannel__icon">
+								<img loading="lazy" src="assets/img/sewerage.svg" alt="sewerage">
+							</div>
+							<div class="pannel__text__wrapper">
+								<span class="pannel__text no-md xs">Канализация</span>
+								<img loading="lazy" src="assets/img/pannel__arrow.svg" alt="Arrow" class="pannel__arrow">
+								<img loading="lazy" src="assets/img/pannel__arrow_white.svg" alt="Arrow" class="pannel__arrow white">
+							</div>
+						</div>
+						<span class="pannel__text no-xl md no-xs">Канализация</span>
+					</div>
+
+					<div class="pannel__item__wrapper" id="m_wpapper__5">
+						<div class="pannel__item">
+							<div class="pannel__icon">
+								<img loading="lazy" src="assets/img/design.svg" alt="design">
+							</div>
+							<div class="pannel__text__wrapper">
+								<span class="pannel__text no-md xs">Проектирование</span>
+								<img loading="lazy" src="assets/img/pannel__arrow.svg" alt="Arrow" class="pannel__arrow">
+								<img loading="lazy" src="assets/img/pannel__arrow_white.svg" alt="Arrow" class="pannel__arrow white">
+							</div>
+						</div>
+						<span class="pannel__text no-xl md no-xs">Проектирование</span>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!-- Pannel (Mobile) END -->
+
+        <section class="page__content">
+            <div class="container">
+				<div class="services">
+					<div class="work__cost">
+                        <img src="assets/img/work-example/first.png" alt="" class="work__cost__img">
+                        <div class="work__cost__form">
+                            <h1 class="work__cost__form__title">Отопление для загородного дома под ключ за 3 дня</h1>
+                            <div class="work__cost__form__subtitle">В Новосибирске и Новосибирской области</div>
+                            <form action="#" class="work__cost__form__price">
+                                <input type="text" class="work__cost__form__price__input" placeholder="Ваше имя*">
+                                <input type="text" class="work__cost__form__price__input" placeholder="Ваш телефон">
+                                <button type="submit" class="work__cost__form__price__btn">Рассчитать стоимость</button>
+                                <div class="work__cost__form__price__check">
+                                   <img src="/assets/img/work-example/key.png" alt="" class="work__cost__form__price__check__img">
+                                    <span>Оправляя заявку вы соглашаетесь на <a href="#">Обработку персональных данных</a></span> 
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+					<div class="card__why">
+                        <h2 class="card__why__title">Почему мы?</h2>
+                        <p class="card__why__subtitle">Вот почему следует выбрать именно нас</p>
+                        <div class="card__why__objects">
+                            <div class="card__why__objects__object">
+                                <img src="assets/img/serviсes/img-1.png" alt="" class="card__why__objects__object__img">
+                                <p class="card__why__objects__object__title">Профессионально</p>
+                                <span class="card__why__objects__object__text">Современный подход к <br> каждому объекту</span>
+                            </div>
+                            <div class="card__why__objects__object">
+                                <img src="assets/img/serviсes/img-2.png" alt="" class="card__why__objects__object__img">
+                                <p class="card__why__objects__object__title">Качественно</p>
+                                <span class="card__why__objects__object__text">Сплоченая команда <br> высшего уровня </span>
+                            </div>
+                            <div class="card__why__objects__object">
+                                <img src="assets/img/serviсes/img-3.png" alt="" class="card__why__objects__object__img">
+                                <p class="card__why__objects__object__title">Своевременно</p>
+                                <span class="card__why__objects__object__text">Настроены на быстрое <br> решение ваших проблем</span>
+                            </div>
+                        </div>
+                    </div>
+					<div class="con">
+						<div class="services__info">
+						<h2 class="services__info__title">Монтаж отопления «ПОД КЛЮЧ»</h2>
+						<div class="services__info__subtitle">Наша компания «ТеплоИнженер» предлагает комплексное решение для организации отопления в жилых и производственных помещениях «под ключ»</div>
+							<p class="services__info__text">
+								<span>Для осуществления данной услуги мы обладаем всеми необходимыми ресурсами и компетенцией, в нашем штате работают грамотные и опытные специалисты, поэтому все работы от проектирования до наладки оборудования будут осуществлены на высшем уровне.</span> 
+								<span>Монтаж автономной системы отопления частного дома или коттеджа возможен на любом этапе готовности объекта. Одновременно с монтажом отопления можно осуществлять разводку внутренних систем водоснабжения и канализации.</span>
+								<span>Монтаж системы отопления «под ключ» выполняется в несколько этапов: выезд специалиста, осуществление расчёта стоимости, проектирование системы отопления, подбор и покупка необходимого оборудования, монтажные работы.</span>
+								<span>Для того, чтобы оценить стоимость работ по установке отопления вы можете получить расчёт сметы с указанием стоимости материалов и работ. Для этого вам необходимо отправить нам план объекта с указанием размеров и площадей на адрес электронной почты novosibirsk@montazh-otopleniya.pro</span>
+							</p>
+						</div>
+					</div>
+					
+					<div class="examples">
+						<div class="container">
+							<h2 class="examples__title">Примеры реализованных проектов</h2>
+							<div class="examples__inner">
+								<div class="examples__item">
+									<div class="list__block__title">Монтаж отопления</div>
+									<img loading="lazy" src="assets/img/examples/examples--1.jpg" alt="Examples Image" class="examples__img">
+									<h3 class="examples__area">до 100 м²</h3>
+									<div class="examples__subtitle">Дом (Дача)</div>
+									<div class="examples__line">
+										<div class="examples__line__left">Работа</div>
+										<div class="examples__line__right">
+											от <span class="examples__line__price">185 000 ₽</span>
+										</div>
+									</div>
+									<div class="examples__line">
+										<div class="examples__line__left">Материалы</div>
+										<div class="examples__line__right">
+											от <span class="examples__line__price">205 000 ₽</span>
+										</div>
+									</div>
+									<div class="examples__line examples__line--blue">
+										<div class="examples__line__left">ПОД КЛЮЧ</div>
+										<div class="examples__line__right">
+											от <span class="examples__line__price">124 000 ₽</span>
+										</div>
+									</div>
+									<div class="examples__btn__wrapper">
+										<a href="#" class="examples__btn">ПОСМОТРЕТЬ СМЕТУ</a>
+									</div>
+								</div>
+			
+								<div class="examples__item">
+									<div class="list__block__title">Обслуживание отопления</div>
+									<img loading="lazy" src="assets/img/examples/examples--2.jpg" alt="Examples Image" class="examples__img">
+									<h3 class="examples__area">до 200 м²</h3>
+									<div class="examples__subtitle">Дом</div>
+									<div class="examples__line">
+										<div class="examples__line__left">Работа</div>
+										<div class="examples__line__right">
+											от <span class="examples__line__price">185 000 ₽</span>
+										</div>
+									</div>
+									<div class="examples__line">
+										<div class="examples__line__left">Материалы</div>
+										<div class="examples__line__right">
+											от <span class="examples__line__price">205 000 ₽</span>
+										</div>
+									</div>
+									<div class="examples__line examples__line--blue">
+										<div class="examples__line__left">ПОД КЛЮЧ</div>
+										<div class="examples__line__right">
+											от <span class="examples__line__price">124 000 ₽</span>
+										</div>
+									</div>
+									<div class="examples__btn__wrapper">
+										<a href="#" class="examples__btn">ПОСМОТРЕТЬ СМЕТУ</a>
+									</div>
+								</div>
+			
+								<div class="examples__item">
+									<div class="list__block__title">Монтаж водоснабжения</div>
+									<img loading="lazy" src="assets/img/examples/examples--3.jpg" alt="Examples Image" class="examples__img">
+									<h3 class="examples__area">до 300 м²</h3>
+									<div class="examples__subtitle">Коттедж</div>
+									<div class="examples__line">
+										<div class="examples__line__left">Работа</div>
+										<div class="examples__line__right">
+											от <span class="examples__line__price">185 000 ₽</span>
+										</div>
+									</div>
+									<div class="examples__line">
+										<div class="examples__line__left">Материалы</div>
+										<div class="examples__line__right">
+											от <span class="examples__line__price">205 000 ₽</span>
+										</div>
+									</div>
+									<div class="examples__line examples__line--blue">
+										<div class="examples__line__left">ПОД КЛЮЧ</div>
+										<div class="examples__line__right">
+											от <span class="examples__line__price">124 000 ₽</span>
+										</div>
+									</div>
+									<div class="examples__btn__wrapper">
+										<a href="#" class="examples__btn">ПОСМОТРЕТЬ СМЕТУ</a>
+									</div>
+								</div>
+			
+								<div class="examples__item">
+									<div class="list__block__title">Монтаж водоснабжения</div>
+									<img loading="lazy" src="assets/img/examples/examples--4.jpg" alt="Examples Image" class="examples__img">
+									<h3 class="examples__area">до 450 м²</h3>
+									<div class="examples__subtitle">Коттедж</div>
+									<div class="examples__line">
+										<div class="examples__line__left">Работа</div>
+										<div class="examples__line__right">
+											от <span class="examples__line__price">185 000 ₽</span>
+										</div>
+									</div>
+									<div class="examples__line">
+										<div class="examples__line__left">Материалы</div>
+										<div class="examples__line__right">
+											от <span class="examples__line__price">205 000 ₽</span>
+										</div>
+									</div>
+									<div class="examples__line examples__line--blue">
+										<div class="examples__line__left">ПОД КЛЮЧ</div>
+										<div class="examples__line__right">
+											от <span class="examples__line__price">124 000 ₽</span>
+										</div>
+									</div>
+									<div class="examples__btn__wrapper">
+										<a href="#" class="examples__btn">ПОСМОТРЕТЬ СМЕТУ</a>
+									</div>
+								</div>
+							</div>
+							<div class="btn list__btn btn--active">
+								<img src="assets/img/line-list.svg" alt="">
+								<button class="more list__more cert">Смотреть еще</button> 
+								<img src="assets/img/line-list.svg" alt="">
+							</div> 
+						</div>
+					</div>
+					<div class="card__sale">
+						<span class="card__sale__gradient"></span>
+						<img src="assets/img/serviсes/man.png" alt="">
+						<div>
+							<h2 class="card__sale__title">Качественно – не обязательно дорого</h2>
+                        	<span class="card__sale__subtitle">Не переплачивайте! Наши цены почти на 8% ниже </span>
+							<span class="card__sale__span">Нашли дешевле? Сообщите нам и получите скидку 10%!</span>
+						</div>                        
+                    </div>
+					<div class="services__slider">
+						<h2 class="services__slider__title">Мы работаем с проверенным оборудованием</h2>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="assets/img/serviсes/uni-fitt.svg" alt="" class="services__slider__img">
+								</div>
+								<div class="swiper-slide">
+									<img src="assets/img/serviсes/bosch.svg" alt="" class="services__slider__img">
+								</div>
+								<div class="swiper-slide">
+									<img src="assets/img/serviсes/rego.svg" alt="" class="services__slider__img">
+								</div>
+								<div class="swiper-slide">
+									<img src="assets/img/serviсes/grundfos.svg" alt="" class="services__slider__img">
+								</div>
+								<div class="swiper-slide">
+									<img src="assets/img/serviсes/fas.png" alt="" class="services__slider__img">
+								</div>
+							</div>
+							<div class="swiper-button-prev1"></div>
+							<div class="swiper-button-next1"></div>
+						</div>
+					</div>
+					<!-- Advantages -->
+					<section class="advantages no-xs">
+						<div class="container">
+							<h2 class="advantages__title">Схема работы</h2>
+							<div class="advantages__inner">
+								<div class="advantages__item">
+									<div class="advantages__number">1</div>
+									<div class="advantages__text">
+										<h3 class="advantages__item__title">Выезд</h3>
+										<p class="advantages__item__text">квалифицированного специалиста на объект</p>
+									</div>
+								</div>
+
+								<div class="advantages__item">
+									<div class="advantages__number">4</div>
+									<div class="advantages__text">
+										<h3 class="advantages__item__title">Расчет стоимости</h3>
+										<p class="advantages__item__text">В связи с наличием в продаже разных типов оборудования и дополнительных
+											элементов, стоимость может варьироваться в соответствии с возможностями заказчиков путем замены
+											дорогостоящих моделей более дешевыми аналогами</p>
+									</div>
+								</div>
+
+								<div class="advantages__item">
+									<div class="advantages__number">2</div>
+									<div class="advantages__text">
+										<h3 class="advantages__item__title">Разработка схемы </h3>
+										<p class="advantages__item__text">отопительной системы под конкретный объект. В некоторых случаях работа
+											может осуществляться по уже готовым проектам</p>
+									</div>
+								</div>
+
+								<div class="advantages__item">
+									<div class="advantages__number">5</div>
+									<div class="advantages__text">
+										<h3 class="advantages__item__title">Монтаж, запуск<br class="no-xl md">и наладка системы</h3>
+									</div>
+								</div>
+
+								<div class="advantages__item">
+									<div class="advantages__number">3</div>
+									<div class="advantages__text">
+										<h3 class="advantages__item__title">Подбор оборудования</h3>
+										<p class="advantages__item__text">необходимого для реализации вашего проекта. Помните, что не только
+											качественный монтаж, но и грамотно выбранное оборудование поможет в будущем сэкономить на таких
+											энергоресурсах, как дрова, проридный газ, электричество</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- Advantages END -->
+					<div class="services__examples">
+						<h2 class="services__examples__title">У нас вы можете заказать услуги</h2>
+						<div class="services__examples__items">
+							<div class="services__examples__items__item">
+								<img src="assets/img/serviсes/ser-1.svg" alt="">
+								<div class="services__examples__items__item__name">Установка радиаторов отопления</div>
+								<div class="services__examples__items__item__btn">Заказать</div>
+							</div>
+							<div class="services__examples__items__item">
+								<img src="assets/img/serviсes/ser-2.svg" alt="">
+								<div class="services__examples__items__item__name">Установка газгольдеров </div>
+								<div class="services__examples__items__item__btn">Заказать</div>
+							</div>
+							<div class="services__examples__items__item">
+								<img src="assets/img/serviсes/ser-3.svg" alt="">
+								<div class="services__examples__items__item__name">Монтаж системы водоснабжения в квартире </div>
+								<div class="services__examples__items__item__btn">Заказать</div>
+							</div>
+							<div class="services__examples__items__item">
+								<img src="assets/img/serviсes/ser-4.svg" alt="">
+								<div class="services__examples__items__item__name">Монтаж автономного отопления дома</div>
+								<div class="services__examples__items__item__btn">Заказать</div>
+							</div>
+							<div class="services__examples__items__item">
+								<img src="assets/img/serviсes/ser-1.svg" alt="">
+								<div class="services__examples__items__item__name">Монтаж автономной системы водоснабжения</div>
+								<div class="services__examples__items__item__btn">Заказать</div>
+							</div>
+							<div class="services__examples__items__item">
+								<img src="assets/img/serviсes/ser-5.svg" alt="">
+								<div class="services__examples__items__item__name">Установка и подключение
+									водонагревателя</div>
+								<div class="services__examples__items__item__btn">Заказать</div>
+							</div>
+						</div>
+					</div>
+                </div>
+			</div>
+        </section>
+	</main>
+
+	<!-- Connection -->
+	<section class="connection">
+		<img loading="lazy" src="assets/img/profile--mobile.jpg" class="profile__img no-xl xs" alt="Profile">
+		<div class="container">
+			<div class="connection__inner">
+				<div class="profile">
+					<picture class="profile__img no-xs">
+						<source srcset="assets/img/profile--tablet.jpg" media="(max-width: 1199px)" />
+						<img loading="lazy" src="assets/img/profile.jpg" alt="Profile">
+					</picture>
+					<h3 class="profile__name">Васильев Петр Иванович</h3>
+					<div class="profile__job">Ведущий инженер «СибГазСервис»</div>
+				</div>
+				<div class="connection__right">
+					<h2 class="connection__title">Получите бесплатную консультацию от нашего ведущего инженера</h2>
+					<form onsubmit="return validateForm()" method="POST" name="form" id="form" class="form">
+						<div class="form__input__wrapper">
+							<input type="text" name="username" id="username" class="form__input" placeholder="Ваше имя*" required>
+							<input type="tel" name="userphone" id="userphone" class="form__input input__phone" placeholder="Ваш телефон"
+								required>
+						</div>
+						<div class="form__text__wrapper">
+							<img loading="lazy" src="assets/img/locker.svg" alt="Locker" class="form__img">
+							<p class="form__text">
+								Оправляя заявку вы соглашаетесь на Обработку
+								<a href="#">персональных данных</a>
+							</p>
+						</div>
+						<button type="submit" class="form__btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Connection END -->
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__left">
+					<div class="footer__left__wrapper">
+						<div class="footer__logo__wrapper">
+							<a href="/" class="footer__logo">
+								<img loading="lazy" src="assets/img/logo.png" alt="Logo">
+							</a>
+							<div class="footer__email no-xl md"><a href="info@sibgazservice.ru">info@sibgazservice.ru</a></div>
+							<a href="+7(383) 292-36-12" class="footer__phone no-xl md">+7(383) 292-36-12</a>
+						</div>
+						<nav class="footer__nav">
+							<div class="footer__nav__row no-xs">
+								<a href="#" class="footer__nav__link">Галерея работ</a>
+								<a href="#" class="footer__nav__link">Отзывы</a>
+								<a href="#" class="footer__nav__link no-md">Сертификаты</a>
+							</div>
+							<div class="footer__nav__row no-xs">
+								<a href="#" class="footer__nav__link no-xl md">Сертификаты</a>
+								<a href="#" class="footer__nav__link">Справочник</a>
+								<a href="#" class="footer__nav__link no-md">О компании</a>
+								<a href="#" class="footer__nav__link no-md">Контакты</a>
+							</div>
+							<div class="footer__nav__row no-xl md no-xs">
+								<a href="#" class="footer__nav__link">О компании</a>
+								<a href="#" class="footer__nav__link">Контакты</a>
+							</div>
+
+							<div class="footer__btn__wrapper no-xl md">
+								<a href="#" class="footer__btn">Заказать звонок</a>
+								<a href="#" class="footer__btn footer__btn--white">Написать в WhatsApp</a>
+							</div>
+						</nav>
+						<div class="footer__links__wrapper no-md">
+							<a href="#" class="footer__link">Политика конфединцеальности</a>
+							<a href="#" class="footer__link">Банковские реквизиты</a>
+							<a href="#" class="footer__link">Гарантия, сервис</a>
+						</div>
+					</div>
+					<div class="footer__links__wrapper no-xl md">
+						<a href="#" class="footer__link">Политика конфединцеальности</a>
+						<a href="#" class="footer__link">Банковские реквизиты</a>
+						<a href="#" class="footer__link">Гарантия, сервис</a>
+					</div>
+					<div class="footer__line no-xs">
+						<div class="footer__line__text">Наши представители в регионах:</div>
+						<a href="#" class="footer__line__link">Кемерово и Кемеровская область</a>
+						<a href="#" class="footer__line__link">Томск и Томская область</a>
+						<a href="#" class="footer__line__link footer__line__link--blue">СТАТЬ ПРЕДСТАВИТЕЛЕМ</a>
+					</div>
+				</div>
+
+				<div class="footer__right no-md">
+					<div class="footer__email no-md"><a href="info@sibgazservice.ru">info@sibgazservice.ru</a></div>
+					<a href="+7(383) 292-36-12" class="footer__phone no-md">+7(383) 292-36-12</a>
+					<div class="footer__btn__wrapper">
+						<a href="#" class="footer__btn">Заказать звонок</a>
+						<a href="#" class="footer__btn footer__btn--white">Написать в WhatsApp</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__pannel">
+				<a href="#" class="footer__pannel__link">Создание и продвижение сайта – «Айкон»</a>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer END -->
+	<div id="modal__feedback" class="modal">
+		<div class="modal__inner">
+			<div class="modal__header">Обратный звонок</div>
+			<form onsubmit="return validateForm()" method="POST" name="form__feddback" id="form__feddback" class="form">
+				<div class="form__input__wrapper">
+					<input type="text" name="m_username" id="m__username" class="form__input" placeholder="Ваше имя" required>
+					<input type="tel" name="m_userphone" id="m__userphone" class="form__input input__phone" placeholder="Ваш телефон" required>
+				</div>
+				<button type="submit" class="form__btn">Отправить</button>
+			</form>
+		</div>
+	</div>
+	<!-- Modal -->
+	
+	<!-- Modal END -->
+
+	<!-- jQuery -->
+	<script src="assets/js/include/jquery.min.js"></script>
+	<!-- Mask -->
+	<script src="assets/js/include/jquery.maskedinput.min.js"></script>
+	<!-- Modal -->
+	<script src="assets/js/include/jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Slick -->
+	<script src="assets/js/include/slick.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="assets/js/scripts.min.js?v=1.0.0.0.1"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="assets/js/jquery.colorbox-min.js"></script>
+    <script src="assets/js/services.js"></script>
+</body>
+
+</html>
