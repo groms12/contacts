@@ -3225,22 +3225,21 @@ option {
 .services .card__sale img {
   opacity: 1;
   height: auto;
-  position: absolute;
-  left: 0;
-  bottom: 0;
   z-index: 2;
   width: 479px;
   height: 448px;
 }
 
 .services .card__sale div {
-  position: absolute;
-  right: 0;
   margin-right: 0;
+  margin-bottom: 30px;
 }
 
 .services .card__sale {
   height: 280px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .services .card__sale__gradient {
@@ -3323,11 +3322,44 @@ option {
   line-height: 13px;
 }
 
+@media screen and (max-width: 835px) {
+  .services .card__why__objects {
+    max-width: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 @media screen and (max-width: 680px) {
   .services__examples__items {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .services .card__why__objects {
+    max-width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .services__info__text span {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .services .card__why__objects__object {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: auto;
   }
 }
 

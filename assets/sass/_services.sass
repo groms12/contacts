@@ -82,18 +82,15 @@
     .card__sale img
         opacity: 1 
         height: auto 
-        position: absolute
-        left: 0
-        bottom: 0
         z-index: 2
         width: 479px
         height: 448px
     .card__sale div
-        position: absolute
-        right: 0
         margin-right: 0
+        margin-bottom: 30px
     .card__sale
         height: 280px
+        align-items: flex-end
         &__gradient
            background-color: #008BCC
            z-index: 1
@@ -146,9 +143,35 @@
                     font-size: 11px
                     font-weight: 700
                     line-height: 13px
-
+// @media screen and ( max-width: 980px )
+//     .services
+//         .card__sale
+//             flex-wrap: wrap
+//             align-items: start
+//             &__gradient
+//                 height: 600px
+@media screen and ( max-width: 835px )
+    .services
+        .card__why__objects
+            max-width: 100%
+            flex-wrap: nowrap
 @media screen and ( max-width: 680px )
     .services
         &__examples
             &__items
                 justify-content: center
+@media screen and ( max-width: 550px )
+    .services
+        .card__why__objects
+            max-width: 100%
+            flex-wrap: wrap
+            justify-content: center
+@media screen and ( max-width: 500px )
+    .services__info__text
+        span
+            text-align: center
+@media screen and ( max-width: 365px )
+    .services
+        .card__why__objects__object
+            flex-basis: 100%
+            margin: auto
