@@ -3322,6 +3322,67 @@ option {
   line-height: 13px;
 }
 
+.services .swiper-slide {
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 1340px) {
+  .services .swiper-button-next1 {
+    right: -25px;
+  }
+  .services .swiper-button-prev1 {
+    left: -25px;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .services .swiper-button-next1 {
+    right: 0;
+  }
+  .services .swiper-button-prev1 {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .services .swiper-button-next1 {
+    right: -35px;
+  }
+  .services .swiper-button-prev1 {
+    left: -35px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .services .swiper-button-next1 {
+    right: -15px;
+  }
+  .services .swiper-button-prev1 {
+    left: -15px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .services .swiper-button-next1 {
+    right: -10px;
+    display: block !important;
+  }
+  .services .swiper-button-prev1 {
+    left: -10px;
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .services .swiper-button-next1 {
+    right: 0;
+  }
+  .services .swiper-button-prev1 {
+    left: 0;
+  }
+}
+
 @media screen and (max-width: 835px) {
   .services .card__why__objects {
     max-width: 100%;
