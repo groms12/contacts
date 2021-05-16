@@ -3107,6 +3107,10 @@ option {
   height: auto;
 }
 
+.services .work__cost {
+  margin-top: 50px;
+}
+
 .services__slider {
   margin-bottom: 100px;
 }
@@ -3240,11 +3244,18 @@ option {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
 }
 
-.services .card__sale__gradient {
+.services .card__sale::before {
+  content: "";
   background-color: #008BCC;
-  z-index: 1;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 4000px;
+  left: -2000px;
+  z-index: -1;
 }
 
 .services .advantages {
@@ -3383,6 +3394,50 @@ option {
   }
 }
 
+@media screen and (max-width: 980px) {
+  .services .card__sale {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+  .services .card__sale::before {
+    content: "";
+    background-color: #008BCC;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  .services .card__sale img {
+    margin-top: -168px;
+  }
+  .services .card__sale div {
+    width: 100%;
+    max-width: 475px;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  .services .card__sale__title {
+    font-size: 36px;
+    line-height: 41px;
+  }
+  .services .card__sale__subtitle {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .services .card__sale__span {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
 @media screen and (max-width: 835px) {
   .services .card__why__objects {
     max-width: 100%;
@@ -3407,6 +3462,26 @@ option {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .services .card__sale img {
+    height: 436px;
+    width: 320px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .services .card__sale div {
+    max-width: 320px;
+  }
+  .services .card__sale__title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .services .card__sale__subtitle {
+    font-size: 18px;
+  }
+  .services .card__sale__span {
+    font-size: 16px;
+    line-height: 18px;
   }
 }
 

@@ -1,4 +1,6 @@
 .services
+    .work__cost
+        margin-top: 50px
     &__slider
         margin-bottom: 100px
         &__title
@@ -91,9 +93,19 @@
     .card__sale
         height: 280px
         align-items: flex-end
-        &__gradient
-           background-color: #008BCC
-           z-index: 1
+        position: relative
+        &::before
+            content: ""
+            background-color: #008BCC
+            position: absolute
+            height: 100%
+            top: 0
+            width: 4000px
+            left: -2000px
+            z-index: -1
+        // &__gradient
+        //    background-color: #008BCC
+        //    z-index: 1
     .advantages
         padding-top: 0
     .swiper-container
@@ -190,13 +202,37 @@
       right: 0
     .services .swiper-button-prev1
       left: 0
-// @media screen and ( max-width: 980px )
-//     .services
-//         .card__sale
-//             flex-wrap: wrap
-//             align-items: start
-//             &__gradient
-//                 height: 600px
+@media screen and ( max-width: 980px )
+    .services
+        .card__sale
+            flex-wrap: wrap
+            height: fit-content
+            max-height: fit-content
+            &::before
+                content: ""
+                background-color: #008BCC
+                position: absolute
+                height: 100%
+                top: 0
+                left: 0
+                width: 100%
+                z-index: -1
+            img
+                margin-top: -168px
+            div
+                width: 100%
+                max-width: 475px
+                margin: auto
+                margin-bottom: 60px
+            &__title
+                font-size: 36px
+                line-height: 41px
+            &__subtitle
+                font-size: 24px
+                line-height: 28px
+            &__span
+                font-size: 16px
+                line-height: 18px
 @media screen and ( max-width: 835px )
     .services
         .card__why__objects
@@ -213,6 +249,22 @@
             max-width: 100%
             flex-wrap: wrap
             justify-content: center
+        .card__sale
+            img
+                height: 436px
+                width: 320px
+                object-fit: contain
+            div
+                max-width: 320px
+            &__title
+                font-size: 30px
+                line-height: 34px
+            &__subtitle
+                font-size: 18px
+                line-height: 
+            &__span
+                font-size: 16px
+                line-height: 18px
 @media screen and ( max-width: 500px )
     .services__info__text
         span
