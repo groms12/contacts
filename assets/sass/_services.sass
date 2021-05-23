@@ -1,3 +1,4 @@
+
 .services
     .work__cost
         margin-top: 50px
@@ -71,11 +72,14 @@
             width: 24px
             height: 44px
             position: absolute
-            top: 0
+            top: 10px
         &-next1
             right: -55px
         &-prev1
             left: -60px
+    .advantages__inner
+        max-width: 85%
+        margin: auto
     .advantages__title
         margin-bottom: 60px
     .card__sale__span
@@ -87,9 +91,11 @@
         z-index: 2
         width: 479px
         height: 448px
+        margin-left: -45px
     .card__sale div
         margin-right: 0
         margin-bottom: 30px
+        max-width: 55%
     .card__sale
         height: 280px
         align-items: flex-end
@@ -100,23 +106,38 @@
             position: absolute
             height: 100%
             top: 0
-            width: 4000px
-            left: -2000px
+            left: 0
+            width: 100%
             z-index: -1
         // &__gradient
         //    background-color: #008BCC
         //    z-index: 1
+    .benefits
+        margin-bottom: 120px
+    .benefits__inner.slim-width
+        width: 70% !important
+        margin: auto
+        text-align: center
+    .benefits__item__title 
+        text-transform: uppercase
+    .benefits__item__subtitle 
+        padding: 0px 5px
     .advantages
         padding-top: 0
+    .swiper-wrapper
+        align-items: center
     .swiper-container
         overflow: visible
         .swiper-slide
             img
                 display: block
                 margin: auto
+    &__examples__items
+        max-width: 85%
+        margin: auto
     &__examples
         color: #000 
-        margin-top: 57px
+        margin-top: 90px
         font-family: Arial
         font-style: normal
         letter-spacing: 0em
@@ -155,9 +176,13 @@
                     font-size: 11px
                     font-weight: 700
                     line-height: 13px
+                    cursor: pointer
+                    &:hover
+                        color: #fff 
+                        background-color: #027DC3
 .services .swiper-slide 
     width: 200px
-    height: 200px
+    // height: 200px
 
 @media screen and (max-width: 1340px) 
     .services .swiper-button-next1 
@@ -181,22 +206,90 @@
 
     .services .swiper-button-prev1 
         left: -35px
+    .services .benefits__item
+        width: auto
+        margin-bottom: 0
 
-
+@media screen and ( max-width: 1000px )
+    .services .benefits__inner.slim-width
+        width: 95% !important
+@media screen and ( max-width: 980px )
+    .services .gradient
+        position: absolute
+        width: 100%
+        height: 280px
+        top: 0
+        left: 0
+        z-index: 5
+        display: block
+        background: linear-gradient(358deg, #008BCC 5.65%, rgba(0, 139, 204, 0) 81.09%)
 @media screen and (max-width: 767px) 
+    .services .benefits__subtitle
+        margin-bottom: 38px
+    .services .benefits
+        margin-bottom: 87px
+    .container .container 
+        padding: 0
     .services .swiper-button-next1 
         right: -15px
     .services .swiper-button-prev1 
         left: -15px
-   
+    .services .work__cost 
+        margin-bottom: 0px
+    .services .card__why .slim-width
+        width: 100% !important
+    .services
+        .advantages__title
+            margin-bottom: 42px
+        &__slider
+            margin-bottom: 35px
+            &__title
+                margin-bottom: 65px
+        .no-xs
+            display: block
+        .list__block__title
+            margin-top: 20px
+        .card__why
+            margin-bottom: 30px !important
+        &__info
+            margin-bottom: 10px
+            padding: 60px 0 45px
+            &__text 
+                padding: 0px 45px
+        &__examples
+            margin-top: 28px
+        .examples
+            &__title
+                margin-bottom: 0
+            &__img
+                max-width: 280px
+                margin: auto
+            &__item
+                display: flex
+                flex-direction: column
+                justify-content: center
+@media screen and (max-width: 900px)
+    .services__examples__items
+        max-width: 95%
+        &__item
+            margin: auto
+            margin-bottom: 30px
 @media screen and (max-width: 640px)
+    .services .advantages__inner
+        max-width: 100%
     .services .swiper-button-next1
         right: -10px
         display: block !important
     .services .swiper-button-prev1
         left: -10px
         display: block !important
-
+@media screen and ( max-width: 500px )
+    .services .advantages__number
+        width: 76px
+        min-width: 76px
+        height: 76px
+    .services__info__text 
+        padding: 0px 10px
 @media screen and (max-width: 479px) 
     .services .swiper-button-next1
       right: 0
@@ -218,6 +311,7 @@
                 width: 100%
                 z-index: -1
             img
+                margin: auto
                 margin-top: -168px
             div
                 width: 100%
@@ -243,6 +337,16 @@
         &__examples
             &__items
                 justify-content: center
+@media screen and ( max-width: 575px )
+    .services
+        .benefits
+            &__item
+                flex-basis: 50%
+                margin: auto
+                margin-bottom: 30px
+            &__img
+                width: 120px
+                height: 120px
 @media screen and ( max-width: 550px )
     .services
         .card__why__objects
@@ -256,6 +360,7 @@
                 object-fit: contain
             div
                 max-width: 320px
+                padding: 0px 15px
             &__title
                 font-size: 30px
                 line-height: 34px
@@ -269,6 +374,23 @@
     .services__info__text
         span
             text-align: center
+    .services
+        &__examples__items__item__btn
+            padding: 17px 66px
+            max-width: 212px
+@media screen and ( max-width: 380px )
+    .services
+        .work__cost
+            margin-bottom: 16px
+        .benefits
+            margin-bottom: 5px
+            &__item
+                flex-basis: 46%
+@media screen and ( max-width: 356px )
+    .services
+        .benefits
+            &__item
+                flex-basis: 100%
 @media screen and ( max-width: 365px )
     .services
         .card__why__objects__object
