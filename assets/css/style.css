@@ -3661,6 +3661,9 @@ option {
 }
 
 @media screen and (max-width: 380px) {
+  .services .advantages__item {
+    width: 100%;
+  }
   .services .work__cost {
     margin-bottom: 16px;
   }
