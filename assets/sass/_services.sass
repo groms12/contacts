@@ -223,7 +223,12 @@
         z-index: 5
         display: block
         background: linear-gradient(358deg, #008BCC 5.65%, rgba(0, 139, 204, 0) 81.09%)
+@media screen and ( max-width: 900px )
+    .services .work__cost 
+        margin-bottom: 0px
 @media screen and (max-width: 767px) 
+    .services .list__block__title
+        display: none
     .services .benefits__subtitle
         margin-bottom: 38px
     .services .benefits
@@ -234,8 +239,6 @@
         right: -15px
     .services .swiper-button-prev1 
         left: -15px
-    .services .work__cost 
-        margin-bottom: 0px
     .services .card__why .slim-width
         width: 100% !important
     .services
@@ -258,9 +261,10 @@
                 padding: 0px 45px
         &__examples
             margin-top: 28px
+            margin-bottom: -70px
         .examples
             &__title
-                margin-bottom: 0
+                margin-bottom: 30px
             &__img
                 max-width: 280px
                 margin: auto
