@@ -3201,12 +3201,20 @@ option {
   margin-bottom: 107px;
 }
 
+.services .swiper-container {
+  overflow: hidden !important;
+}
+
+.services__slider {
+  position: relative;
+}
+
 .services .swiper-button-next1, .services .swiper-button-prev1 {
   background: url("../img/serviсes/arrow-left.svg") no-repeat center;
   width: 24px;
   height: 44px;
   position: absolute;
-  top: 10px;
+  top: 53%;
 }
 
 .services .swiper-button-next1 {
@@ -3237,7 +3245,7 @@ option {
   z-index: 2;
   width: 479px;
   height: 448px;
-  margin-left: -45px;
+  margin-left: -155px;
 }
 
 .services .card__sale div {
@@ -3435,56 +3443,10 @@ option {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .services .list__block__title {
-    display: none;
-  }
-  .services .benefits__subtitle {
-    margin-bottom: 38px;
-  }
-  .services .benefits {
-    margin-bottom: 87px;
-  }
-  .container .container {
-    padding: 0;
-  }
-  .services .swiper-button-next1 {
-    right: -15px;
-  }
-  .services .swiper-button-prev1 {
-    left: -15px;
-  }
-  .services .card__why .slim-width {
-    width: 100% !important;
-  }
-  .services .advantages__title {
-    margin-bottom: 42px;
-  }
-  .services__slider {
-    margin-bottom: 35px;
-  }
-  .services__slider__title {
-    margin-bottom: 65px;
-  }
-  .services .no-xs {
-    display: block;
-  }
+@media screen and (max-width: 768px) {
   .services .list__block__title {
     margin-top: 20px;
-  }
-  .services .card__why {
-    margin-bottom: 30px !important;
-  }
-  .services__info {
-    margin-bottom: 10px;
-    padding: 60px 0 45px;
-  }
-  .services__info__text {
-    padding: 0px 45px;
-  }
-  .services__examples {
-    margin-top: 28px;
-    margin-bottom: -70px;
+    display: none;
   }
   .services .examples__title {
     margin-bottom: 30px;
@@ -3504,6 +3466,62 @@ option {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .services .benefits {
+    margin-bottom: 87px;
+  }
+  .services .card__sale div {
+    margin-left: 8% !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .services .benefits__subtitle {
+    margin-bottom: 38px;
+  }
+  .container .container {
+    padding: 0;
+  }
+  .services .swiper-button-next1 {
+    right: -15px;
+  }
+  .services .swiper-button-prev1 {
+    left: -15px;
+  }
+  .services .card__why .slim-width {
+    width: 100% !important;
+  }
+  .services .swiper-container {
+    max-width: 97%;
+  }
+  .services .advantages__item {
+    width: 100%;
+  }
+  .services .advantages__title {
+    margin-bottom: 42px;
+  }
+  .services__slider {
+    margin-bottom: 35px;
+  }
+  .services__slider__title {
+    margin-bottom: 65px;
+  }
+  .services .no-xs {
+    display: block;
+  }
+  .services .card__why {
+    margin-bottom: 30px !important;
+  }
+  .services__info {
+    margin-bottom: 10px;
+    padding: 60px 0 45px;
+  }
+  .services__info__text {
+    padding: 0px 45px;
+  }
+  .services__examples {
+    margin-top: 28px;
+    margin-bottom: -70px;
   }
 }
 
@@ -3542,12 +3560,14 @@ option {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 482px) {
   .services .swiper-button-next1 {
     right: 0;
+    top: 58%;
   }
   .services .swiper-button-prev1 {
     left: 0;
+    top: 58%;
   }
 }
 
@@ -3643,6 +3663,7 @@ option {
   .services .card__sale div {
     max-width: 320px;
     padding: 0px 15px;
+    margin-left: auto !important;
   }
   .services .card__sale__title {
     font-size: 30px;
