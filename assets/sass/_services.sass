@@ -1,5 +1,7 @@
 
 .services
+    .benefits
+        padding-top: 0
     .work__cost
         margin-top: 50px
     &__slider
@@ -214,7 +216,6 @@
     .services .benefits__item
         width: auto
         margin-bottom: 0
-
 @media screen and ( max-width: 1000px )
     .services .benefits__inner.slim-width
         width: 95% !important
@@ -230,7 +231,13 @@
         background: linear-gradient(358deg, #008BCC 5.65%, rgba(0, 139, 204, 0) 81.09%)
 @media screen and ( max-width: 900px )
     .services .work__cost 
-        margin-bottom: 0px
+        margin-bottom: 55px
+    .services .swiper-button-next1
+        right: 0
+    .services .swiper-button-prev1
+        left: 0
+    .services .advantages__item
+        width: 100%
 @media screen and ( max-width: 768px )
     .services
         .list__block__title
@@ -257,9 +264,9 @@
     .container .container 
         padding: 0
     .services .swiper-button-next1 
-        right: -15px
+        top: 47%
     .services .swiper-button-prev1 
-        left: -15px
+        top: 47%
     .services .card__why .slim-width
         width: 100% !important
     .services
@@ -285,9 +292,14 @@
         &__examples
             margin-top: 28px
             margin-bottom: -70px
+@media screen and ( max-width: 726px )
+    .services .swiper-button-next1 
+        top: 53%
+    .services .swiper-button-prev1 
+        top: 53%
 @media screen and (max-width: 900px)
     .services__examples__items
-        max-width: 95%
+        max-width: 100%
         &__item
             margin: auto
             margin-bottom: 30px
@@ -300,6 +312,9 @@
     .services .swiper-button-prev1
         left: -10px
         display: block !important
+@media screen and (max-width: 630px)
+    .services .card__sale
+        margin-bottom: 60px
 @media screen and ( max-width: 500px )
     .services .advantages__number
         width: 76px
@@ -404,7 +419,7 @@
         .advantages__item
             width: 100%
         .work__cost
-            margin-bottom: 16px
+            margin-bottom: 79px
         .benefits
             margin-bottom: 5px
             &__item
