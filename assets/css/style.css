@@ -3167,13 +3167,6 @@ option {
   margin-bottom: 10px;
 }
 
-.services__info__subtitle {
-  line-height: 24px;
-  max-width: 668px;
-  margin: auto;
-  margin-bottom: 40px;
-}
-
 .services__info__text {
   line-height: 20px;
   text-align: left;
@@ -3181,9 +3174,13 @@ option {
   margin: auto;
 }
 
-.services__info__text span {
-  display: inline-block;
+.services__info__text p {
   margin-bottom: 20px;
+}
+
+.services__info__text p:first-child {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .services .card__why {
@@ -3196,7 +3193,6 @@ option {
 }
 
 .services .btn {
-  margin-top: 70px;
   margin-bottom: 220px;
 }
 
@@ -3431,9 +3427,11 @@ option {
 @media screen and (max-width: 980px) {
   .services .gradient {
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 280px;
     top: 0;
+    right: 0;
+    margin: auto;
     left: 0;
     z-index: 5;
     display: block;
@@ -3526,7 +3524,7 @@ option {
     margin-bottom: 30px !important;
   }
   .services__info {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 60px 0 45px;
   }
   .services__info__text {
@@ -3535,6 +3533,9 @@ option {
   .services__examples {
     margin-top: 28px;
     margin-bottom: -70px;
+  }
+  .services .examples__item {
+    margin-bottom: 60px;
   }
 }
 
@@ -3617,7 +3618,9 @@ option {
     height: 100%;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
+    margin: auto;
+    width: 90%;
     z-index: -1;
   }
   .services .card__sale img {
@@ -3629,6 +3632,7 @@ option {
     max-width: 475px;
     margin: auto;
     margin-bottom: 60px;
+    padding-left: 20px;
   }
   .services .card__sale__title {
     font-size: 36px;
@@ -3707,7 +3711,7 @@ option {
 }
 
 @media screen and (max-width: 500px) {
-  .services__info__text span {
+  .services__info__text p {
     text-align: center;
   }
   .services__examples__items__item__btn {
