@@ -3178,11 +3178,6 @@ option {
   margin-bottom: 20px;
 }
 
-.services__info__text p:first-child {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 .services .card__why {
   margin-bottom: 55px !important;
 }
@@ -3203,6 +3198,7 @@ option {
 
 .services .swiper-container {
   overflow: hidden !important;
+  position: relative;
 }
 
 .services__slider {
@@ -3214,7 +3210,7 @@ option {
   width: 24px;
   height: 44px;
   position: absolute;
-  top: 53%;
+  top: 0;
 }
 
 .services .swiper-button-next1 {
@@ -3299,6 +3295,8 @@ option {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .services .swiper-container {
@@ -3317,7 +3315,7 @@ option {
 
 .services__examples {
   color: #000;
-  margin-top: 90px;
+  margin-top: 80px;
   font-family: Arial;
   font-style: normal;
   letter-spacing: 0em;
@@ -3383,10 +3381,6 @@ option {
   background-color: #027DC3;
 }
 
-.services .swiper-slide {
-  width: 200px;
-}
-
 @media screen and (max-width: 1340px) {
   .services .swiper-button-next1 {
     right: -25px;
@@ -3414,6 +3408,9 @@ option {
   }
   .services .benefits__item {
     width: auto;
+    margin-bottom: 0;
+  }
+  .services .advantages__item:nth-child(4) {
     margin-bottom: 0;
   }
 }
@@ -3455,6 +3452,17 @@ option {
 }
 
 @media screen and (max-width: 768px) {
+  .services .swiper-button-next1, .services .swiper-button-prev1 {
+    width: 30px;
+    height: 30px;
+  }
+  .services__slider__title {
+    margin-bottom: 80px;
+  }
+  .services__slider__img {
+    max-height: 30px;
+    max-width: 120px;
+  }
   .services .list__block__title {
     margin-top: 20px;
     display: none;
@@ -3492,12 +3500,6 @@ option {
   }
   .container .container {
     padding: 0;
-  }
-  .services .swiper-button-next1 {
-    top: 47%;
-  }
-  .services .swiper-button-prev1 {
-    top: 47%;
   }
   .services .card__why .slim-width {
     width: 100% !important;
@@ -3539,15 +3541,6 @@ option {
   }
 }
 
-@media screen and (max-width: 726px) {
-  .services .swiper-button-next1 {
-    top: 53%;
-  }
-  .services .swiper-button-prev1 {
-    top: 53%;
-  }
-}
-
 @media screen and (max-width: 900px) {
   .services__examples__items {
     max-width: 100%;
@@ -3584,19 +3577,29 @@ option {
     min-width: 76px;
     height: 76px;
   }
+  .services .advantages__item {
+    margin-bottom: 28px;
+  }
+  .services .advantages__item__title {
+    font-size: 20px;
+  }
   .services__info__text {
     padding: 0px 10px;
+  }
+  .services__examples {
+    margin-top: 45px;
+  }
+  .services__examples__title {
+    margin-bottom: 40px;
   }
 }
 
 @media screen and (max-width: 482px) {
   .services .swiper-button-next1 {
     right: 0;
-    top: 58%;
   }
   .services .swiper-button-prev1 {
     left: 0;
-    top: 58%;
   }
 }
 
@@ -3711,6 +3714,9 @@ option {
 }
 
 @media screen and (max-width: 500px) {
+  .services .gradient, .services .card__sale::before {
+    width: 100%;
+  }
   .services__info__text p {
     text-align: center;
   }
