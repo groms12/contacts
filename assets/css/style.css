@@ -3199,6 +3199,8 @@ option {
 .services .swiper-container {
   overflow: hidden !important;
   position: relative;
+  width: 110%;
+  left: -5%;
 }
 
 .services__slider {
@@ -3214,11 +3216,11 @@ option {
 }
 
 .services .swiper-button-next1 {
-  right: -55px;
+  right: 0;
 }
 
 .services .swiper-button-prev1 {
-  left: -60px;
+  left: 0;
 }
 
 .services .advantages__inner {
@@ -3381,6 +3383,13 @@ option {
   background-color: #027DC3;
 }
 
+@media screen and (max-width: 1350px) {
+  .services .swiper-container {
+    width: 100%;
+    left: 0;
+  }
+}
+
 @media screen and (max-width: 1340px) {
   .services .swiper-button-next1 {
     right: -25px;
@@ -3422,6 +3431,14 @@ option {
 }
 
 @media screen and (max-width: 980px) {
+  .services__slider__img {
+    max-height: 30px;
+    max-width: 120px;
+  }
+  .services .swiper-button-next1, .services .swiper-button-prev1 {
+    width: 30px;
+    height: 30px;
+  }
   .services .gradient {
     position: absolute;
     width: 90%;
@@ -3452,16 +3469,8 @@ option {
 }
 
 @media screen and (max-width: 768px) {
-  .services .swiper-button-next1, .services .swiper-button-prev1 {
-    width: 30px;
-    height: 30px;
-  }
   .services__slider__title {
     margin-bottom: 80px;
-  }
-  .services__slider__img {
-    max-height: 30px;
-    max-width: 120px;
   }
   .services .list__block__title {
     margin-top: 20px;

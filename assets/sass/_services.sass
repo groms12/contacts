@@ -65,6 +65,8 @@
     .swiper-container
         overflow: hidden !important
         position: relative
+        width: 110%
+        left: -5%
     &__slider
         position: relative
     .swiper-button
@@ -75,9 +77,9 @@
             position: absolute
             top: 0
         &-next1
-            right: -55px
+            right: 0
         &-prev1
-            left: -60px
+            left: 0
     .advantages__inner
         max-width: 85%
         margin: auto
@@ -187,6 +189,10 @@
 // .services .swiper-slide 
 //     width: 200px
     // height: 200px
+@media screen and (max-width: 1350px) 
+    .services .swiper-container
+        width: 100%
+        left: 0
 
 @media screen and (max-width: 1340px) 
     .services .swiper-button-next1 
@@ -219,6 +225,14 @@
     .services .benefits__inner.slim-width
         width: 95% !important
 @media screen and ( max-width: 980px )
+    .services 
+        &__slider
+            &__img
+                max-height: 30px
+                max-width: 120px
+        .swiper-button-next1, .swiper-button-prev1
+            width: 30px
+            height: 30px
     .services .gradient
         position: absolute
         width: 90%
@@ -240,17 +254,10 @@
     .services .advantages__item
         width: 100%
 @media screen and ( max-width: 768px )
-    .services 
-        .swiper-button-next1, .swiper-button-prev1
-            width: 30px
-            height: 30px
     .services
         &__slider
             &__title
                 margin-bottom: 80px
-            &__img
-                max-height: 30px
-                max-width: 120px
         .list__block__title
             margin-top: 20px
             display: none
